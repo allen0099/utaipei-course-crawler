@@ -14,8 +14,8 @@ jobs:
       matrix:
         department: [0, 1, 2]
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: "npm"
@@ -23,7 +23,7 @@ jobs:
         run: npm install
       - name: fetch course data
         run: node fetchCourse.js ${{ matrix.department }}
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: ${{ matrix.department }}
           path: ./dist/
@@ -35,12 +35,12 @@ jobs:
       matrix:
         department: [0, 1, 2]
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/download-artifact@v3
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
         with:
           name: ${{ matrix.department }}
           path: ./dist/
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: "npm"
@@ -48,7 +48,7 @@ jobs:
         run: npm install
       - name: fetch course data
         run: node fetchSyllabus.js ${{ matrix.department }}
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: ${{ matrix.department }}
           path: ./dist/
@@ -57,16 +57,16 @@ jobs:
     needs: [FetchCurrent, FetchSyllabus]
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/download-artifact@v3
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
         with:
           name: 0
           path: ./dist/
-      - uses: actions/download-artifact@v3
+      - uses: actions/download-artifact@v4
         with:
           name: 1
           path: ./dist/
-      - uses: actions/download-artifact@v3
+      - uses: actions/download-artifact@v4
         with:
           name: 2
           path: ./dist/
@@ -74,7 +74,7 @@ jobs:
         run: ls -R
         working-directory: ./dist/
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: dist
