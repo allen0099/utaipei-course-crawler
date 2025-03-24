@@ -25,7 +25,7 @@ jobs:
         run: node fetchCourse.js ${{ matrix.department }}
       - uses: actions/upload-artifact@v4
         with:
-          name: ${{ matrix.department }}
+          name: course-${{ matrix.department }}
           path: ./dist/
           retention-days: 2
   FetchSyllabus:
@@ -50,7 +50,7 @@ jobs:
         run: node fetchSyllabus.js ${{ matrix.department }}
       - uses: actions/upload-artifact@v4
         with:
-          name: ${{ matrix.department }}
+          name: syllabus-${{ matrix.department }}
           path: ./dist/
           retention-days: 2
   Deploy:
@@ -60,16 +60,9 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/download-artifact@v4
         with:
-          name: 0
+          pattern: "*"
           path: ./dist/
-      - uses: actions/download-artifact@v4
-        with:
-          name: 1
-          path: ./dist/
-      - uses: actions/download-artifact@v4
-        with:
-          name: 2
-          path: ./dist/
+          merge-multiple: true
       - name: Show All years
         run: ls -R
         working-directory: ./dist/
