@@ -36,10 +36,6 @@ jobs:
         department: [0, 1, 2]
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/download-artifact@v4
-        with:
-          name: ${{ matrix.department }}
-          path: ./dist/
       - uses: actions/setup-node@v4
         with:
           node-version: 20
