@@ -2,14 +2,14 @@ import { load, CheerioAPI } from "cheerio";
 
 const delay = (s: number): Promise<void> => new Promise((resolve) => setTimeout(resolve, s));
 
-async function fetchSinglePage(url: string, options?: RequestInit): Promise<CheerioAPI | null> {
+export const fetchSinglePage = async (url: string, options?: RequestInit): Promise<CheerioAPI> => {
   await delay(100 + Math.random() * 500);
   const html = await getResp(url, options);
   if (html === null) {
-    return null;
+    throw new Error(`Could not find the page, [${options?.method || "GET"}] ${url}`);
   }
   return load(html);
-}
+};
 
 async function getResp(url: string, options: RequestInit = {}): Promise<string | null> {
   let retry = 0;
@@ -37,5 +37,3 @@ async function getResp(url: string, options: RequestInit = {}): Promise<string |
   console.error(`[error] ${url} - Failed after ${retry} attempts.`);
   return null;
 }
-
-export default { fetchSinglePage };

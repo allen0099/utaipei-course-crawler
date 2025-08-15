@@ -1,15 +1,22 @@
 {
   "compilerOptions": {
-    "target": "es2020",
+    "target": "es5",
     "module": "esnext",
-    "lib": ["es2020", "dom"],
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "noEmit": true,
     "moduleResolution": "node",
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "incremental": true,
     "strict": true,
     "outDir": "./dist",
-    "rootDir": "."
+    "rootDir": ".",
+    "paths": {
+      "@/*": ["./*"]
+    }
   },
   "include": ["**/*.ts"],
   "exclude": ["node_modules"]
