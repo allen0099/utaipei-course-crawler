@@ -4,36 +4,29 @@
 
 ## 專案設定與執行
 
-本專案使用 TypeScript 開發，並利用 `fetch` API 進行網頁內容抓取。
-
-### 1. 安裝依賴
+本專案使用 TypeScript 開發。
 
 請確保您已安裝 [pnpm](https://pnpm.io/)。然後執行以下命令安裝專案所需的所有依賴：
 
+### Commands
+
 ```bash
 pnpm install
-```
-
-### 2. 編譯 TypeScript
-
-在執行專案之前，您需要將 TypeScript 原始碼編譯為 JavaScript。執行以下命令：
-
-```bash
 npx tsc
-```
 
-這將會把編譯後的 JavaScript 檔案輸出到 `dist/` 目錄中。
+# 執行 ts 檔案
+tsx xxx.ts
+```
 
 ### 核心模組
 
-- `tools/fetcher.ts`: 負責網頁內容的抓取，使用原生 `fetch` API 實現重試機制。
+- `utils/fetcher.ts`: 負責網頁內容的抓取，使用原生 `fetch` API 實現重試機制。
+- `utils/text.ts`: 提供文本處理的工具函數。
 
 ## TODO
 
-- [ ] 公告爬取
-- [ ] 課程爬取
-- [ ] 課程時間表爬取
-- [ ] GitHub Actions 自動化
+- [X] [公告](https://allen0099.github.io/utaipei-course-crawler/announcement.json)
+- [ ] 歷史課程
 
 ## 資料
 
