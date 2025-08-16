@@ -11,20 +11,23 @@
     "format": "prettier --write ."
   },
   "keywords": [],
-  "author": "",
+  "author": "allen0099",
   "license": "ISC",
   "packageManager": "pnpm@10.14.0",
   "dependencies": {
     "cheerio": "^1.1.2",
+    "jsonfile": "^6.2.0",
     "pangu": "^7.2.0"
   },
   "devDependencies": {
+    "@types/jsonfile": "^6.1.4",
     "@types/node": "^24.3.0",
     "eslint": "^9.33.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.4",
     "globals": "^16.3.0",
     "prettier": "^3.6.2",
+    "tsx": "^4.20.4",
     "typescript": "^5.9.2"
   }
 }
