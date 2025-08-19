@@ -1,6 +1,7 @@
 import { fetchSinglePage } from "@/utils/fetcher";
 import { writeFile } from "jsonfile";
 import { validatePath } from "@/utils/dir";
+import { spacing } from "@/utils/text";
 
 const outputPath = validatePath("./dist/calendar.json");
 
@@ -31,7 +32,7 @@ const fetchCalendar = async () => {
         results.push({
           year: parseInt(text.match(/(\d{3})/g)?.[0] || "0"),
           semester: text.includes("上學期") ? 1 : 2,
-          title: text,
+          title: spacing(text),
           link: `https://adeva.utaipei.edu.tw${link}`,
         });
       });
