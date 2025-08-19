@@ -1,16 +1,13 @@
-import fs from "fs";
-import path from "path";
-
 import { fetchSinglePage } from "@/utils/fetcher";
 import { spacing } from "@/utils/text";
 import { writeFile } from "jsonfile";
+import { validatePath } from "@/utils/dir";
 
 const reLevel1 = /^[一二三四五六七八九十]+、/;
 const reLevel2 = /^\([一二三四五六七八九十]+\)/;
 const reLink = /https?:\/\/\S+/;
 
-const outputPath = "./dist/announcement.json";
-const outputDir = path.dirname(outputPath);
+const outputPath = validatePath("./dist/announcement.json");
 
 interface jsonItem {
   text: string;
@@ -82,11 +79,6 @@ const fetchAnnouncement = async () => {
       }
     }
   });
-
-  // Make sure the folder in outputPath exists
-  if (!fs.existsSync(outputDir)) {
-    fs.mkdirSync(outputDir, { recursive: true });
-  }
 
   await writeFile(outputPath, results, { spaces: 2, EOL: "\r\n" });
 };
