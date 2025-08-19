@@ -37,6 +37,14 @@ const fetchCalendar = async () => {
       });
   });
 
+  // Sort results by year and semester
+  results.sort((a, b) => {
+    if (a.year !== b.year) {
+      return a.year - b.year; // Sort by year first
+    }
+    return a.semester - b.semester; // Then by semester
+  });
+
   await writeFile(outputPath, results, { spaces: 2, EOL: "\r\n" });
 };
 
