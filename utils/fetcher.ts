@@ -1,4 +1,8 @@
+import fs from "fs";
+import { Readable } from "stream";
+import { finished } from "stream/promises";
 import { load, CheerioAPI } from "cheerio";
+import { checkPath } from "@/utils/dir";
 
 const delay = (s: number): Promise<void> => new Promise((resolve) => setTimeout(resolve, s));
 
@@ -44,8 +48,13 @@ export const fetcher = {
   post: (url: string, options?: RequestInit) => {
     return retryFetcher(url, { method: "POST", ...options });
   },
-  download: async (url: string, options?: RequestInit) => {
-    const response = await retryFetcher(url, { method: "GET", ...options });
-    return response.blob();
+  download: async (url: string, filePath: string) => {
+    const { body } = await retryFetcher(url);
+    const destination = checkPath(filePath);
+
+    const fileStream = fs.createWriteStream(destination);
+    await finished(Readable.fromWeb(body as any).pipe(fileStream));
+
+    console.log(`[download] ${url} to ${destination} done.`);
   },
 };

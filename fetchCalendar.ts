@@ -1,9 +1,9 @@
-import { fetchSinglePage } from "@/utils/fetcher";
+import { fetcher, fetchSinglePage } from "@/utils/fetcher";
 import { writeFile } from "jsonfile";
-import { validatePath } from "@/utils/dir";
+import { checkPath } from "@/utils/dir";
 import { spacing } from "@/utils/text";
 
-const outputPath = validatePath("./dist/calendar.json");
+const outputPath = checkPath("./dist/calendar.json");
 
 interface calendarItem {
   year: number;
@@ -29,12 +29,16 @@ const fetchCalendar = async () => {
 
         if (!link) return; // Skip if no link is found
 
-        results.push({
-          year: parseInt(text.match(/(\d{3})/g)?.[0] || "0"),
-          semester: text.includes("上學期") ? 1 : 2,
-          title: spacing(text),
-          link: `https://adeva.utaipei.edu.tw${link}`,
-        });
+        const year = parseInt(text.match(/(\d{3})/g)?.[0] || "0");
+        const semester = text.includes("上學期") ? 1 : 2;
+        const title = spacing(text);
+        const fullLink = `https://adeva.utaipei.edu.tw${link}`;
+
+        results.push({ year, semester, title, link: fullLink });
+
+        (async () => {
+          await fetcher.download(fullLink, `./dist/calendar/${year}/${title}.pdf`);
+        })();
       });
   });
 
