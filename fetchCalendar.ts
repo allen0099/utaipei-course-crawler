@@ -9,7 +9,6 @@ interface calendarItem {
   year: number;
   semester: number;
   title: string;
-  link: string;
 }
 
 const fetchCalendar = async () => {
@@ -34,7 +33,7 @@ const fetchCalendar = async () => {
         const title = spacing(text);
         const fullLink = `https://adeva.utaipei.edu.tw${link}`;
 
-        results.push({ year, semester, title, link: fullLink });
+        results.push({ year, semester, title });
 
         (async () => {
           await fetcher.download(fullLink, `./dist/calendar/${year}/${title}.pdf`);
