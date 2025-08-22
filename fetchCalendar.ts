@@ -1,9 +1,6 @@
 import { fetcher, fetchSinglePage } from "@/utils/fetcher";
-import { writeFile } from "jsonfile";
-import { checkPath } from "@/utils/dir";
+import { writeJson } from "@/utils/dir";
 import { spacing } from "@/utils/text";
-
-const outputPath = checkPath("./dist/calendar.json");
 
 interface calendarItem {
   year: number;
@@ -49,7 +46,7 @@ const fetchCalendar = async () => {
     return a.semester - b.semester; // Then by semester
   });
 
-  await writeFile(outputPath, results, { spaces: 2, EOL: "\r\n" });
+  await writeJson("./dist/calendar.json", results);
 };
 
 (async () => {

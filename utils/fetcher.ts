@@ -43,10 +43,12 @@ export const fetchSinglePage = async (url: string, options?: RequestInit): Promi
 
 export const fetcher = {
   get: (url: string, options?: RequestInit) => {
-    return retryFetcher(url, { method: "GET", ...options });
+    return fetchSinglePage(url, { method: "GET", ...options });
   },
-  post: (url: string, options?: RequestInit) => {
-    return retryFetcher(url, { method: "POST", ...options });
+  post: (url: string, postedBody: URLSearchParams, options?: RequestInit) => {
+    if (!options?.headers)
+      options = { ...options, headers: { "Content-Type": "application/x-www-form-urlencoded" } };
+    return fetchSinglePage(url, { method: "POST", body: postedBody, ...options });
   },
   download: async (url: string, filePath: string) => {
     const { body } = await retryFetcher(url);

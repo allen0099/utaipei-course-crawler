@@ -25,7 +25,7 @@ tsx xxx.ts
 
 ## TODO
 
-- [X] [公告](https://allen0099.github.io/utaipei-course-crawler/announcement.json)
+- [x] [公告](https://allen0099.github.io/utaipei-course-crawler/announcement.json)
 - [ ] 歷史課程
 
 ## 資料

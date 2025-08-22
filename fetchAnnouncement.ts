@@ -1,13 +1,10 @@
 import { fetchSinglePage } from "@/utils/fetcher";
 import { spacing } from "@/utils/text";
-import { writeFile } from "jsonfile";
-import { checkPath } from "@/utils/dir";
+import { writeJson } from "@/utils/dir";
 
 const reLevel1 = /^[一二三四五六七八九十]+、/;
 const reLevel2 = /^\([一二三四五六七八九十]+\)/;
 const reLink = /https?:\/\/\S+/;
-
-const outputPath = checkPath("./dist/announcement.json");
 
 interface jsonItem {
   text: string;
@@ -79,11 +76,10 @@ const fetchAnnouncement = async () => {
       }
     }
   });
-
-  await writeFile(outputPath, results, { spaces: 2, EOL: "\r\n" });
+  await writeJson("./dist/announcement.json", results);
 };
 
 (async () => {
   await fetchAnnouncement();
-  console.log(`Announcement data has been fetched and saved to ${outputPath}`);
+  console.log(`Announcement data has been fetched and saved!`);
 })();
