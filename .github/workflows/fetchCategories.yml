@@ -1,11 +1,15 @@
-name: fetchCalendar
+name: fetchCategories
 
 on:
+  push:
+    branches:
+      - main
+
   schedule:
-    - cron: "0 3 1 * *"
+    - cron: "0 0 3 * *"
 
 jobs:
-  fetchCalendar:
+  fetchCategories:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -16,8 +20,8 @@ jobs:
           cache: "pnpm"
       - name: Install dependencies
         run: pnpm install
-      - name: Fetch calendar data
-        run: pnpm tsx fetchCalendar.ts
+      - name: Fetch standards and categories
+        run: pnpm tsx fetchStandards.ts
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
