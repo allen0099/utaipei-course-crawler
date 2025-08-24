@@ -3,37 +3,53 @@ import { Readable } from "stream";
 import { finished } from "stream/promises";
 import { load, CheerioAPI } from "cheerio";
 import { checkPath } from "@/utils/dir";
+import { CookieJar } from "tough-cookie";
+import makeFetchCookie from "fetch-cookie";
 
+type GenericFetch<T1, T2, T3> = (input: T1, init?: T2) => Promise<T3>;
 const delay = (s: number): Promise<void> => new Promise((resolve) => setTimeout(resolve, s));
 
-async function retryFetcher(url: string, options: RequestInit = {}): Promise<Response> {
+export const retryFetcher: GenericFetch<
+  string | URL | globalThis.Request,
+  RequestInit,
+  Response
+> = async (input, init = {}): Promise<Response> => {
   let retry = 0;
   while (retry < 10) {
     try {
       const now = new Date();
-      const response = await fetch(url, {
-        method: options.method ? options.method : "GET",
-        ...options,
+      const response = await fetch(input, {
+        method: init.method ? init.method : "GET",
+        ...init,
       });
 
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
 
-      console.log(`[fetch] ${url} done. (${new Date().getTime() - now.getTime()}ms)`);
+      console.log(`[fetch] ${input} done. (${new Date().getTime() - now.getTime()}ms)`);
       return response;
     } catch (e: any) {
-      console.error(`[error] ${url} - Attempt ${retry + 1}: ${e.message}`);
+      console.error(`[error] ${input} - Attempt ${retry + 1}: ${e.message}`);
       retry += 1;
       await delay(1000 * retry * retry);
     }
   }
-  throw new Error(`Failed to fetch ${url} after ${retry} attempts.`);
-}
+  throw new Error(`Failed to fetch ${input} after ${retry} attempts.`);
+};
 
-export const fetchSinglePage = async (url: string, options?: RequestInit): Promise<CheerioAPI> => {
+export const fetchSinglePage = async (
+  url: string,
+  options?: RequestInit,
+  jar?: CookieJar,
+): Promise<CheerioAPI> => {
   await delay(100 + Math.random() * 500);
-  const response = await retryFetcher(url, options);
+
+  let response: Response;
+  if (jar) {
+    const fetchCookie = makeFetchCookie(retryFetcher, jar);
+    response = await fetchCookie(url, options);
+  } else response = await retryFetcher(url, options);
   const html = await response.text();
   if (html === null) {
     throw new Error(`Could not find the page, [${options?.method || "GET"}] ${url}`);
