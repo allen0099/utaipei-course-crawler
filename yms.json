@@ -1,0 +1,390 @@
+[
+  {
+    "code": "95#1",
+    "displayName": "95 學年度第 1 學期"
+  },
+  {
+    "code": "96#1",
+    "displayName": "96 學年度第 1 學期"
+  },
+  {
+    "code": "96#2",
+    "displayName": "96 學年度第 2 學期"
+  },
+  {
+    "code": "97#1",
+    "displayName": "97 學年度第 1 學期"
+  },
+  {
+    "code": "97#2",
+    "displayName": "97 學年度第 2 學期"
+  },
+  {
+    "code": "98#1",
+    "displayName": "98 學年度第 1 學期"
+  },
+  {
+    "code": "98#2",
+    "displayName": "98 學年度第 2 學期"
+  },
+  {
+    "code": "98#3",
+    "displayName": "98 學年度暑修一"
+  },
+  {
+    "code": "98#5",
+    "displayName": "98 學年度第 1 學期暑假上課"
+  },
+  {
+    "code": "98#6",
+    "displayName": "98 學年度第 2 學期寒假上課"
+  },
+  {
+    "code": "99#1",
+    "displayName": "99 學年度第 1 學期"
+  },
+  {
+    "code": "99#2",
+    "displayName": "99 學年度第 2 學期"
+  },
+  {
+    "code": "99#3",
+    "displayName": "99 學年度暑修一"
+  },
+  {
+    "code": "99#5",
+    "displayName": "99 學年度第 1 學期 (暑假)"
+  },
+  {
+    "code": "99#6",
+    "displayName": "99 學年度第 2 學期 (寒假)"
+  },
+  {
+    "code": "99#7",
+    "displayName": "99 學年度寒假"
+  },
+  {
+    "code": "100#1",
+    "displayName": "100 學年度第 1 學期"
+  },
+  {
+    "code": "100#2",
+    "displayName": "100 學年度第 2 學期"
+  },
+  {
+    "code": "100#3",
+    "displayName": "100 學年度暑修一"
+  },
+  {
+    "code": "100#5",
+    "displayName": "100 學年第 1 學期 (暑假)"
+  },
+  {
+    "code": "100#6",
+    "displayName": "100 學年第 2 學期 (寒假)"
+  },
+  {
+    "code": "100#7",
+    "displayName": "100 學年度寒假"
+  },
+  {
+    "code": "101#1",
+    "displayName": "101 學年度第 1 學期"
+  },
+  {
+    "code": "101#2",
+    "displayName": "101 學年度第 2 學期"
+  },
+  {
+    "code": "101#5",
+    "displayName": "101 學年度第 1 學期 (暑假)"
+  },
+  {
+    "code": "101#6",
+    "displayName": "101 學年度第 2 學期 (寒假)"
+  },
+  {
+    "code": "101#7",
+    "displayName": "101 學年度寒假"
+  },
+  {
+    "code": "102#1",
+    "displayName": "102 學年度第 1 學期"
+  },
+  {
+    "code": "102#2",
+    "displayName": "102 學年度第 2 學期"
+  },
+  {
+    "code": "102#3",
+    "displayName": "103 學年度暑修一"
+  },
+  {
+    "code": "102#5",
+    "displayName": "102 學年度第 1 學期 (暑假)"
+  },
+  {
+    "code": "102#6",
+    "displayName": "102 學年度第 2 學期 (寒假)"
+  },
+  {
+    "code": "102#7",
+    "displayName": "102 學年度寒假"
+  },
+  {
+    "code": "103#1",
+    "displayName": "103 學年度第 1 學期"
+  },
+  {
+    "code": "103#2",
+    "displayName": "103 學年度第 2 學期"
+  },
+  {
+    "code": "103#3",
+    "displayName": "103 學年度暑修一"
+  },
+  {
+    "code": "103#5",
+    "displayName": "101 學年度第 1 學期 (暑)"
+  },
+  {
+    "code": "103#6",
+    "displayName": "102 學年度第 2 學期 (寒)"
+  },
+  {
+    "code": "103#7",
+    "displayName": "103 學年度寒假"
+  },
+  {
+    "code": "104#1",
+    "displayName": "104 學年度第 1 學期"
+  },
+  {
+    "code": "104#2",
+    "displayName": "104 學年度第 2 學期"
+  },
+  {
+    "code": "104#3",
+    "displayName": "104 學年度暑修一"
+  },
+  {
+    "code": "104#5",
+    "displayName": "104 學年度第 1 學期 (暑)"
+  },
+  {
+    "code": "104#6",
+    "displayName": "104 學年度第 2 學期 (寒)"
+  },
+  {
+    "code": "104#7",
+    "displayName": "104 學年度寒假"
+  },
+  {
+    "code": "105#1",
+    "displayName": "105 學年度第 1 學期"
+  },
+  {
+    "code": "105#2",
+    "displayName": "105 學年度第 2 學期"
+  },
+  {
+    "code": "105#3",
+    "displayName": "105 學年度暑修一"
+  },
+  {
+    "code": "105#5",
+    "displayName": "105 學年度第 1 學期 (暑)"
+  },
+  {
+    "code": "105#6",
+    "displayName": "105 學年度第 2 學期 (寒)"
+  },
+  {
+    "code": "105#7",
+    "displayName": "105 學年度寒假"
+  },
+  {
+    "code": "106#1",
+    "displayName": "106 學年度第 1 學期"
+  },
+  {
+    "code": "106#2",
+    "displayName": "106 學年度第 2 學期"
+  },
+  {
+    "code": "106#3",
+    "displayName": "106 學年度暑修一"
+  },
+  {
+    "code": "106#5",
+    "displayName": "106 學年度第 1 學期 (暑)"
+  },
+  {
+    "code": "106#6",
+    "displayName": "106 學年度第 1 學期 (暑)"
+  },
+  {
+    "code": "106#7",
+    "displayName": "106 學年度寒假"
+  },
+  {
+    "code": "107#1",
+    "displayName": "107 學年度第 1 學期"
+  },
+  {
+    "code": "107#2",
+    "displayName": "107 學年度第 2 學期"
+  },
+  {
+    "code": "107#3",
+    "displayName": "107 學年度第 3 學期"
+  },
+  {
+    "code": "108#1",
+    "displayName": "108 學年度第 1 學期"
+  },
+  {
+    "code": "108#2",
+    "displayName": "108 學年度第 2 學期"
+  },
+  {
+    "code": "108#3",
+    "displayName": "108 學年度第 3 學期"
+  },
+  {
+    "code": "108#6",
+    "displayName": "108 學年度第 2 學期 (寒)"
+  },
+  {
+    "code": "109#1",
+    "displayName": "109 學年度第 1 學期"
+  },
+  {
+    "code": "109#2",
+    "displayName": "109 學年度第 2 學期"
+  },
+  {
+    "code": "109#3",
+    "displayName": "109 學年度第 3 學期"
+  },
+  {
+    "code": "109#5",
+    "displayName": "109 學年度第 1 學期 (暑)"
+  },
+  {
+    "code": "109#6",
+    "displayName": "109 學年度第 2 學期 (寒)"
+  },
+  {
+    "code": "110#1",
+    "displayName": "110 學年度第 1 學期"
+  },
+  {
+    "code": "110#2",
+    "displayName": "110 學年度第 2 學期"
+  },
+  {
+    "code": "110#3",
+    "displayName": "110 學年度第 3 學期"
+  },
+  {
+    "code": "110#5",
+    "displayName": "110 學年度第 5 學期 (暑)"
+  },
+  {
+    "code": "110#6",
+    "displayName": "110 學年度第 2 學期 (寒)"
+  },
+  {
+    "code": "110#7",
+    "displayName": "110 學年度寒假"
+  },
+  {
+    "code": "111#1",
+    "displayName": "111 學年度第 1 學期"
+  },
+  {
+    "code": "111#2",
+    "displayName": "111 學年度第 2 學期"
+  },
+  {
+    "code": "111#3",
+    "displayName": "111 學年度第 3 學期 (暑) 大"
+  },
+  {
+    "code": "111#5",
+    "displayName": "111 學年度第 5 學期 (暑)"
+  },
+  {
+    "code": "111#6",
+    "displayName": "111 學年度第 2 學期 (寒)"
+  },
+  {
+    "code": "111#7",
+    "displayName": "111 學年度寒假"
+  },
+  {
+    "code": "112#1",
+    "displayName": "112 學年度第 1 學期"
+  },
+  {
+    "code": "112#2",
+    "displayName": "112 學年度第 2 學期"
+  },
+  {
+    "code": "112#3",
+    "displayName": "112 學年度第 3 學期"
+  },
+  {
+    "code": "112#5",
+    "displayName": "112 學年度第 5 學期 (暑)"
+  },
+  {
+    "code": "112#6",
+    "displayName": "112 學年度第 2 學期 (寒)"
+  },
+  {
+    "code": "112#7",
+    "displayName": "112 學年度寒假"
+  },
+  {
+    "code": "113#1",
+    "displayName": "113 學年度第 1 學期"
+  },
+  {
+    "code": "113#2",
+    "displayName": "113 學年度第 2 學期"
+  },
+  {
+    "code": "113#3",
+    "displayName": "113 學年度第 3 學期 (暑)"
+  },
+  {
+    "code": "113#5",
+    "displayName": "113 學年度第 5 學期 (暑)"
+  },
+  {
+    "code": "113#6",
+    "displayName": "113 學年度第 2 學期 (寒)"
+  },
+  {
+    "code": "113#7",
+    "displayName": "113 學年度寒假"
+  },
+  {
+    "code": "114#1",
+    "displayName": "114 學年度第 1 學期"
+  },
+  {
+    "code": "114#3",
+    "displayName": "113 學年度第 3 學期 (暑)"
+  },
+  {
+    "code": "114#5",
+    "displayName": "114 學年度第 5 學期 (暑)"
+  },
+  {
+    "code": "114#6",
+    "displayName": "114 學年度第 2 學期 (寒)"
+  }
+]
