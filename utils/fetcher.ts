@@ -61,10 +61,10 @@ export const fetcher = {
   get: (url: string, options?: RequestInit) => {
     return fetchSinglePage(url, { method: "GET", ...options });
   },
-  post: (url: string, postedBody: URLSearchParams, options?: RequestInit) => {
+  post: (url: string, postedBody: URLSearchParams, options?: RequestInit, jar?: CookieJar) => {
     if (!options?.headers)
       options = { ...options, headers: { "Content-Type": "application/x-www-form-urlencoded" } };
-    return fetchSinglePage(url, { method: "POST", body: postedBody, ...options });
+    return fetchSinglePage(url, { method: "POST", body: postedBody, ...options }, jar);
   },
   download: async (url: string, filePath: string) => {
     const { body } = await retryFetcher(url);
