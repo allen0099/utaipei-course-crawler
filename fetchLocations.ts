@@ -3,6 +3,7 @@ import { login } from "@/utils/authFetcher";
 import { convertChineseNumber, spacing } from "@/utils/text";
 import { writeJson } from "@/utils/dir";
 import { CookieJar } from "tough-cookie";
+import pLimit from "p-limit";
 
 interface YearAndSemester {
   code: string;
@@ -73,21 +74,29 @@ const fetchLocations = async (yms: string, jar: CookieJar) => {
     "body > form > table > tbody > tr:nth-child(2) > td > font > select:nth-child(2) option",
   );
 
-  const locations: Location[] = [];
+  // Limit concurrent requests to 10, to avoid overwhelming the server
+  const limit = pLimit(10);
 
-  for (const el of data.toArray()) {
-    const value = $(el).val();
-    const text = $(el).text().trim();
-    if (value && text) {
-      if (Array.isArray(value)) throw new Error("Unexpected array value");
-      const courses = await fetchCourses(yms, value, jar);
-      locations.push({
-        code: value,
-        name: spacing(text),
-        courses,
-      });
-    }
-  }
+  const locationPromises = data
+    .toArray()
+    .map((el) => {
+      const value = $(el).val();
+      const text = $(el).text().trim();
+      if (value && text) {
+        if (Array.isArray(value)) throw new Error("Unexpected array value");
+        return limit(() =>
+          fetchCourses(yms, value, jar).then((courses) => ({
+            code: value,
+            name: spacing(text),
+            courses,
+          })),
+        );
+      }
+      return null;
+    })
+    .filter(Boolean) as Promise<Location>[]; // 過濾掉 null
+
+  const locations = await Promise.all(locationPromises);
 
   await writeJson(`./dist/${year}/${semester}/locations.json`, locations);
 };
