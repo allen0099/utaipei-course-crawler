@@ -132,9 +132,18 @@ const fetchYms = async () => {
   });
 
   const jobs: Promise<void>[] = [];
-  results.forEach((item) => {
-    jobs.push(fetchLocations(item.code, authJar));
-  });
+  // Find default equals to true, and get the year for the true item
+  const defaultItem = results.find((item) => item.default);
+  if (defaultItem) {
+    const [year] = defaultItem.code.split("#");
+    // Add all results with the same year as the default item
+    results.forEach((item) => {
+      const [itemYear] = item.code.split("#");
+      if (itemYear === year) {
+        jobs.push(fetchLocations(item.code, authJar));
+      } else console.log(`Skip fetching locations for ${item.code}`);
+    });
+  }
   await Promise.all(jobs);
   console.log("All locations fetched!");
 
