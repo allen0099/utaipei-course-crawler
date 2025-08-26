@@ -6,7 +6,8 @@ on:
       - main
 
   schedule:
-    - cron: "0 0 5 * *"
+    # Run only on 3, 6, 9, 12 months and the 3rd day of the month
+    - cron: "0 0 3 3,6,9,12 *"
 
 jobs:
   fetchLocations:

@@ -7,41 +7,87 @@ import { CookieJar } from "tough-cookie";
 interface YearAndSemester {
   code: string;
   displayName: string;
+  default: boolean;
+}
+
+interface CourseItem {
+  code: string;
+  name: string;
+  class: string;
+  time: string;
+  teacher: string;
 }
 
 interface Location {
   code: string;
   name: string;
+  courses: CourseItem[];
 }
 
 const reYear = /(\D{2,4})學年度?/;
 const reSemester = /第([一二三四五六七八九])學期/;
 
+const fetchCourses = async (yms: string, courseId: string, jar: CookieJar) => {
+  const [year, semester] = yms.split("#");
+  const url = "https://my.utaipei.edu.tw/utaipei/ag_pro/ag302_02.jsp";
+
+  const params = new URLSearchParams({
+    yms_yms: yms,
+    room_id: courseId,
+    ls_year: year,
+    ls_sms: semester,
+  });
+
+  const $ = await fetcher.authPost(url, params, jar);
+  const data = $('body > form > table > tbody > tr[bgcolor="#fffcee"]');
+
+  const results: CourseItem[] = [];
+
+  data.each((_, el) => {
+    const row = $(el).find("td");
+
+    results.push({
+      code: row.eq(0).text().trim(),
+      name: spacing(row.eq(1).text().trim()),
+      class: spacing(row.eq(2).text().trim()),
+      time: spacing(row.eq(8).text().trim()),
+      teacher: spacing(row.eq(9).text().trim()),
+    });
+  });
+
+  return results;
+};
+
 const fetchLocations = async (yms: string, jar: CookieJar) => {
   const [year, semester] = yms.split("#");
   const url = "https://my.utaipei.edu.tw/utaipei/ag_pro/ag302_01.jsp";
 
-  const posted = new URLSearchParams({
+  const params = new URLSearchParams({
     yms_yms: yms,
     ls_year: year,
     ls_sms: semester,
   });
 
-  const $ = await fetcher.post(url, posted, {}, jar);
+  const $ = await fetcher.authPost(url, params, jar);
   const data = $(
     "body > form > table > tbody > tr:nth-child(2) > td > font > select:nth-child(2) option",
   );
 
   const locations: Location[] = [];
 
-  data.each((_, el) => {
+  for (const el of data.toArray()) {
     const value = $(el).val();
     const text = $(el).text().trim();
     if (value && text) {
       if (Array.isArray(value)) throw new Error("Unexpected array value");
-      locations.push({ code: value, name: spacing(text) });
+      const courses = await fetchCourses(yms, value, jar);
+      locations.push({
+        code: value,
+        name: spacing(text),
+        courses,
+      });
     }
-  });
+  }
 
   await writeJson(`./dist/${year}/${semester}/locations.json`, locations);
 };
@@ -81,6 +127,7 @@ const fetchYms = async () => {
     results.push({
       code: $(el).val() as string,
       displayName: spacing(name),
+      default: $(el).attr("selected") === "selected",
     });
   });
 
@@ -96,4 +143,5 @@ const fetchYms = async () => {
 
 (async () => {
   await fetchYms();
+  // await fetchCourses("114#1", "0001", await login());
 })();

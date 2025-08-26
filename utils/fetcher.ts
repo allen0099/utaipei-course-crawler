@@ -66,6 +66,9 @@ export const fetcher = {
       options = { ...options, headers: { "Content-Type": "application/x-www-form-urlencoded" } };
     return fetchSinglePage(url, { method: "POST", body: postedBody, ...options }, jar);
   },
+  authPost: (url: string, postedBody: URLSearchParams, jar: CookieJar, options?: RequestInit) => {
+    return fetcher.post(url, postedBody, options, jar);
+  },
   download: async (url: string, filePath: string) => {
     const { body } = await retryFetcher(url);
     const destination = checkPath(filePath);
