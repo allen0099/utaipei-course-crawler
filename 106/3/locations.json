@@ -1,26 +1,94 @@
 [
   {
     "code": "9432",
-    "name": "博愛 S103A"
+    "name": "博愛 S103A",
+    "courses": [
+      {
+        "code": "0049",
+        "name": "物理化學 (二)",
+        "class": "物化系應用化學組二",
+        "time": "",
+        "teacher": "李權倍"
+      }
+    ]
   },
   {
     "code": "C609",
-    "name": "博愛 C609"
+    "name": "博愛 C609",
+    "courses": [
+      {
+        "code": "0004",
+        "name": "運動體適能",
+        "class": "體育系二",
+        "time": "(四) 1-4",
+        "teacher": "韓大衛"
+      }
+    ]
   },
   {
     "code": "G409",
-    "name": "博愛 G409"
+    "name": "博愛 G409",
+    "courses": [
+      {
+        "code": "0008",
+        "name": "生涯發展教育與規劃",
+        "class": "小教 (合併) 2",
+        "time": "(二) 1",
+        "teacher": "蕭雁文"
+      }
+    ]
   },
   {
     "code": "G609",
-    "name": "博愛 G609"
+    "name": "博愛 G609",
+    "courses": [
+      {
+        "code": "0002",
+        "name": "運動心理學",
+        "class": "體育系二",
+        "time": "(三) 1-4",
+        "teacher": "陳顯宗"
+      },
+      {
+        "code": "0003",
+        "name": "身體活動導論",
+        "class": "體育系二",
+        "time": "(五) 1-4",
+        "teacher": "王宗騰"
+      },
+      {
+        "code": "0005",
+        "name": "體育運動概論",
+        "class": "體育系二",
+        "time": "(二) 1-2",
+        "teacher": "林國瑞"
+      }
+    ]
   },
   {
     "code": "M304",
-    "name": "博愛 M304"
+    "name": "博愛 M304",
+    "courses": [
+      {
+        "code": "0009",
+        "name": "影像配樂",
+        "class": "音樂系四",
+        "time": "(一) 5-6",
+        "teacher": "黃乾育"
+      }
+    ]
   },
   {
     "code": "T505",
-    "name": "博愛 T505"
+    "name": "博愛 T505",
+    "courses": [
+      {
+        "code": "0001",
+        "name": "高等微積分 (一)",
+        "class": "數學系二",
+        "time": "",
+        "teacher": "陳光武"
+      }
+    ]
   }
 ]

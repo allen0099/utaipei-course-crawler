@@ -1,174 +1,4145 @@
 [
   {
     "code": "0012",
-    "name": "天母大佳河濱公園"
+    "name": "天母大佳河濱公園",
+    "courses": [
+      {
+        "code": "0417",
+        "name": "西式划船 (上)",
+        "class": "水上一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0448",
+        "name": "西式划船 (上)",
+        "class": "水上三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0432",
+        "name": "西式划船 (上)",
+        "class": "水上二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0461",
+        "name": "西式划船 (上)",
+        "class": "水上四",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0338",
+        "name": "田徑擲部",
+        "class": "陸上一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0380",
+        "name": "田徑擲部",
+        "class": "陸上三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0362",
+        "name": "田徑擲部",
+        "class": "陸上二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0398",
+        "name": "田徑擲部",
+        "class": "陸上四",
+        "time": "",
+        "teacher": ""
+      }
+    ]
   },
   {
     "code": "0018",
-    "name": "天母中山足球場"
+    "name": "天母中山足球場",
+    "courses": [
+      {
+        "code": "0577",
+        "name": "足球",
+        "class": "休管三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0479",
+        "name": "拳擊女 (上)",
+        "class": "技擊一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0480",
+        "name": "拳擊男 (上)",
+        "class": "技擊一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0515",
+        "name": "拳擊女 (上)",
+        "class": "技擊三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0516",
+        "name": "拳擊男 (上)",
+        "class": "技擊三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0493",
+        "name": "拳擊女 (上)",
+        "class": "技擊二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0494",
+        "name": "拳擊男 (上)",
+        "class": "技擊二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0528",
+        "name": "拳擊女 (上)",
+        "class": "技擊四",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0529",
+        "name": "拳擊男 (上)",
+        "class": "技擊四",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0350",
+        "name": "舉重",
+        "class": "陸上一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0393",
+        "name": "舉重",
+        "class": "陸上三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0375",
+        "name": "舉重",
+        "class": "陸上二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0410",
+        "name": "舉重",
+        "class": "陸上四",
+        "time": "",
+        "teacher": ""
+      }
+    ]
   },
   {
     "code": "0019",
-    "name": "天母士林中正保齡球館"
+    "name": "天母士林中正保齡球館",
+    "courses": [
+      {
+        "code": "0513",
+        "name": "保齡球 I",
+        "class": "技擊三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0250",
+        "name": "保齡球",
+        "class": "球一誠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0308",
+        "name": "保齡球",
+        "class": "球三誠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0259",
+        "name": "保齡球 I",
+        "class": "球二忠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0279",
+        "name": "保齡球",
+        "class": "球二誠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0670",
+        "name": "保齡球",
+        "class": "體健三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0658",
+        "name": "保齡球",
+        "class": "體健二誠",
+        "time": "",
+        "teacher": ""
+      }
+    ]
   },
   {
     "code": "0020",
-    "name": "天母中正高中田徑場"
+    "name": "天母中正高中田徑場",
+    "courses": [
+      {
+        "code": "0335",
+        "name": "田徑中長距離",
+        "class": "陸上一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0336",
+        "name": "田徑短距離",
+        "class": "陸上一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0337",
+        "name": "田徑跳部",
+        "class": "陸上一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0339",
+        "name": "田徑欄架",
+        "class": "陸上一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0377",
+        "name": "田徑中長距離",
+        "class": "陸上三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0378",
+        "name": "田徑短距離",
+        "class": "陸上三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0379",
+        "name": "田徑跳部",
+        "class": "陸上三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0381",
+        "name": "田徑欄架",
+        "class": "陸上三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0359",
+        "name": "田徑中長距離",
+        "class": "陸上二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0360",
+        "name": "田徑短距離",
+        "class": "陸上二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0361",
+        "name": "田徑跳部",
+        "class": "陸上二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0363",
+        "name": "田徑欄架",
+        "class": "陸上二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0395",
+        "name": "田徑中長距離",
+        "class": "陸上四",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0396",
+        "name": "田徑短距離",
+        "class": "陸上四",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0397",
+        "name": "田徑跳部",
+        "class": "陸上四",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0399",
+        "name": "田徑欄架",
+        "class": "陸上四",
+        "time": "",
+        "teacher": ""
+      }
+    ]
   },
   {
     "code": "0021",
-    "name": "天母公西靶場"
+    "name": "天母公西靶場",
+    "courses": [
+      {
+        "code": "0344",
+        "name": "射擊",
+        "class": "陸上一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0385",
+        "name": "射擊",
+        "class": "陸上三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0368",
+        "name": "射擊",
+        "class": "陸上二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0403",
+        "name": "射擊",
+        "class": "陸上四",
+        "time": "",
+        "teacher": ""
+      }
+    ]
   },
   {
     "code": "0022",
-    "name": "天母不使用"
+    "name": "天母不使用",
+    "courses": [
+      {
+        "code": "0863",
+        "name": "運動用品經營行銷",
+        "class": "運器碩二",
+        "time": "",
+        "teacher": ""
+      }
+    ]
   },
   {
     "code": "0025",
-    "name": "天母天母乒乓球園"
+    "name": "天母天母乒乓球園",
+    "courses": [
+      {
+        "code": "0517",
+        "name": "桌球 I",
+        "class": "技擊三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0369",
+        "name": "桌球 I",
+        "class": "陸上二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0648",
+        "name": "桌球",
+        "class": "體健二",
+        "time": "",
+        "teacher": ""
+      }
+    ]
   },
   {
     "code": "0037",
-    "name": "天母北投運動中心"
+    "name": "天母北投運動中心",
+    "courses": [
+      {
+        "code": "0547",
+        "name": "游泳",
+        "class": "休管一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0587",
+        "name": "輕艇",
+        "class": "休管三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0477",
+        "name": "非技擊類游泳",
+        "class": "技擊一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0421",
+        "name": "游泳女 (上)",
+        "class": "水上一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0422",
+        "name": "游泳男 (上)",
+        "class": "水上一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0423",
+        "name": "游泳 (上)",
+        "class": "水上一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0450",
+        "name": "游泳女 (上)",
+        "class": "水上三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0451",
+        "name": "游泳男 (上)",
+        "class": "水上三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0433",
+        "name": "游泳女 (上)",
+        "class": "水上二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0434",
+        "name": "游泳男 (上)",
+        "class": "水上二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0436",
+        "name": "艇球 I",
+        "class": "水上二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0458",
+        "name": "水上活動",
+        "class": "水上四",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0462",
+        "name": "游泳女 (上)",
+        "class": "水上四",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0463",
+        "name": "游泳男 (上)",
+        "class": "水上四",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0232",
+        "name": "游泳 (上)",
+        "class": "球一忠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0287",
+        "name": "水中有氧",
+        "class": "球三忠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0346",
+        "name": "游泳 (上)",
+        "class": "陸上一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0689",
+        "name": "水中有氧",
+        "class": "體健四",
+        "time": "",
+        "teacher": ""
+      }
+    ]
   },
   {
     "code": "0044",
-    "name": "天母白館空手道教室"
+    "name": "天母白館空手道教室",
+    "courses": [
+      {
+        "code": "0475",
+        "name": "空手道 (上)",
+        "class": "技擊一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0512",
+        "name": "空手道 (上)",
+        "class": "技擊三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0490",
+        "name": "空手道 (上)",
+        "class": "技擊二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0526",
+        "name": "空手道 (上)",
+        "class": "技擊四",
+        "time": "",
+        "teacher": ""
+      }
+    ]
   },
   {
     "code": "0047",
-    "name": "天母各場地"
+    "name": "天母各場地",
+    "courses": [
+      {
+        "code": "0226",
+        "name": "桌球",
+        "class": "球一忠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0291",
+        "name": "桌球",
+        "class": "球三忠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0260",
+        "name": "桌球",
+        "class": "球二忠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0316",
+        "name": "桌球",
+        "class": "球四忠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0341",
+        "name": "自由車",
+        "class": "陸上一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0382",
+        "name": "自由車",
+        "class": "陸上三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0364",
+        "name": "自由車",
+        "class": "陸上二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0400",
+        "name": "自由車",
+        "class": "陸上四",
+        "time": "",
+        "teacher": ""
+      }
+    ]
   },
   {
     "code": "0051",
-    "name": "天母多功能草坪"
+    "name": "天母多功能草坪",
+    "courses": [
+      {
+        "code": "0541",
+        "name": "田徑 (含體能訓練)",
+        "class": "休管一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0573",
+        "name": "田徑〈含體能訓練〉",
+        "class": "休管三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0476",
+        "name": "非技擊類田徑",
+        "class": "技擊一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0416",
+        "name": "田徑",
+        "class": "水上一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0222",
+        "name": "田徑 (上)",
+        "class": "球一忠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0223",
+        "name": "田徑 (上)",
+        "class": "球一忠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0247",
+        "name": "田徑 (上)",
+        "class": "球一誠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0357",
+        "name": "田徑 I (上)",
+        "class": "陸上二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0358",
+        "name": "田徑 I (上)",
+        "class": "陸上二",
+        "time": "",
+        "teacher": ""
+      }
+    ]
   },
   {
     "code": "0053",
-    "name": "天母百齡球場"
+    "name": "天母百齡球場",
+    "courses": [
+      {
+        "code": "0255",
+        "name": "橄欖球",
+        "class": "球一誠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0311",
+        "name": "橄欖球",
+        "class": "球三誠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0285",
+        "name": "橄欖球",
+        "class": "球二誠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0331",
+        "name": "橄欖球",
+        "class": "球四誠",
+        "time": "",
+        "teacher": ""
+      }
+    ]
   },
   {
     "code": "0055",
-    "name": "天母育成高中羽球館"
+    "name": "天母育成高中羽球館",
+    "courses": [
+      {
+        "code": "0225",
+        "name": "羽球",
+        "class": "球一忠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0289",
+        "name": "羽球",
+        "class": "球三忠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0258",
+        "name": "羽球",
+        "class": "球二忠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0314",
+        "name": "羽球",
+        "class": "球四忠",
+        "time": "",
+        "teacher": ""
+      }
+    ]
   },
   {
     "code": "0064",
-    "name": "天母室外教學"
+    "name": "天母室外教學",
+    "courses": [
+      {
+        "code": "0572",
+        "name": "水中有氧",
+        "class": "休管三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0564",
+        "name": "登山",
+        "class": "休管二",
+        "time": "",
+        "teacher": ""
+      }
+    ]
   },
   {
     "code": "0065",
-    "name": "天母室外場地"
+    "name": "天母室外場地",
+    "courses": [
+      {
+        "code": "0248",
+        "name": "曲棍球",
+        "class": "球一誠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0306",
+        "name": "曲棍球",
+        "class": "球三誠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0277",
+        "name": "曲棍球",
+        "class": "球二誠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0327",
+        "name": "曲棍球",
+        "class": "球四誠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0669",
+        "name": "休閒直排輪",
+        "class": "體健三",
+        "time": "",
+        "teacher": ""
+      }
+    ]
   },
   {
     "code": "0066",
-    "name": "天母室外籃球場"
+    "name": "天母室外籃球場",
+    "courses": [
+      {
+        "code": "0552",
+        "name": "籃球",
+        "class": "休管一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0553",
+        "name": "籃球",
+        "class": "休管一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0589",
+        "name": "籃球",
+        "class": "休管三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0496",
+        "name": "排球 I",
+        "class": "技擊二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0427",
+        "name": "籃球 I",
+        "class": "水上一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0237",
+        "name": "籃球 I",
+        "class": "球一忠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0238",
+        "name": "籃球 I",
+        "class": "球一忠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0239",
+        "name": "籃球女",
+        "class": "球一忠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0240",
+        "name": "籃球男",
+        "class": "球一忠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0252",
+        "name": "排球 I",
+        "class": "球一誠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0301",
+        "name": "籃球女",
+        "class": "球三忠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0302",
+        "name": "籃球男",
+        "class": "球三忠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0273",
+        "name": "籃球女",
+        "class": "球二忠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0274",
+        "name": "籃球男",
+        "class": "球二忠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0323",
+        "name": "籃球女",
+        "class": "球四忠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0324",
+        "name": "籃球男",
+        "class": "球四忠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0351",
+        "name": "籃球 I",
+        "class": "陸上一",
+        "time": "",
+        "teacher": ""
+      }
+    ]
   },
   {
     "code": "0067",
-    "name": "天母挑空區 I"
+    "name": "天母挑空區 I",
+    "courses": [
+      {
+        "code": "0593",
+        "name": "土風舞",
+        "class": "休管四",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0495",
+        "name": "健身操",
+        "class": "技擊二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0460",
+        "name": "民俗體育",
+        "class": "水上四",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0349",
+        "name": "擊劍",
+        "class": "陸上一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0392",
+        "name": "擊劍",
+        "class": "陸上三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0374",
+        "name": "擊劍",
+        "class": "陸上二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0409",
+        "name": "擊劍",
+        "class": "陸上四",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0679",
+        "name": "武術",
+        "class": "體健三誠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0691",
+        "name": "空手道",
+        "class": "體健四",
+        "time": "",
+        "teacher": ""
+      }
+    ]
   },
   {
     "code": "0068",
-    "name": "天母挑空區 II"
+    "name": "天母挑空區 II",
+    "courses": [
+      {
+        "code": "0568",
+        "name": "運動舞蹈",
+        "class": "休管二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0731",
+        "name": "太極導引 Ⅰ",
+        "class": "舞蹈二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0637",
+        "name": "國際標準舞",
+        "class": "體健一誠",
+        "time": "",
+        "teacher": ""
+      }
+    ]
   },
   {
     "code": "0069",
-    "name": "天母挑空區 III"
+    "name": "天母挑空區 III",
+    "courses": [
+      {
+        "code": "0566",
+        "name": "瑜珈",
+        "class": "休管二",
+        "time": "",
+        "teacher": ""
+      }
+    ]
   },
   {
     "code": "0070",
-    "name": "天母挑空區 IV"
+    "name": "天母挑空區 IV",
+    "courses": [
+      {
+        "code": "0586",
+        "name": "運動舞蹈",
+        "class": "休管三",
+        "time": "",
+        "teacher": ""
+      }
+    ]
   },
   {
     "code": "0072",
-    "name": "天母士東國小活動中心"
+    "name": "天母士東國小活動中心",
+    "courses": [
+      {
+        "code": "0544",
+        "name": "羽球",
+        "class": "休管一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0545",
+        "name": "羽球",
+        "class": "休管一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0576",
+        "name": "羽球",
+        "class": "休管三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0474",
+        "name": "羽球 I",
+        "class": "技擊一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0342",
+        "name": "羽球 I",
+        "class": "陸上一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0383",
+        "name": "羽球 I",
+        "class": "陸上三",
+        "time": "",
+        "teacher": ""
+      }
+    ]
   },
   {
     "code": "0080",
-    "name": "天母北投高爾夫球場"
+    "name": "天母北投高爾夫球場",
+    "courses": [
+      {
+        "code": "0597",
+        "name": "高爾夫",
+        "class": "休管四",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0530",
+        "name": "高爾夫 I",
+        "class": "技擊四",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0251",
+        "name": "高爾夫",
+        "class": "球一誠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0309",
+        "name": "高爾夫",
+        "class": "球三誠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0280",
+        "name": "高爾夫",
+        "class": "球二誠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0329",
+        "name": "高爾夫",
+        "class": "球四誠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0680",
+        "name": "高爾夫球",
+        "class": "體健三誠",
+        "time": "",
+        "teacher": ""
+      }
+    ]
   },
   {
     "code": "0081",
-    "name": "天母基隆河河濱公園迎風段足球場"
+    "name": "天母基隆河河濱公園迎風段足球場",
+    "courses": [
+      {
+        "code": "0249",
+        "name": "足球",
+        "class": "球一誠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0307",
+        "name": "足球",
+        "class": "球三誠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0278",
+        "name": "足球",
+        "class": "球二誠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0328",
+        "name": "足球",
+        "class": "球四誠",
+        "time": "",
+        "teacher": ""
+      }
+    ]
   },
   {
     "code": "0085",
-    "name": "天母棒球場"
+    "name": "天母棒球場",
+    "courses": [
+      {
+        "code": "0562",
+        "name": "棒壘球",
+        "class": "休管二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0563",
+        "name": "棒壘球",
+        "class": "休管二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0420",
+        "name": "棒壘球 I",
+        "class": "水上一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0231",
+        "name": "棒球",
+        "class": "球一忠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0295",
+        "name": "棒球",
+        "class": "球三忠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0263",
+        "name": "棒球",
+        "class": "球二忠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0281",
+        "name": "棒壘球 I",
+        "class": "球二誠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0282",
+        "name": "棒壘球 I",
+        "class": "球二誠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0319",
+        "name": "棒球",
+        "class": "球四忠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0387",
+        "name": "棒壘球 I",
+        "class": "陸上三",
+        "time": "",
+        "teacher": ""
+      }
+    ]
   },
   {
     "code": "0086",
-    "name": "天母一樓棒球場實驗室"
+    "name": "天母一樓棒球場實驗室",
+    "courses": [
+      {
+        "code": "0849",
+        "name": "一上",
+        "class": "運器碩一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0858",
+        "name": "數位電路設計",
+        "class": "運器碩一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0861",
+        "name": "休閒運動器材實習",
+        "class": "運器碩二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0871",
+        "name": "競技運動器材實習",
+        "class": "運器碩二",
+        "time": "",
+        "teacher": ""
+      }
+    ]
   },
   {
     "code": "0087",
-    "name": "天母游泳池"
+    "name": "天母游泳池",
+    "courses": [
+      {
+        "code": "0546",
+        "name": "游泳",
+        "class": "休管一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0415",
+        "name": "水球 (上)",
+        "class": "水上一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0425",
+        "name": "輕艇 (上)",
+        "class": "水上一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0446",
+        "name": "水球 (上)",
+        "class": "水上三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0454",
+        "name": "輕艇 (上)",
+        "class": "水上三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0455",
+        "name": "潛水",
+        "class": "水上三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0429",
+        "name": "水上安全與救生",
+        "class": "水上二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0431",
+        "name": "水球 (上)",
+        "class": "水上二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0442",
+        "name": "輕艇 (上)",
+        "class": "水上二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0459",
+        "name": "水球 (上)",
+        "class": "水上四",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0467",
+        "name": "輕艇 (上)",
+        "class": "水上四",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0233",
+        "name": "游泳 (上)",
+        "class": "球一忠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0253",
+        "name": "游泳 (上)",
+        "class": "球一誠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0345",
+        "name": "游泳 (上)",
+        "class": "陸上一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0627",
+        "name": "游泳",
+        "class": "體健一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0642",
+        "name": "游泳",
+        "class": "體健一誠",
+        "time": "",
+        "teacher": ""
+      }
+    ]
   },
   {
     "code": "0088",
-    "name": "天母四樓跆拳道教室"
+    "name": "天母四樓跆拳道教室",
+    "courses": [
+      {
+        "code": "0481",
+        "name": "跆拳道女 (上)",
+        "class": "技擊一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0482",
+        "name": "跆拳道男 (上)",
+        "class": "技擊一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0518",
+        "name": "跆拳道女 (上)",
+        "class": "技擊三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0519",
+        "name": "跆拳道男 (上)",
+        "class": "技擊三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0497",
+        "name": "跆拳道",
+        "class": "技擊二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0498",
+        "name": "跆拳道女 (上)",
+        "class": "技擊二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0499",
+        "name": "跆拳道男 (上)",
+        "class": "技擊二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0531",
+        "name": "跆拳道女 (上)",
+        "class": "技擊四",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0532",
+        "name": "跆拳道男 (上)",
+        "class": "技擊四",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0452",
+        "name": "跆拳道",
+        "class": "水上三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0404",
+        "name": "跆拳道 I",
+        "class": "陸上四",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0628",
+        "name": "跆拳道",
+        "class": "體健一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0710",
+        "name": "跆拳道",
+        "class": "體健四誠",
+        "time": "",
+        "teacher": ""
+      }
+    ]
   },
   {
     "code": "0090",
-    "name": "天母 203 階梯教室 (50 人)"
+    "name": "天母 203 階梯教室 (50 人)",
+    "courses": [
+      {
+        "code": "0752",
+        "name": "舞蹈教學 I",
+        "class": "舞蹈三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0852",
+        "name": "一上",
+        "class": "運器碩一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0857",
+        "name": "實驗儀器操作",
+        "class": "運器碩一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0835",
+        "name": "運動教育書報期刊討論",
+        "class": "運教碩一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0405",
+        "name": "運動行銷學",
+        "class": "陸上四",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0407",
+        "name": "運動處方",
+        "class": "陸上四",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0411",
+        "name": "體育學研究法",
+        "class": "陸上四",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0704",
+        "name": "社區健康",
+        "class": "體健四誠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0706",
+        "name": "健康體能",
+        "class": "體健四誠",
+        "time": "",
+        "teacher": ""
+      }
+    ]
   },
   {
     "code": "0091",
-    "name": "天母 201 階梯教室 (70 人)"
+    "name": "天母 201 階梯教室 (70 人)",
+    "courses": [
+      {
+        "code": "0535",
+        "name": "運動健康管理",
+        "class": "技擊四",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0241",
+        "name": "體育史",
+        "class": "球一忠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0860",
+        "name": "二上",
+        "class": "運器碩二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0876",
+        "name": "運動生理學研究",
+        "class": "運技碩一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0690",
+        "name": "企業管理概論",
+        "class": "體健四",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0714",
+        "name": "體育運動專題研討",
+        "class": "體健四誠",
+        "time": "",
+        "teacher": ""
+      }
+    ]
   },
   {
     "code": "0093",
-    "name": "天母新生棒球場"
+    "name": "天母新生棒球場",
+    "courses": [
+      {
+        "code": "0256",
+        "name": "壘球女",
+        "class": "球一誠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0312",
+        "name": "壘球女",
+        "class": "球三誠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0286",
+        "name": "壘球女",
+        "class": "球二誠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0332",
+        "name": "壘球女",
+        "class": "球四誠",
+        "time": "",
+        "teacher": ""
+      }
+    ]
   },
   {
     "code": "0097",
-    "name": "天母網球場"
+    "name": "天母網球場",
+    "courses": [
+      {
+        "code": "0502",
+        "name": "網球 I",
+        "class": "技擊二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0441",
+        "name": "網球 I",
+        "class": "水上二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0230",
+        "name": "軟網",
+        "class": "球一忠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0234",
+        "name": "網球女",
+        "class": "球一忠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0235",
+        "name": "網球男",
+        "class": "球一忠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0298",
+        "name": "網球女",
+        "class": "球三忠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0299",
+        "name": "網球男",
+        "class": "球三忠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0268",
+        "name": "網球 I",
+        "class": "球二忠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0269",
+        "name": "網球 I",
+        "class": "球二忠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0270",
+        "name": "網球女",
+        "class": "球二忠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0271",
+        "name": "網球男",
+        "class": "球二忠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0320",
+        "name": "網球女",
+        "class": "球四忠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0321",
+        "name": "網球男",
+        "class": "球四忠",
+        "time": "",
+        "teacher": ""
+      }
+    ]
   },
   {
     "code": "0099",
-    "name": "天母二樓劍道場地"
+    "name": "天母二樓劍道場地",
+    "courses": [
+      {
+        "code": "0484",
+        "name": "劍道",
+        "class": "技擊一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0485",
+        "name": "劍道 (上)",
+        "class": "技擊一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0522",
+        "name": "劍道 (上)",
+        "class": "技擊三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0503",
+        "name": "劍道 (上)",
+        "class": "技擊二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0537",
+        "name": "劍道 (上)",
+        "class": "技擊四",
+        "time": "",
+        "teacher": ""
+      }
+    ]
   },
   {
     "code": "0106",
-    "name": "天母體育館 (白館)"
+    "name": "天母體育館 (白館)",
+    "courses": [
+      {
+        "code": "0228",
+        "name": "排球女",
+        "class": "球一忠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0229",
+        "name": "排球男",
+        "class": "球一忠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0245",
+        "name": "手球女",
+        "class": "球一誠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0246",
+        "name": "手球男",
+        "class": "球一誠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0292",
+        "name": "排球女",
+        "class": "球三忠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0293",
+        "name": "排球男",
+        "class": "球三忠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0304",
+        "name": "手球女",
+        "class": "球三誠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0305",
+        "name": "手球男",
+        "class": "球三誠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0261",
+        "name": "排球女",
+        "class": "球二忠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0262",
+        "name": "排球男",
+        "class": "球二忠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0275",
+        "name": "手球女",
+        "class": "球二誠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0276",
+        "name": "手球男",
+        "class": "球二誠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0317",
+        "name": "排球女",
+        "class": "球四忠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0318",
+        "name": "排球男",
+        "class": "球四忠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0325",
+        "name": "手球女",
+        "class": "球四誠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0326",
+        "name": "手球男",
+        "class": "球四誠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0750",
+        "name": "游泳",
+        "class": "舞蹈三",
+        "time": "",
+        "teacher": ""
+      }
+    ]
   },
   {
     "code": "1004",
-    "name": "天母地下 1 樓 (挑空區)"
+    "name": "天母地下 1 樓 (挑空區)",
+    "courses": [
+      {
+        "code": "0558",
+        "name": "防身術",
+        "class": "休管二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0473",
+        "name": "中國武術 (上)",
+        "class": "技擊一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0478",
+        "name": "柔道 (上)",
+        "class": "技擊一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0507",
+        "name": "中國武術 (上)",
+        "class": "技擊三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0511",
+        "name": "空手道",
+        "class": "技擊三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0514",
+        "name": "柔道 (上)",
+        "class": "技擊三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0488",
+        "name": "中國武術 (上)",
+        "class": "技擊二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0492",
+        "name": "柔道 (上)",
+        "class": "技擊二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0524",
+        "name": "中國武術 (上)",
+        "class": "技擊四",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0527",
+        "name": "柔道 (上)",
+        "class": "技擊四",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0449",
+        "name": "國術",
+        "class": "水上三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0717",
+        "name": "中國舞 I (B)",
+        "class": "舞蹈一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0718",
+        "name": "台灣鄉土舞蹈 I",
+        "class": "舞蹈一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0645",
+        "name": "防身術",
+        "class": "體健二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0705",
+        "name": "柔道",
+        "class": "體健四誠",
+        "time": "",
+        "teacher": ""
+      }
+    ]
   },
   {
     "code": "1252",
-    "name": "天母 503 研究所教室 (25 人)"
+    "name": "天母 503 研究所教室 (25 人)",
+    "courses": [
+      {
+        "code": "0602",
+        "name": "一上",
+        "class": "休管碩一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0603",
+        "name": "休閒治療學",
+        "class": "休管碩一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0604",
+        "name": "休閒教育專題",
+        "class": "休管碩一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0605",
+        "name": "休閒運動產業",
+        "class": "休管碩一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0606",
+        "name": "非營利組織與管理",
+        "class": "休管碩一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0607",
+        "name": "研究方法學",
+        "class": "休管碩一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0608",
+        "name": "統計學",
+        "class": "休管碩一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0609",
+        "name": "運動傳播理論與實務",
+        "class": "休管碩一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0611",
+        "name": "二上",
+        "class": "休管碩二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0612",
+        "name": "公共政策與法規",
+        "class": "休管碩二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0613",
+        "name": "休閒運動管理實習",
+        "class": "休管碩二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0615",
+        "name": "數位傳播專題研究",
+        "class": "休管碩二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0769",
+        "name": "身心學導論",
+        "class": "舞蹈碩一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0770",
+        "name": "研究法",
+        "class": "舞蹈碩一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0772",
+        "name": "專題研究報告",
+        "class": "舞蹈碩一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0773",
+        "name": "舞蹈美學與哲學",
+        "class": "舞蹈碩一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0774",
+        "name": "舞蹈教育專題研究",
+        "class": "舞蹈碩一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0777",
+        "name": "身心技法 Ⅱ",
+        "class": "舞蹈碩二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0778",
+        "name": "其他 - 治療式藝術",
+        "class": "舞蹈碩二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0779",
+        "name": "其他 - 舞蹈文獻選讀",
+        "class": "舞蹈碩二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0780",
+        "name": "表演心生理學",
+        "class": "舞蹈碩二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0782",
+        "name": "專題研究報告 (下)",
+        "class": "舞蹈碩二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0783",
+        "name": "舞蹈教學法",
+        "class": "舞蹈碩二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0784",
+        "name": "舞蹈與文化研究",
+        "class": "舞蹈碩二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0890",
+        "name": "身心障礙者之治療式遊憩研究",
+        "class": "轉休一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0891",
+        "name": "身心障礙者生涯教育研究",
+        "class": "轉休一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0892",
+        "name": "身心障礙者休閒教育研究",
+        "class": "轉休一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0893",
+        "name": "身心障礙者論題與趨勢研究",
+        "class": "轉休一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0894",
+        "name": "特殊教育研究法",
+        "class": "轉休一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0850",
+        "name": "一上",
+        "class": "運器碩一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0851",
+        "name": "一上",
+        "class": "運器碩一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0853",
+        "name": "人體肌肉動力學研究",
+        "class": "運器碩一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0855",
+        "name": "運動生物力學書報討論 (I)",
+        "class": "運器碩一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0858",
+        "name": "數位電路設計",
+        "class": "運器碩一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0862",
+        "name": "運動生物力學專題研究",
+        "class": "運器碩二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0863",
+        "name": "運動用品經營行銷",
+        "class": "運器碩二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0864",
+        "name": "運動表現分析研究",
+        "class": "運器碩二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0865",
+        "name": "運動器材科技英語 (I)",
+        "class": "運器碩二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0866",
+        "name": "運動器材處方設計",
+        "class": "運器碩二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0867",
+        "name": "運動器材與產業應用實務",
+        "class": "運器碩二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0870",
+        "name": "醫療運動器材實習",
+        "class": "運器碩二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0877",
+        "name": "運動技術研究法",
+        "class": "運技碩一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0878",
+        "name": "運動技術書報討論",
+        "class": "運技碩一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0879",
+        "name": "運動教育學研究",
+        "class": "運技碩一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0880",
+        "name": "運動教練領導學",
+        "class": "運技碩一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0883",
+        "name": "運動訓練學研究",
+        "class": "運技碩二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0884",
+        "name": "運動教練書報討論",
+        "class": "運技碩二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0886",
+        "name": "論文寫作方法",
+        "class": "運技碩二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0830",
+        "name": "研究方法學",
+        "class": "運教碩一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0831",
+        "name": "健康時勢議題",
+        "class": "運教碩一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0834",
+        "name": "運動時事議題",
+        "class": "運教碩一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0836",
+        "name": "運動教育學研究",
+        "class": "運教碩一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0838",
+        "name": "體育行政與運動管理專題研究",
+        "class": "運教碩一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0839",
+        "name": "二上",
+        "class": "運教碩二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0840",
+        "name": "社會科學研究法",
+        "class": "運教碩二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0844",
+        "name": "領導與政策研究",
+        "class": "運教碩二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0846",
+        "name": "體育教學觀察與分析",
+        "class": "運教碩二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0788",
+        "name": "人力資源與管理",
+        "class": "運科碩一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0789",
+        "name": "高等運動心理學",
+        "class": "運科碩一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0790",
+        "name": "高等運動生理學",
+        "class": "運科碩一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0791",
+        "name": "新陳代謝專題討論 Ⅰ",
+        "class": "運科碩一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0792",
+        "name": "新陳代謝獨立研究 Ⅰ",
+        "class": "運科碩一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0794",
+        "name": "運動心生理學研究",
+        "class": "運科碩一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0795",
+        "name": "運動生化學 Ⅰ",
+        "class": "運科碩一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0796",
+        "name": "運動科學研究法",
+        "class": "運科碩一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0798",
+        "name": "競技運動心理學研究",
+        "class": "運科碩一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0799",
+        "name": "免疫學",
+        "class": "運科碩二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0800",
+        "name": "現代運動營養學專題討論 Ⅰ",
+        "class": "運科碩二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0812",
+        "name": "組織理論與管理研究",
+        "class": "運科職碩一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0814",
+        "name": "體育教學觀察與分析",
+        "class": "運科職碩一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0815",
+        "name": "體育運動研究法 (I)",
+        "class": "運科職碩一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0816",
+        "name": "體育運動研究法 (I)",
+        "class": "運科職碩一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0817",
+        "name": "體育運動研究法 (II)",
+        "class": "運科職碩一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0818",
+        "name": "體育運動時事議題",
+        "class": "運科職碩一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0819",
+        "name": "體育運動時事議題",
+        "class": "運科職碩一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0822",
+        "name": "運動心理學研究",
+        "class": "運科職碩二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0823",
+        "name": "運動社會學研究",
+        "class": "運科職碩二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0824",
+        "name": "運動社會學研究",
+        "class": "運科職碩二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0825",
+        "name": "碩士論文 1",
+        "class": "運科職碩二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0827",
+        "name": "體育運動管理學",
+        "class": "運科職碩二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0828",
+        "name": "體育課程設計研究",
+        "class": "運科職碩二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0829",
+        "name": "體育課程設計研究",
+        "class": "運科職碩二",
+        "time": "",
+        "teacher": ""
+      }
+    ]
   },
   {
     "code": "1300",
-    "name": "天母舞蹈教室 I (3 樓)"
+    "name": "天母舞蹈教室 I (3 樓)",
+    "courses": [
+      {
+        "code": "0720",
+        "name": "芭蕾舞 I (A)",
+        "class": "舞蹈一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0721",
+        "name": "芭蕾舞 I (B)",
+        "class": "舞蹈一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0722",
+        "name": "現代舞 I (A)",
+        "class": "舞蹈一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0723",
+        "name": "現代舞 I (B)",
+        "class": "舞蹈一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0724",
+        "name": "舞蹈即興 I",
+        "class": "舞蹈一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0742",
+        "name": "中國舞 V (主修)",
+        "class": "舞蹈三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0745",
+        "name": "芭蕾舞 V (主修)",
+        "class": "舞蹈三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0746",
+        "name": "芭蕾舞 V (副修)",
+        "class": "舞蹈三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0748",
+        "name": "現代舞 V (主修)",
+        "class": "舞蹈三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0749",
+        "name": "現代舞 V (副修)",
+        "class": "舞蹈三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0753",
+        "name": "舞蹈創作 III",
+        "class": "舞蹈三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0757",
+        "name": "爵士舞 I",
+        "class": "舞蹈三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0729",
+        "name": "中國舞 III (A)",
+        "class": "舞蹈二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0730",
+        "name": "中國舞 III (B)",
+        "class": "舞蹈二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0734",
+        "name": "芭蕾舞 III (A)",
+        "class": "舞蹈二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0735",
+        "name": "芭蕾舞 III (B)",
+        "class": "舞蹈二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0736",
+        "name": "現代舞 III (A)",
+        "class": "舞蹈二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0737",
+        "name": "現代舞 III (B)",
+        "class": "舞蹈二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0760",
+        "name": "中國舞 VII (主修)",
+        "class": "舞蹈四",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0762",
+        "name": "芭蕾舞 VII (主修)",
+        "class": "舞蹈四",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0763",
+        "name": "芭蕾舞 VII (副修)",
+        "class": "舞蹈四",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0764",
+        "name": "現代舞 VII (主修)",
+        "class": "舞蹈四",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0765",
+        "name": "現代舞 VII (副修)",
+        "class": "舞蹈四",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0766",
+        "name": "畢業製作 (上)",
+        "class": "舞蹈四",
+        "time": "",
+        "teacher": ""
+      }
+    ]
   },
   {
     "code": "1410",
-    "name": "天母電腦教室一 (40 人)"
+    "name": "天母電腦教室一 (40 人)",
+    "courses": [
+      {
+        "code": "0591",
+        "name": "體育運動多媒體製作",
+        "class": "休管三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0767",
+        "name": "舞蹈與科技應用",
+        "class": "舞蹈四",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0856",
+        "name": "電腦輔助設計",
+        "class": "運器碩一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0833",
+        "name": "統計學",
+        "class": "運教碩一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0841",
+        "name": "教育科技研究",
+        "class": "運教碩二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0842",
+        "name": "結構方程模式",
+        "class": "運教碩二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0820",
+        "name": "體育運動統計學 (統計與實驗設計)",
+        "class": "運科職碩一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0821",
+        "name": "體育運動統計學 (統計與實驗設計)",
+        "class": "運科職碩一",
+        "time": "",
+        "teacher": ""
+      }
+    ]
   },
   {
     "code": "1411",
-    "name": "天母電腦教室二 (40 人)"
+    "name": "天母電腦教室二 (40 人)",
+    "courses": [
+      {
+        "code": "0781",
+        "name": "科技與舞蹈 (Ⅰ)",
+        "class": "舞蹈碩二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0793",
+        "name": "資料分析 I",
+        "class": "運科碩一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0801",
+        "name": "資料分析 Ⅱ",
+        "class": "運科碩二",
+        "time": "",
+        "teacher": ""
+      }
+    ]
   },
   {
     "code": "1901",
-    "name": "天母 304 小教室 (40 人)"
+    "name": "天母 304 小教室 (40 人)",
+    "courses": [
+      {
+        "code": "0727",
+        "name": "舞蹈應用解剖生理學 I",
+        "class": "舞蹈一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0626",
+        "name": "普通藥物學",
+        "class": "體健一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0636",
+        "name": "健康與體育概論",
+        "class": "體健一誠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0641",
+        "name": "普通藥物學",
+        "class": "體健一誠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0672",
+        "name": "運動心理學",
+        "class": "體健三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0677",
+        "name": "體育科教材教法",
+        "class": "體健三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0681",
+        "name": "健康管理",
+        "class": "體健三誠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0682",
+        "name": "運動心理學",
+        "class": "體健三誠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0684",
+        "name": "運動貼紮與實習 (上)",
+        "class": "體健三誠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0687",
+        "name": "體育科教材教法",
+        "class": "體健三誠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0688",
+        "name": "體育測量與評價",
+        "class": "體健三誠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0657",
+        "name": "社會體育概論",
+        "class": "體健二誠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0661",
+        "name": "運動生理學實驗",
+        "class": "體健二誠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0662",
+        "name": "運動社會學",
+        "class": "體健二誠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0663",
+        "name": "運動傷害防護導論",
+        "class": "體健二誠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0664",
+        "name": "運動傷害評估學",
+        "class": "體健二誠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0665",
+        "name": "運動管理學",
+        "class": "體健二誠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0666",
+        "name": "運動營養學",
+        "class": "體健二誠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0667",
+        "name": "運動競賽實務與實習",
+        "class": "體健二誠",
+        "time": "",
+        "teacher": ""
+      }
+    ]
   },
   {
     "code": "1902",
-    "name": "天母 306 小教室 (50 人)"
+    "name": "天母 306 小教室 (50 人)",
+    "courses": [
+      {
+        "code": "0644",
+        "name": "體育史",
+        "class": "體健一誠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0646",
+        "name": "社區體育",
+        "class": "體健二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0649",
+        "name": "運動生理學實驗",
+        "class": "體健二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0650",
+        "name": "運動社會學",
+        "class": "體健二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0651",
+        "name": "運動處方與實習 (含體適能)",
+        "class": "體健二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0654",
+        "name": "運動營養學",
+        "class": "體健二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0655",
+        "name": "運動競賽實務與實習",
+        "class": "體健二",
+        "time": "",
+        "teacher": ""
+      }
+    ]
   },
   {
     "code": "1903",
-    "name": "天母 402 大教室 (70 人)"
+    "name": "天母 402 大教室 (70 人)",
+    "courses": [
+      {
+        "code": "0549",
+        "name": "運動生物力學",
+        "class": "休管一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0580",
+        "name": "組織與領導",
+        "class": "休管三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0583",
+        "name": "運動設施經營管理",
+        "class": "休管三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0557",
+        "name": "行銷學概論",
+        "class": "休管二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0560",
+        "name": "健康評估與測試",
+        "class": "休管二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0561",
+        "name": "基礎 PA 活動",
+        "class": "休管二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0565",
+        "name": "會計學概論",
+        "class": "休管二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0598",
+        "name": "專業實習",
+        "class": "休管四",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0601",
+        "name": "體適能活動設計",
+        "class": "休管四",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0483",
+        "name": "運動營養學",
+        "class": "技擊一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0491",
+        "name": "按摩術",
+        "class": "技擊二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0500",
+        "name": "運動生物力學",
+        "class": "技擊二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0413",
+        "name": "人體解剖學",
+        "class": "水上一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0418",
+        "name": "特殊體育",
+        "class": "水上一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0428",
+        "name": "體育學原理",
+        "class": "水上一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0430",
+        "name": "水上運動訓練理論與實務",
+        "class": "水上二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0438",
+        "name": "運動生理學 (上)",
+        "class": "水上二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0440",
+        "name": "運動管理學",
+        "class": "水上二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0464",
+        "name": "運動治療與復健",
+        "class": "水上四",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0465",
+        "name": "運動教練學",
+        "class": "水上四",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0469",
+        "name": "體育運動教學策略",
+        "class": "水上四",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0227",
+        "name": "特殊體育",
+        "class": "球一忠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0242",
+        "name": "體育學原理",
+        "class": "球一忠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0288",
+        "name": "休閒活動指導與管理",
+        "class": "球三忠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0297",
+        "name": "運動教練學",
+        "class": "球三忠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0303",
+        "name": "體能訓練法",
+        "class": "球三忠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0257",
+        "name": "幼兒體育",
+        "class": "球二忠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0265",
+        "name": "運動傷害與急救",
+        "class": "球二忠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0267",
+        "name": "運動營養學",
+        "class": "球二忠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0283",
+        "name": "運動生物力學",
+        "class": "球二誠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0313",
+        "name": "老人保健學",
+        "class": "球四忠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0315",
+        "name": "社區休閒活動",
+        "class": "球四忠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0333",
+        "name": "人體解剖學",
+        "class": "陸上一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0340",
+        "name": "休閒活動概論",
+        "class": "陸上一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0386",
+        "name": "陸上運動競賽實務",
+        "class": "陸上三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0388",
+        "name": "運動治療與復健",
+        "class": "陸上三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0390",
+        "name": "運動營養學",
+        "class": "陸上三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0356",
+        "name": "幼兒體育",
+        "class": "陸上二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0370",
+        "name": "運動心理學 I",
+        "class": "陸上二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0372",
+        "name": "運動設施經營與管理",
+        "class": "陸上二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0406",
+        "name": "運動按摩",
+        "class": "陸上四",
+        "time": "",
+        "teacher": ""
+      }
+    ]
   },
   {
     "code": "1904",
-    "name": "天母 303 中教室 (40 人)"
+    "name": "天母 303 中教室 (40 人)",
+    "courses": [
+      {
+        "code": "0719",
+        "name": "舞蹈英文 Ⅰ",
+        "class": "舞蹈一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0673",
+        "name": "運動技能學習",
+        "class": "體健三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0675",
+        "name": "運動傷害評估學",
+        "class": "體健三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0683",
+        "name": "運動技能學習",
+        "class": "體健三誠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0685",
+        "name": "運動傷害評估學",
+        "class": "體健三誠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0647",
+        "name": "急救學與實驗",
+        "class": "體健二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0659",
+        "name": "急救學與實驗",
+        "class": "體健二誠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0696",
+        "name": "運動法規",
+        "class": "體健四",
+        "time": "",
+        "teacher": ""
+      }
+    ]
   },
   {
     "code": "1905",
-    "name": "天母 301 中教室 (50 人)"
+    "name": "天母 301 中教室 (50 人)",
+    "courses": [
+      {
+        "code": "0542",
+        "name": "休閒遊憩概論",
+        "class": "休管一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0543",
+        "name": "企業管理概論",
+        "class": "休管一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0548",
+        "name": "運動文宣與企劃案寫作技巧",
+        "class": "休管一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0550",
+        "name": "運動與健康",
+        "class": "休管一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0554",
+        "name": "體育志工概論",
+        "class": "休管一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0555",
+        "name": "體育學原理",
+        "class": "休管一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0574",
+        "name": "休閒活動概論",
+        "class": "休管三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0575",
+        "name": "休閒俱樂部經營管理",
+        "class": "休管三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0578",
+        "name": "冒險活動團隊領導",
+        "class": "休管三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0579",
+        "name": "國際體育事務",
+        "class": "休管三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0582",
+        "name": "運動心理學",
+        "class": "休管三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0584",
+        "name": "運動經濟學",
+        "class": "休管三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0585",
+        "name": "運動管理學",
+        "class": "休管三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0590",
+        "name": "體育史",
+        "class": "休管三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0592",
+        "name": "體適能",
+        "class": "休管三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0567",
+        "name": "運動心理學",
+        "class": "休管二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0569",
+        "name": "團體動力學",
+        "class": "休管二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0571",
+        "name": "體育行政",
+        "class": "休管二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0594",
+        "name": "休閒活動企劃與設計",
+        "class": "休管四",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0595",
+        "name": "休閒運動研究法",
+        "class": "休管四",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0599",
+        "name": "運動公共關係",
+        "class": "休管四",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0471",
+        "name": "人體解剖學",
+        "class": "技擊一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0487",
+        "name": "體育學原理",
+        "class": "技擊一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0506",
+        "name": "人身保全",
+        "class": "技擊三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0508",
+        "name": "幼兒體育",
+        "class": "技擊三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0510",
+        "name": "技擊運動競賽實務",
+        "class": "技擊三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0520",
+        "name": "運動生物力學",
+        "class": "技擊三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0521",
+        "name": "運動教練學",
+        "class": "技擊三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0489",
+        "name": "法學緒論",
+        "class": "技擊二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0501",
+        "name": "運動傷害急救與貼紮",
+        "class": "技擊二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0505",
+        "name": "體育統計學",
+        "class": "技擊二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0525",
+        "name": "有氧運動指導法",
+        "class": "技擊四",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0533",
+        "name": "運動自然科學講座",
+        "class": "技擊四",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0534",
+        "name": "運動行銷學",
+        "class": "技擊四",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0536",
+        "name": "運動團隊管理與領導",
+        "class": "技擊四",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0539",
+        "name": "體適能",
+        "class": "技擊四",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0419",
+        "name": "國際體育組織與現勢",
+        "class": "水上一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0445",
+        "name": "水域經營與管理",
+        "class": "水上三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0447",
+        "name": "休閒活動指導與管理",
+        "class": "水上三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0457",
+        "name": "體適能",
+        "class": "水上三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0437",
+        "name": "運動心理學 (上)",
+        "class": "水上二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0439",
+        "name": "運動傷害與急救",
+        "class": "水上二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0470",
+        "name": "體能訓練法",
+        "class": "水上四",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0220",
+        "name": "人體解剖學",
+        "class": "球一忠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0224",
+        "name": "休閒活動概論",
+        "class": "球一忠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0243",
+        "name": "人體解剖學",
+        "class": "球一誠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0294",
+        "name": "球類運動競賽實務",
+        "class": "球三忠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0296",
+        "name": "運動治療與復健",
+        "class": "球三忠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0264",
+        "name": "運動心理學",
+        "class": "球二忠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0266",
+        "name": "運動管理學",
+        "class": "球二忠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0725",
+        "name": "舞蹈概論 I",
+        "class": "舞蹈一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0744",
+        "name": "台灣舞蹈史",
+        "class": "舞蹈三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0751",
+        "name": "演出實習 (3)",
+        "class": "舞蹈三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0754",
+        "name": "舞蹈評論",
+        "class": "舞蹈三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0758",
+        "name": "藝術行政",
+        "class": "舞蹈三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0732",
+        "name": "西方舞蹈史 I",
+        "class": "舞蹈二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0733",
+        "name": "東方舞蹈史 I",
+        "class": "舞蹈二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0738",
+        "name": "演出實習 (1)",
+        "class": "舞蹈二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0854",
+        "name": "高等運動生物力學",
+        "class": "運器碩一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0352",
+        "name": "體育行政",
+        "class": "陸上一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0389",
+        "name": "運動貼紮與實習",
+        "class": "陸上三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0371",
+        "name": "運動生理學 I",
+        "class": "陸上二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0401",
+        "name": "重量訓練指導法",
+        "class": "陸上四",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0619",
+        "name": "人體解剖生理學",
+        "class": "體健一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0621",
+        "name": "安全教育與急救 (含實習)",
+        "class": "體健一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0622",
+        "name": "健康與體育概論",
+        "class": "體健一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0623",
+        "name": "普通心理學",
+        "class": "體健一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0624",
+        "name": "普通生理學",
+        "class": "體健一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0625",
+        "name": "普通物理學",
+        "class": "體健一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0629",
+        "name": "運動媒體與大眾傳播",
+        "class": "體健一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0631",
+        "name": "體育史",
+        "class": "體健一",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0632",
+        "name": "人體解剖生理學",
+        "class": "體健一誠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0634",
+        "name": "安全教育與急救 (含實習)",
+        "class": "體健一誠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0635",
+        "name": "社會體育概論",
+        "class": "體健一誠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0638",
+        "name": "普通心理學",
+        "class": "體健一誠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0639",
+        "name": "普通生理學",
+        "class": "體健一誠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0640",
+        "name": "普通物理學",
+        "class": "體健一誠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0671",
+        "name": "健康管理",
+        "class": "體健三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0674",
+        "name": "運動貼紮與實習 (上)",
+        "class": "體健三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0678",
+        "name": "體育測量與評價",
+        "class": "體健三",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0652",
+        "name": "運動場館經營與管理",
+        "class": "體健二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0653",
+        "name": "運動管理學",
+        "class": "體健二",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0692",
+        "name": "專業實習 (上)(健康學群)",
+        "class": "體健四",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0693",
+        "name": "專業實習 (上)(體育學群)",
+        "class": "體健四",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0694",
+        "name": "訪談原理與實務",
+        "class": "體健四",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0695",
+        "name": "傷害防護學",
+        "class": "體健四",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0697",
+        "name": "運動指導法",
+        "class": "體健四",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0698",
+        "name": "運動團隊管理",
+        "class": "體健四",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0699",
+        "name": "儀器治療學",
+        "class": "體健四",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0701",
+        "name": "體育運動專題研討",
+        "class": "體健四",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0702",
+        "name": "比較體育",
+        "class": "體健四誠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0703",
+        "name": "企業管理概論",
+        "class": "體健四誠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0707",
+        "name": "專業實習 (上)(健康學群)",
+        "class": "體健四誠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0708",
+        "name": "專業實習 (上)(體育學群)",
+        "class": "體健四誠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0709",
+        "name": "訪談原理與實務",
+        "class": "體健四誠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0711",
+        "name": "傷害防護學",
+        "class": "體健四誠",
+        "time": "",
+        "teacher": ""
+      },
+      {
+        "code": "0712",
+        "name": "儀器治療學",
+        "class": "體健四誠",
+        "time": "",
+        "teacher": ""
+      }
+    ]
   }
 ]

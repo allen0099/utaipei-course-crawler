@@ -1,26 +1,108 @@
 [
   {
     "code": "2159",
-    "name": "天母 B709 球三誠 (50 人)"
+    "name": "天母 B709 球三誠 (50 人)",
+    "courses": [
+      {
+        "code": "0044",
+        "name": "國文 (二)",
+        "class": "暑修班",
+        "time": "",
+        "teacher": "陳宣諭"
+      }
+    ]
   },
   {
     "code": "2269",
-    "name": "天母 E3 樓桌球場地"
+    "name": "天母 E3 樓桌球場地",
+    "courses": [
+      {
+        "code": "0049",
+        "name": "桌球進階",
+        "class": "暑修班",
+        "time": "",
+        "teacher": "陳建利"
+      }
+    ]
   },
   {
     "code": "C309",
-    "name": "博愛 C309A"
+    "name": "博愛 C309A",
+    "courses": [
+      {
+        "code": "0004",
+        "name": "教學媒體與操作",
+        "class": "小教 (博愛) 2",
+        "time": "(三) 1-4 (五) 1-4",
+        "teacher": "邱世明"
+      }
+    ]
   },
   {
     "code": "G609",
-    "name": "博愛 G609"
+    "name": "博愛 G609",
+    "courses": [
+      {
+        "code": "0012",
+        "name": "運動社會學",
+        "class": "體育系一",
+        "time": "",
+        "teacher": "陳顯宗"
+      },
+      {
+        "code": "0013",
+        "name": "運動裁判法",
+        "class": "體育系一",
+        "time": "",
+        "teacher": "蔡博隆"
+      },
+      {
+        "code": "0014",
+        "name": "運動體適能",
+        "class": "體育系一",
+        "time": "",
+        "teacher": "韓大衛"
+      },
+      {
+        "code": "0015",
+        "name": "體育運動概論",
+        "class": "體育系一",
+        "time": "",
+        "teacher": "林國瑞"
+      }
+    ]
   },
   {
     "code": "G614",
-    "name": "博愛 G614"
+    "name": "博愛 G614",
+    "courses": [
+      {
+        "code": "0030",
+        "name": "運動訓練專業實習",
+        "class": "體育系三",
+        "time": "",
+        "teacher": "林國瑞"
+      },
+      {
+        "code": "0031",
+        "name": "運動管理專業實習",
+        "class": "體育系三",
+        "time": "",
+        "teacher": "蔡博隆"
+      }
+    ]
   },
   {
     "code": "T502",
-    "name": "博愛 T502"
+    "name": "博愛 T502",
+    "courses": [
+      {
+        "code": "0011",
+        "name": "數學課程研究",
+        "class": "數學系三",
+        "time": "(一) 2-4",
+        "teacher": "李源順"
+      }
+    ]
   }
 ]
