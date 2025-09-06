@@ -1,5 +1,5 @@
-import { fetcher, fetchSinglePage } from "@/utils/fetcher";
 import { writeJson } from "@/utils/dir";
+import { fetcher, fetchSinglePage } from "@/utils/fetcher";
 import { spacing } from "@/utils/text";
 
 interface calendarItem {
@@ -43,6 +43,7 @@ const fetchCalendar = async () => {
     if (a.year !== b.year) {
       return a.year - b.year; // Sort by year first
     }
+
     return a.semester - b.semester; // Then by semester
   });
 

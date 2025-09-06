@@ -1,9 +1,10 @@
-import { fetcher, fetchSinglePage } from "@/utils/fetcher";
-import { login } from "@/utils/authFetcher";
-import { convertChineseNumber, spacing } from "@/utils/text";
-import { writeJson } from "@/utils/dir";
-import { CookieJar } from "tough-cookie";
 import pLimit from "p-limit";
+import { CookieJar } from "tough-cookie";
+
+import { login } from "@/utils/authFetcher";
+import { writeJson } from "@/utils/dir";
+import { fetcher, fetchSinglePage } from "@/utils/fetcher";
+import { convertChineseNumber, spacing } from "@/utils/text";
 
 interface YearAndSemester {
   code: string;
@@ -82,8 +83,10 @@ const fetchLocations = async (yms: string, jar: CookieJar) => {
     .map((el) => {
       const value = $(el).val();
       const text = $(el).text().trim();
+
       if (value && text) {
         if (Array.isArray(value)) throw new Error("Unexpected array value");
+
         return limit(() =>
           fetchCourses(yms, value, jar).then((courses) => ({
             code: value,
@@ -92,6 +95,7 @@ const fetchLocations = async (yms: string, jar: CookieJar) => {
           })),
         );
       }
+
       return null;
     })
     .filter(Boolean) as Promise<Location>[]; // 過濾掉 null
@@ -121,6 +125,7 @@ const fetchYms = async () => {
     if (yearMatch) {
       const yearInChinese = yearMatch[1];
       const yearInNumber = convertChineseNumber(yearInChinese);
+
       if (yearInNumber) {
         name = name.replace(yearInChinese, yearInNumber.toString());
       }
@@ -128,6 +133,7 @@ const fetchYms = async () => {
     if (semesterMatch) {
       const semesterInChinese = semesterMatch[1];
       const semesterInNumber = convertChineseNumber(semesterInChinese);
+
       if (semesterInNumber) {
         name = name.replace(semesterInChinese, semesterInNumber.toString());
       }
@@ -143,11 +149,14 @@ const fetchYms = async () => {
   const jobs: Promise<void>[] = [];
   // Find default equals to true, and get the year for the true item
   const defaultItem = results.find((item) => item.default);
+
   if (defaultItem) {
     const [year] = defaultItem.code.split("#");
+
     // Add all results with the same year as the default item
     results.forEach((item) => {
       const [itemYear] = item.code.split("#");
+
       if (itemYear === year) {
         jobs.push(fetchLocations(item.code, authJar));
       } else console.log(`Skip fetching locations for ${item.code}`);

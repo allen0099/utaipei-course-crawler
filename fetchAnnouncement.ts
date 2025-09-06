@@ -1,6 +1,6 @@
+import { writeJson } from "@/utils/dir";
 import { fetchSinglePage } from "@/utils/fetcher";
 import { spacing } from "@/utils/text";
-import { writeJson } from "@/utils/dir";
 
 const reLevel1 = /^[一二三四五六七八九十]+、/;
 const reLevel2 = /^\([一二三四五六七八九十]+\)/;
@@ -38,6 +38,7 @@ const fetchAnnouncement = async () => {
 
     if (element.type === "tag" && element.name === "br") {
       const containLink = buffer.text.match(reLink);
+
       if (containLink) {
         buffer.href?.push({
           link: containLink[0],
@@ -55,6 +56,7 @@ const fetchAnnouncement = async () => {
       results.push(buffer);
 
       buffer = { ...initialBuffer, href: [] }; // Reset buffer for the next item
+
       return;
     }
 

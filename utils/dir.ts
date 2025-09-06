@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+
 import { writeFile } from "jsonfile";
 
 export const checkPath = (input: string): string => {
@@ -14,6 +15,7 @@ export const checkPath = (input: string): string => {
 
 export const writeJson = async <T>(filePath: string, data: T): Promise<void> => {
   const outputPath = checkPath(filePath);
+
   await writeFile(outputPath, data, { spaces: 2, EOL: "\r\n" });
   console.log(`Data written to ${outputPath}`);
 };

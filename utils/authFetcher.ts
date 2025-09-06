@@ -1,5 +1,6 @@
 import makeFetchCookie from "fetch-cookie";
 import { CookieJar } from "tough-cookie";
+
 import { retryFetcher } from "@/utils/fetcher";
 
 export const login = async () => {
@@ -10,9 +11,11 @@ export const login = async () => {
   const preCheckUrl = "https://my.utaipei.edu.tw/utaipei/perchk.jsp";
 
   const defaultHeader = new Headers();
+
   defaultHeader.append("Content-Type", "application/x-www-form-urlencoded");
 
   const preLoginParams = new URLSearchParams();
+
   preLoginParams.append("uid", "guest");
   preLoginParams.append("pwd", "123");
   preLoginParams.append("myway", "yes");
@@ -23,6 +26,7 @@ export const login = async () => {
   preLoginParams.append("std_choice", "");
 
   const preCheckParams = new URLSearchParams();
+
   preCheckParams.append("uid", "guest");
   preCheckParams.append("check_choice", "");
   preCheckParams.append("teach_roll", "");

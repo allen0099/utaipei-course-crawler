@@ -71,5 +71,6 @@ export const convertChineseNumber = (chineseNum: string): number => {
     }
   }
   total += currentNumber * (currentUnit >= 10 ? 1 : currentUnit); // Add any remaining number
+
   return total;
 };

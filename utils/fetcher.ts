@@ -1,10 +1,12 @@
 import fs from "fs";
 import { Readable } from "stream";
 import { finished } from "stream/promises";
+
 import { load, CheerioAPI } from "cheerio";
-import { checkPath } from "@/utils/dir";
-import { CookieJar } from "tough-cookie";
 import makeFetchCookie from "fetch-cookie";
+import { CookieJar } from "tough-cookie";
+
+import { checkPath } from "@/utils/dir";
 
 type GenericFetch<T1, T2, T3> = (input: T1, init?: T2) => Promise<T3>;
 const delay = (s: number): Promise<void> => new Promise((resolve) => setTimeout(resolve, s));
@@ -15,6 +17,7 @@ export const retryFetcher: GenericFetch<
   Response
 > = async (input, init = {}): Promise<Response> => {
   let retry = 0;
+
   while (retry < 10) {
     try {
       const now = new Date();
@@ -28,6 +31,7 @@ export const retryFetcher: GenericFetch<
       }
 
       console.log(`[fetch] ${input} done. (${new Date().getTime() - now.getTime()}ms)`);
+
       return response;
     } catch (e: any) {
       console.error(`[error] ${input} - Attempt ${retry + 1}: ${e.message}`);
@@ -46,14 +50,18 @@ export const fetchSinglePage = async (
   await delay(100 + Math.random() * 500);
 
   let response: Response;
+
   if (jar) {
     const fetchCookie = makeFetchCookie(retryFetcher, jar);
+
     response = await fetchCookie(url, options);
   } else response = await retryFetcher(url, options);
   const html = await response.text();
+
   if (html === null) {
     throw new Error(`Could not find the page, [${options?.method || "GET"}] ${url}`);
   }
+
   return load(html);
 };
 
@@ -64,6 +72,7 @@ export const fetcher = {
   post: (url: string, postedBody: URLSearchParams, options?: RequestInit, jar?: CookieJar) => {
     if (!options?.headers)
       options = { ...options, headers: { "Content-Type": "application/x-www-form-urlencoded" } };
+
     return fetchSinglePage(url, { method: "POST", body: postedBody, ...options }, jar);
   },
   authPost: (url: string, postedBody: URLSearchParams, jar: CookieJar, options?: RequestInit) => {
@@ -74,6 +83,7 @@ export const fetcher = {
     const destination = checkPath(filePath);
 
     const fileStream = fs.createWriteStream(destination);
+
     await finished(Readable.fromWeb(body as any).pipe(fileStream));
 
     console.log(`[download] ${url} to ${destination} done.`);

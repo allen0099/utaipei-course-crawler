@@ -1,5 +1,5 @@
-import { fetcher } from "@/utils/fetcher";
 import { writeJson } from "@/utils/dir";
+import { fetcher } from "@/utils/fetcher";
 import { spacing } from "@/utils/text";
 
 interface Category {
@@ -74,6 +74,7 @@ const fetchStandards = async () => {
   });
 
   const jobs: Promise<void>[] = [];
+
   ymss.forEach((item) => {
     jobs.push(fetchCategories(item));
   });
