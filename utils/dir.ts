@@ -17,5 +17,5 @@ export const writeJson = async <T>(filePath: string, data: T): Promise<void> => 
   const outputPath = checkPath(filePath);
 
   await writeFile(outputPath, data, { spaces: 2, EOL: "\r\n" });
-  console.log(`Data written to ${outputPath}`);
+  console.log(`[Write] Data written to ${outputPath}`);
 };
