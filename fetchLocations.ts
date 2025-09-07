@@ -98,7 +98,7 @@ const fetchLocations = async (yms: string, jar: CookieJar) => {
   await writeJson(`./dist/${year}/${semester}/locations.json`, locations);
 };
 
-const fetchYms = async () => {
+(async () => {
   const authJar = await login();
 
   const results: YearAndSemester[] = await LoadYMS();
@@ -121,8 +121,4 @@ const fetchYms = async () => {
   }
   await Promise.all(jobs);
   console.log("All locations fetched!");
-};
-
-(async () => {
-  await fetchYms();
 })();
