@@ -1,20 +1,12 @@
 import pLimit from "p-limit";
 import { CookieJar } from "tough-cookie";
 
-import { YearAndSemester } from "@/interfaces/globals";
+import { YearAndSemester, CourseItem } from "@/interfaces/globals";
 import { login } from "@/utils/authFetcher";
 import { LoadYMS } from "@/utils/common";
 import { writeJson } from "@/utils/dir";
 import { fetcher } from "@/utils/fetcher";
 import { spacing } from "@/utils/text";
-
-interface CourseItem {
-  code: string;
-  name: string;
-  class: string;
-  time: string;
-  teacher: string;
-}
 
 interface Location {
   code: string;
@@ -101,17 +93,17 @@ const fetchLocations = async (yms: string, jar: CookieJar) => {
 (async () => {
   const authJar = await login();
 
-  const results: YearAndSemester[] = await LoadYMS();
+  const yearAndSemesters: YearAndSemester[] = await LoadYMS();
 
   const jobs: Promise<void>[] = [];
   // Find default equals to true, and get the year for the true item
-  const defaultItem = results.find((item) => item.default);
+  const defaultItem = yearAndSemesters.find((item) => item.default);
 
   if (defaultItem) {
     const [year] = defaultItem.code.split("#");
 
     // Add all results with the same year as the default item
-    results.forEach((item) => {
+    yearAndSemesters.forEach((item) => {
       const [itemYear] = item.code.split("#");
 
       if (itemYear === year) {
