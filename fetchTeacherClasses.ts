@@ -254,7 +254,7 @@ const fetchTeachers = async (yms: string, jar: CookieJar) => {
   await writeJson(`./dist/${year}/${semester}/teachers.json`, results, true);
 };
 
-(async () => {
+const main = async () => {
   const authJar = await login();
   const yearAndSemesters: YearAndSemester[] = await LoadYMS();
 
@@ -281,4 +281,26 @@ const fetchTeachers = async (yms: string, jar: CookieJar) => {
   }
 
   console.log("All done.");
-})();
+};
+
+// Read first argument from command line
+const args = process.argv.slice(2);
+
+// Treat first argument as yms if exists
+if (args.length > 0) {
+  const yms = args[0];
+
+  (async () => {
+    console.log("Fetch teachers for", yms);
+
+    const authJar = await login();
+
+    await fetchTeachers(yms, authJar);
+
+    console.log(`Fetch teachers for ${yms} done.`);
+  })();
+} else {
+  (async () => {
+    await main();
+  })();
+}
