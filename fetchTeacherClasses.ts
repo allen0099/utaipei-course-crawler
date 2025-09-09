@@ -1,4 +1,5 @@
 import { CheerioAPI } from "cheerio";
+import pLimit from "p-limit";
 import { CookieJar } from "tough-cookie";
 
 import { CourseItem, YearAndSemester } from "@/interfaces/globals";
@@ -219,15 +220,25 @@ const fetchTeachers = async (yms: string, jar: CookieJar) => {
     if (code) {
       dataMap[code] = {
         value,
-        promise: fetchUnitTeacher(yms, code, jar),
+        promise: undefined as any,
       };
     }
   });
 
   const resolvedMap: Record<string, AwaitedResolved<typeof fetchUnitTeacher>> = {};
 
+  const limit = pLimit(10);
+
+  const entries = Object.entries(dataMap).map(([code, { value }]) => {
+    return {
+      code,
+      value,
+      promise: limit(() => fetchUnitTeacher(yms, code, jar)),
+    };
+  });
+
   await Promise.all(
-    Object.entries(dataMap).map(async ([code, { value, promise }]) => {
+    entries.map(async ({ code, value, promise }) => {
       resolvedMap[code] = { value, result: await promise };
     }),
   );
