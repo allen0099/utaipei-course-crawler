@@ -467,11 +467,16 @@
   {
     "code": "114#1",
     "displayName": "114 學年度第 1 學期",
+    "default": false
+  },
+  {
+    "code": "114#2",
+    "displayName": "114 學年度第 2 學期",
     "default": true
   },
   {
     "code": "114#3",
-    "displayName": "113 學年度第 3 學期 (暑)",
+    "displayName": "114 學年度第 3 學期 (暑)",
     "default": false
   },
   {
