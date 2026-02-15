@@ -488,5 +488,30 @@
     "code": "114#6",
     "displayName": "114 學年度第 2 學期 (寒)",
     "default": false
+  },
+  {
+    "code": "115#1",
+    "displayName": "115 學年度第 1 學期",
+    "default": false
+  },
+  {
+    "code": "115#2",
+    "displayName": "115 學年度第 2 學期",
+    "default": false
+  },
+  {
+    "code": "115#5",
+    "displayName": "115 學年度第 5 學期 (暑)",
+    "default": false
+  },
+  {
+    "code": "115#6",
+    "displayName": "115 學年度第 2 學期 (寒)",
+    "default": false
+  },
+  {
+    "code": "115#7",
+    "displayName": "115 學年度寒假",
+    "default": false
   }
 ]
