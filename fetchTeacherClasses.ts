@@ -7,32 +7,18 @@ import { login } from "@/utils/authFetcher";
 import { LoadYMS } from "@/utils/common";
 import { writeJson } from "@/utils/dir";
 import { fetcher } from "@/utils/fetcher";
-import { spacing, unifyString } from "@/utils/text";
-
-interface Courses {
-  code: string;
-}
+import { spacing, splitTeacherAndTime, unifyString } from "@/utils/text";
 
 interface TeacherClasses {
   code: string;
   name: string;
-  class: Courses[];
+  class: CourseItem[];
 }
 
 interface Units {
   code: string;
   name: string;
   teachers: TeacherClasses[];
-}
-
-interface AwaitedResolved<T extends (...args: any) => Promise<any>> {
-  value: string;
-  result: Awaited<ReturnType<T>>;
-}
-
-interface PromiseResults<T extends (...args: any) => Promise<any>> {
-  value: string;
-  promise: ReturnType<T>;
 }
 
 const callApi = async ({
@@ -77,62 +63,6 @@ const callSecondApi = async ({
   return await fetcher.authPost(url, params, jar);
 };
 
-/**
- * Split teacher and time from input string
- * @param input
- * @returns [teacher, time]
- * @example
- * "王小明 (一) 1-2 (教室未定)" => ["王小明", "(一) 1-2"]
- * "王小明時間未定 (教室未定)" => ["王小明", ""]
- * "王小明 (一) 1-2 (教室A) 李小華 (三) 3-4 (教室B)" => ["王小明,李小華", "(一) 1-2 (三) 3-4"]
- */
-const splitTeacherAndTime = (input: string): [string, string] => {
-  const cleanedInput = spacing(input)
-    .replaceAll("(單週)", "")
-    .replaceAll("(雙週)", "")
-    .replaceAll("\n", ""); // Clean up the input, remove extra spaces
-
-  const teachers: string[] = [];
-  const times: string[] = [];
-
-  const timeRegex = /\([一二三四五六日]\)\s*\d+(-\d+)?/g; // Regex to match time patterns like (一) 1-2
-  const teacherRegex = /([^\s()]+)(?=\s*\([一二三四五六日]\))/g; // Regex to match teacher names before time patterns
-
-  const timeUndefinedRegex = /([^\s()]+)\s*時間未定/g; // Regex to match teacher names with "時間未定"
-  const locationUndefinedRegex = /([^\s()]+)\s*\(教室未定\)/g; // Regex to match teacher names with "(教室未定)"
-
-  let match: RegExpExecArray | null;
-
-  // Extract times
-  while ((match = timeRegex.exec(cleanedInput)) !== null) {
-    times.push(match[0].trim());
-  }
-
-  // Extract teachers with defined times
-  while ((match = teacherRegex.exec(cleanedInput)) !== null) {
-    teachers.push(match[1].trim());
-  }
-
-  // Extract teachers with "時間未定"
-  while ((match = timeUndefinedRegex.exec(cleanedInput)) !== null) {
-    teachers.push(match[1].trim());
-  }
-
-  // Extract teachers with "(教室未定)"
-  while ((match = locationUndefinedRegex.exec(cleanedInput)) !== null) {
-    const tmpTeacher = match[1].trim();
-
-    if (tmpTeacher.endsWith("時間未定")) continue; // Skip if already added
-    teachers.push();
-  }
-
-  // Remove duplicates
-  const uniqueTeachers = Array.from(new Set(teachers));
-  const uniqueTimes = Array.from(new Set(times));
-
-  return [uniqueTeachers.join(","), uniqueTimes.join(" ")];
-};
-
 const fetchTeacherClasses = async (yms: string, teacherCode: string, jar: CookieJar) => {
   const $ = await callSecondApi({ yms, jar, teacherCode });
   const data = $("body > form:nth-child(3) > table > tbody > tr[bgcolor='#FFFCEE']");
@@ -167,49 +97,44 @@ const fetchUnitTeacher = async (
   const $ = await callApi({ yms, unit, jar });
   const data = $("#tea_str1 option");
 
-  const results: TeacherClasses[] = [];
-  const dataMap: Record<string, PromiseResults<typeof fetchTeacherClasses>> = {};
+  const entries: { code: string; value: string; promise: Promise<CourseItem[]> }[] = [];
 
   data.each((_, el) => {
     const code = $(el).val() as string;
     const value = $(el).text().trim();
 
     if (code) {
-      dataMap[code] = {
+      entries.push({
+        code,
         value,
         promise: fetchTeacherClasses(yms, code, jar),
-      };
+      });
     }
   });
 
-  const resolvedMap: Record<string, AwaitedResolved<typeof fetchTeacherClasses>> = {};
-
-  await Promise.all(
-    Object.entries(dataMap).map(async ([code, { value, promise }]) => {
-      resolvedMap[code] = { value, result: await promise };
-    }),
+  const resolved = await Promise.all(
+    entries.map(async ({ code, value, promise }) => ({
+      code,
+      value,
+      result: await promise,
+    })),
   );
 
-  for (const [code, { value, result }] of Object.entries(resolvedMap)) {
-    results.push({
-      code,
-      name: value,
-      class: result,
-    });
-  }
-
-  return results;
+  return resolved.map(({ code, value, result }) => ({
+    code,
+    name: value,
+    class: result,
+  }));
 };
 
 const fetchTeachers = async (yms: string, jar: CookieJar) => {
   const [year, semester] = yms.split("#");
-  const results: Units[] = [];
 
   const $ = await callApi({ yms, jar });
   const data = $("#unit option");
 
-  // Create a map to code and Promise
-  const dataMap: Record<string, PromiseResults<typeof fetchUnitTeacher>> = {};
+  const limit = pLimit(10);
+  const entries: { code: string; value: string; promise: Promise<TeacherClasses[]> }[] = [];
 
   data.each((_, el) => {
     const code = $(el).val() as string;
@@ -218,38 +143,27 @@ const fetchTeachers = async (yms: string, jar: CookieJar) => {
     console.log(`[${year} - ${semester}] Fetching unit ${value} (${code})...`);
 
     if (code) {
-      dataMap[code] = {
+      entries.push({
+        code,
         value,
-        promise: undefined as any,
-      };
+        promise: limit(() => fetchUnitTeacher(yms, code, jar)),
+      });
     }
   });
 
-  const resolvedMap: Record<string, AwaitedResolved<typeof fetchUnitTeacher>> = {};
-
-  const limit = pLimit(10);
-
-  const entries = Object.entries(dataMap).map(([code, { value }]) => {
-    return {
+  const resolved = await Promise.all(
+    entries.map(async ({ code, value, promise }) => ({
       code,
       value,
-      promise: limit(() => fetchUnitTeacher(yms, code, jar)),
-    };
-  });
-
-  await Promise.all(
-    entries.map(async ({ code, value, promise }) => {
-      resolvedMap[code] = { value, result: await promise };
-    }),
+      result: await promise,
+    })),
   );
 
-  for (const [code, { value, result }] of Object.entries(resolvedMap)) {
-    results.push({
-      code,
-      name: value,
-      teachers: result,
-    });
-  }
+  const results: Units[] = resolved.map(({ code, value, result }) => ({
+    code,
+    name: value,
+    teachers: result,
+  }));
 
   await writeJson(`./dist/${year}/${semester}/teachers.json`, results, true);
 };

@@ -4,8 +4,7 @@ import pangu from "pangu";
 export const unifyString = (input: string): string => {
   return input
     .trim()
-    .replaceAll("([^\x00-\x7F]+)", " ") // 移除非 ASCII 字符
-    .replaceAll(" ", "") // 移除單個空格
+    .replaceAll("　", "") // 移除全形空格
     .replaceAll("（", "(") // 替換全形括號為半形
     .replaceAll("）", ")"); // 替換全形括號為半形
 };
@@ -13,6 +12,57 @@ export const unifyString = (input: string): string => {
 export const spacing = (text: string): string => {
   if (text) return pangu.spacingText(unifyString(text));
   else return text;
+};
+
+/**
+ * Split teacher name(s) and time slot(s) from a combined course table cell.
+ * @returns [teachers (comma-separated), times (space-separated)]
+ * @example
+ * "王小明 (一) 1-2 (教室未定)"              => ["王小明", "(一) 1-2"]
+ * "王小明時間未定 (教室未定)"                => ["王小明", ""]
+ * "王小明 (一) 1-2 (教室A) 李小華 (三) 3-4 (教室B)" => ["王小明,李小華", "(一) 1-2 (三) 3-4"]
+ * "王小明 (教室未定)"                        => ["王小明", ""]
+ */
+export const splitTeacherAndTime = (input: string): [string, string] => {
+  const cleanedInput = spacing(input)
+    .replaceAll("(單週)", "")
+    .replaceAll("(雙週)", "")
+    .replaceAll("\n", "");
+
+  const teachers: string[] = [];
+  const times: string[] = [];
+
+  const timeRegex = /\([一二三四五六日]\)\s*\d+(-\d+)?/g;
+  const teacherRegex = /([^\s()]+)(?=\s*\([一二三四五六日]\))/g;
+  const timeUndefinedRegex = /([^\s()]+)\s*時間未定/g;
+  const locationUndefinedRegex = /([^\s()]+)\s*\(教室未定\)/g;
+
+  let match: RegExpExecArray | null;
+
+  while ((match = timeRegex.exec(cleanedInput)) !== null) {
+    times.push(match[0].trim());
+  }
+
+  while ((match = teacherRegex.exec(cleanedInput)) !== null) {
+    teachers.push(match[1].trim());
+  }
+
+  while ((match = timeUndefinedRegex.exec(cleanedInput)) !== null) {
+    teachers.push(match[1].trim());
+  }
+
+  while ((match = locationUndefinedRegex.exec(cleanedInput)) !== null) {
+    const tmpTeacher = match[1].trim();
+
+    if (tmpTeacher.endsWith("時間未定")) continue; // already captured by timeUndefinedRegex
+    if (/^\d+(-\d+)?$/.test(tmpTeacher)) continue; // numeric time-slot, not a teacher name
+    teachers.push(tmpTeacher);
+  }
+
+  const uniqueTeachers = Array.from(new Set(teachers));
+  const uniqueTimes = Array.from(new Set(times));
+
+  return [uniqueTeachers.join(","), uniqueTimes.join(" ")];
 };
 
 export const convertChineseNumber = (chineseNum: string): number => {

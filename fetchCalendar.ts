@@ -6,6 +6,7 @@ interface calendarItem {
   year: number;
   semester: number;
   title: string;
+  link: string;
 }
 
 const fetchCalendar = async () => {
@@ -14,7 +15,8 @@ const fetchCalendar = async () => {
   const $ = await fetchSinglePage(setUrl);
   const data = $("#Dyn_2_2 > div > div > section > div > div > div > p");
 
-  let results: calendarItem[] = [];
+  const results: calendarItem[] = [];
+  const downloads: Promise<void>[] = [];
 
   data.each((_, el) => {
     $(el)
@@ -30,11 +32,8 @@ const fetchCalendar = async () => {
         const title = spacing(text);
         const fullLink = `https://adeva.utaipei.edu.tw${link}`;
 
-        results.push({ year, semester, title });
-
-        (async () => {
-          await fetcher.download(fullLink, `./dist/calendar/${year}/${title}.pdf`);
-        })();
+        results.push({ year, semester, title, link: fullLink });
+        downloads.push(fetcher.download(fullLink, `./dist/calendar/${year}/${title}.pdf`));
       });
   });
 
@@ -47,6 +46,7 @@ const fetchCalendar = async () => {
     return a.semester - b.semester; // Then by semester
   });
 
+  await Promise.all(downloads);
   await writeJson("./dist/calendar.json", results);
 };
 
