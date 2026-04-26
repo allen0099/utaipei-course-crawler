@@ -5,9 +5,11 @@ export const unifyString = (input: string): string => {
   return input
     .trim()
     .replaceAll("([^\x00-\x7F]+)", " ") // 移除非 ASCII 字符
-    .replaceAll(" ", "") // 移除單個空格
+    .replaceAll("\u00A0", "") // 移除不換行空格
     .replaceAll("（", "(") // 替換全形括號為半形
-    .replaceAll("）", ")"); // 替換全形括號為半形
+    .replaceAll("）", ")") // 替換全形括號為半形
+    .replace(/[ \t\n\r\f\v]+/g, " ") // 正規化空白字元（換行、多餘空格）為單一空格
+    .trim(); // 再次修剪，因正規化可能留下前後空格
 };
 
 export const spacing = (text: string): string => {
