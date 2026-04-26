@@ -1,17 +1,17 @@
 name: fetchTeachers
 
 on:
-    schedule:
-        - cron: "0 0 * * 0" # At 00:00 on Sunday
+  schedule:
+    - cron: "0 0 * * 0" # At 00:00 on Sunday
 
 jobs:
-  fetchLocations:
+  fetchTeachers:
     runs-on: ubuntu-latest
 
-#    strategy:
-#      max-parallel: 3
-#      matrix:
-#        term: [ ]
+    #    strategy:
+    #      max-parallel: 3
+    #      matrix:
+    #        term: [ ]
 
     steps:
       - uses: actions/checkout@v4
@@ -22,6 +22,8 @@ jobs:
           cache: "pnpm"
       - name: Install dependencies
         run: pnpm install
+      - name: Lint
+        run: pnpm exec eslint .
       - name: Fetch Teacher Classes
         run: pnpm tsx fetchTeacherClasses.ts
       - name: Upload artifact
@@ -31,7 +33,7 @@ jobs:
           path: ./dist
 
   deploy:
-    needs: fetchLocations
+    needs: fetchTeachers
     runs-on: ubuntu-latest
     steps:
       - name: Download artifact

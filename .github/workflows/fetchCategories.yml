@@ -16,6 +16,8 @@ jobs:
           cache: "pnpm"
       - name: Install dependencies
         run: pnpm install
+      - name: Lint
+        run: pnpm exec eslint .
       - name: Fetch standards and categories
         run: pnpm tsx fetchStandards.ts
       - name: Deploy to GitHub Pages

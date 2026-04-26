@@ -6,7 +6,7 @@
   "author": "allen0099",
   "packageManager": "pnpm@10.14.0",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "vitest run",
     "compile": "tsc",
     "lint": "eslint . --fix",
     "format": "prettier --write ."
@@ -36,6 +36,7 @@
     "globals": "^17.5.0",
     "prettier": "^3.8.3",
     "tsx": "^4.21.0",
-    "typescript": "^6.0.3"
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.5"
   }
 }
