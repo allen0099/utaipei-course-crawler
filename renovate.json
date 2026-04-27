@@ -5,11 +5,15 @@
   "packageRules": [
     {
       "groupName": "ESLint packages",
-      "matchPackagePatterns": ["^eslint", "^@eslint/"]
+      "matchPackageNames": ["/^eslint/", "/^@eslint//"]
     },
     {
       "groupName": "TypeScript and type definitions",
-      "matchPackagePatterns": ["^typescript$", "^@typescript-eslint/", "^@types/"]
+      "matchPackageNames": [
+        "/^typescript$/",
+        "/^@typescript-eslint//",
+        "/^@types//"
+      ]
     },
     {
       "matchUpdateTypes": ["minor", "patch"],
