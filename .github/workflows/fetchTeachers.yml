@@ -27,7 +27,7 @@ jobs:
       - name: Fetch Teacher Classes
         run: pnpm tsx fetchTeacherClasses.ts
       - name: Upload artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: dist-1
           path: ./dist
@@ -37,7 +37,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Download artifact
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           pattern: dist-*
           path: ./dist
