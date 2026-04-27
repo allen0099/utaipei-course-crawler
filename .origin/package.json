@@ -23,7 +23,7 @@
     "cheerio-tableparser": "^1.0.1",
     "colors": "^1.4.0",
     "jsonfile": "^6.1.0",
-    "node-ical": "^0.15.3",
+    "node-ical": "^0.26.0",
     "pangu": "^7.0.0"
   }
 }
