@@ -4,8 +4,13 @@ on:
   schedule:
     - cron: "0 3 1 * *"
 
+permissions:
+  contents: read
+
 jobs:
   fetchCalendar:
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6

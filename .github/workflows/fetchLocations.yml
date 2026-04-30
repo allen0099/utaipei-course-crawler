@@ -5,6 +5,9 @@ on:
     # Run only on 3, 6, 9, 12 months and the 3rd day of the month
     - cron: "0 0 3 3,6,9,12 *"
 
+permissions:
+  contents: write
+
 jobs:
   fetchLocations:
     runs-on: ubuntu-latest
