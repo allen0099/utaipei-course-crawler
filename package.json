@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "type": "module",
   "author": "allen0099",
-  "packageManager": "pnpm@10.34.2",
+  "packageManager": "pnpm@10.34.3",
   "scripts": {
     "test": "vitest run",
     "compile": "tsc",
