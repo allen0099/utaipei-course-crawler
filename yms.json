@@ -472,7 +472,7 @@
   {
     "code": "114#2",
     "displayName": "114 學年度第 2 學期",
-    "default": true
+    "default": false
   },
   {
     "code": "114#3",
@@ -492,7 +492,7 @@
   {
     "code": "115#1",
     "displayName": "115 學年度第 1 學期",
-    "default": false
+    "default": true
   },
   {
     "code": "115#2",
