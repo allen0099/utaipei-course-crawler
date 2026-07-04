@@ -1,6 +1,6 @@
 import fs from "fs";
 
-import { YearAndSemester } from "@/interfaces/globals";
+import { YearAndSemester, YmsCache } from "@/interfaces/globals";
 import { login } from "@/utils/authFetcher";
 import { writeJson } from "@/utils/dir";
 import { fetchSinglePage } from "@/utils/fetcher";
@@ -9,15 +9,35 @@ import { convertChineseNumber, spacing } from "@/utils/text";
 const reYear = /(\D{2,4})學年度?/;
 const reSemester = /第([一二三四五六七八九])學期/;
 
+const ONE_MONTH_MS = 30 * 24 * 60 * 60 * 1000;
+
+const isYmsCache = (value: unknown): value is YmsCache =>
+  typeof value === "object" &&
+  value !== null &&
+  typeof (value as YmsCache).lastUpdated === "string" &&
+  !Number.isNaN(new Date((value as YmsCache).lastUpdated).getTime()) &&
+  Array.isArray((value as YmsCache).data);
+
 export const LoadYMS = async (): Promise<YearAndSemester[]> => {
   const targetFile = "./dist/yms.json";
 
   if (fs.existsSync(targetFile)) {
-    const data = await fs.promises.readFile(targetFile, "utf-8");
+    const raw = await fs.promises.readFile(targetFile, "utf-8");
+    const parsed: unknown = JSON.parse(raw);
 
-    console.log("[LoadYMS] Load from existing file.");
+    if (!isYmsCache(parsed)) {
+      console.log("[LoadYMS] Existing file has an unrecognized structure, refetching...");
+    } else {
+      const isStale = Date.now() - new Date(parsed.lastUpdated).getTime() > ONE_MONTH_MS;
 
-    return JSON.parse(data) as YearAndSemester[];
+      if (!isStale) {
+        console.log("[LoadYMS] Load from existing file.");
+
+        return parsed.data;
+      }
+
+      console.log("[LoadYMS] Existing file is older than 1 month, refetching...");
+    }
   }
 
   console.log("[LoadYMS] Fetch from server...");
@@ -62,7 +82,12 @@ export const LoadYMS = async (): Promise<YearAndSemester[]> => {
     });
   });
 
-  await writeJson("./dist/yms.json", results);
+  const cache: YmsCache = {
+    lastUpdated: new Date().toISOString(),
+    data: results,
+  };
+
+  await writeJson("./dist/yms.json", cache);
 
   return results;
 };

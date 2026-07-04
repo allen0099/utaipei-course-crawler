@@ -4,6 +4,11 @@ export interface YearAndSemester {
   default: boolean;
 }
 
+export interface YmsCache {
+  lastUpdated: string;
+  data: YearAndSemester[];
+}
+
 export interface CourseItem {
   code: string;
   name: string;
