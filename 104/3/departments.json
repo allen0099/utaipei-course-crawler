@@ -1,0 +1,51 @@
+[
+  {
+    "code": "33",
+    "name": "通識中心 (舊)",
+    "departments": [
+      {
+        "code": "XC00",
+        "name": "通識教育中心 (XC00)"
+      }
+    ]
+  },
+  {
+    "code": "XZ",
+    "name": "人文藝術學院",
+    "departments": [
+      {
+        "code": "8200",
+        "name": "音樂學系"
+      }
+    ]
+  },
+  {
+    "code": "YZ",
+    "name": "理學院",
+    "departments": [
+      {
+        "code": "9200",
+        "name": "數學系"
+      },
+      {
+        "code": "9300",
+        "name": "體育學系"
+      }
+    ]
+  },
+  {
+    "code": "ZY",
+    "name": "校際選課",
+    "departments": []
+  },
+  {
+    "code": "ZZ",
+    "name": "體育學院",
+    "departments": [
+      {
+        "code": "ZZ10",
+        "name": "校定必修"
+      }
+    ]
+  }
+]

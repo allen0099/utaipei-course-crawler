@@ -1,0 +1,37 @@
+[
+  {
+    "code": "XZ",
+    "name": "人文藝術學院",
+    "departments": [
+      {
+        "code": "7900",
+        "name": "中國語文學系"
+      }
+    ]
+  },
+  {
+    "code": "YZ",
+    "name": "理學院",
+    "departments": [
+      {
+        "code": "9300",
+        "name": "體育學系"
+      }
+    ]
+  },
+  {
+    "code": "ZY",
+    "name": "校際選課",
+    "departments": []
+  },
+  {
+    "code": "ZZ",
+    "name": "體育學院",
+    "departments": [
+      {
+        "code": "ZZ10",
+        "name": "校定必修"
+      }
+    ]
+  }
+]
