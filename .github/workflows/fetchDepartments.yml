@@ -21,6 +21,23 @@ jobs:
         run: pnpm install
       - name: Lint
         run: pnpm exec eslint .
+      # Seed ./dist with the already-published data so the crawler can skip
+      # years that were backfilled on a previous run. The runner's checkout is
+      # otherwise empty, which would force a full re-crawl of every year on
+      # each scheduled run. keep_files on deploy preserves old years on
+      # gh-pages, but only this seeding stops them being re-fetched needlessly.
+      - name: Restore published data
+        continue-on-error: true
+        uses: actions/checkout@v7
+        with:
+          ref: gh-pages
+          path: gh-pages
+      - name: Seed dist from published data
+        run: |
+          if [ -d gh-pages ]; then
+            mkdir -p dist
+            rsync -a --exclude='.git' gh-pages/ dist/
+          fi
       - name: Fetch levels, colleges and departments
         run: pnpm tsx fetchDepartments.ts
       - name: Deploy to GitHub Pages
