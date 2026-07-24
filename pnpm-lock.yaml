@@ -21,8 +21,8 @@ importers:
         specifier: ^7.3.0
         version: 7.3.1
       pangu:
-        specifier: ^7.2.1
-        version: 7.2.1
+        specifier: ^8.0.0
+        version: 8.0.0
       tough-cookie:
         specifier: ^6.0.1
         version: 6.0.2
@@ -1518,8 +1518,8 @@ packages:
     resolution: {integrity: sha512-LaNjtRWUBY++zB5nE/NwcaoMylSPk+S+ZHNB1TzdbMJMny6dynpAGt7X/tl/QYq3TIeE6nxHppbo2LGymrG5Pw==}
     engines: {node: '>=10'}
 
-  pangu@7.2.1:
-    resolution: {integrity: sha512-HEWJHmYcJhGz5wGebMaKblzu709wUjzsnJzwdjaowAKQzHIHQDmWGpCbWWPx19Exnv/RaQ3UhUg4LkttWZsbCw==}
+  pangu@8.0.0:
+    resolution: {integrity: sha512-7u8ByVWXfs8sknQCdV3T93qRAEm/ZDpDu6cXFD0naxGIuFiDYDY3THCU6851irmObExYM+/DpeiVZ/R568EeQA==}
     engines: {node: '>=18.0.0'}
     hasBin: true
 
@@ -3389,7 +3389,7 @@ snapshots:
     dependencies:
       p-limit: 3.1.0
 
-  pangu@7.2.1: {}
+  pangu@8.0.0: {}
 
   parent-module@1.0.1:
     dependencies:
