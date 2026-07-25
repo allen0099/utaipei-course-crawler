@@ -17,6 +17,7 @@
     "jsonfile": "^6.2.1",
     "p-limit": "^7.3.0",
     "pangu": "^7.2.1",
+    "pdfjs-dist": "^6.1.200",
     "tough-cookie": "^6.0.1"
   },
   "devDependencies": {

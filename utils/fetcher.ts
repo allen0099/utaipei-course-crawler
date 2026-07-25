@@ -1,6 +1,4 @@
 import fs from "fs";
-import { Readable } from "stream";
-import { finished } from "stream/promises";
 
 import { load, CheerioAPI } from "cheerio";
 import makeFetchCookie from "fetch-cookie";
@@ -78,14 +76,16 @@ export const fetcher = {
   authPost: (url: string, postedBody: URLSearchParams, jar: CookieJar, options?: RequestInit) => {
     return fetcher.post(url, postedBody, options, jar);
   },
-  download: async (url: string, filePath: string) => {
-    const { body } = await retryFetcher(url);
+  /** 下載檔案並回傳其內容，供呼叫端在存檔後直接解析，不必再讀一次磁碟。 */
+  download: async (url: string, filePath: string): Promise<Uint8Array> => {
+    const response = await retryFetcher(url);
     const destination = checkPath(filePath);
+    const content = new Uint8Array(await response.arrayBuffer());
 
-    const fileStream = fs.createWriteStream(destination);
-
-    await finished(Readable.fromWeb(body as any).pipe(fileStream));
+    await fs.promises.writeFile(destination, content);
 
     console.log(`[download] ${url} to ${destination} done.`);
+
+    return content;
   },
 };

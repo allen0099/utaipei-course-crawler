@@ -24,6 +24,9 @@ jobs:
         run: pnpm install
       - name: Lint
         run: pnpm exec eslint .
+      # PDF 解析對版面敏感，先跑 fixture 測試擋下回歸，避免把壞掉的資料發布出去
+      - name: Test
+        run: pnpm test
       - name: Fetch calendar data
         run: pnpm tsx fetchCalendar.ts
       - name: Deploy to GitHub Pages
