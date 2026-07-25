@@ -1,0 +1,227 @@
+[
+  {
+    "date": "2018-02-01",
+    "unit": "體",
+    "title": "競技運動代表隊寒假集訓",
+    "isHoliday": false
+  },
+  {
+    "date": "2018-02-15",
+    "endDate": "2018-02-20",
+    "unit": "教",
+    "title": "春節放假(17、18日春節初二、初三適逢週休，2月19日、2月20日共補假2天)",
+    "isHoliday": true
+  },
+  {
+    "date": "2018-02-19",
+    "unit": "教",
+    "title": "放假1天(2月17日春節初二適逢週休，19日補假1天)",
+    "isHoliday": true
+  },
+  {
+    "date": "2018-02-20",
+    "unit": "教",
+    "title": "放假1天(2月18日春節初三適逢週休，20日補假1天)",
+    "isHoliday": true
+  },
+  {
+    "date": "2018-02-26",
+    "unit": "教",
+    "title": "106學年度第2學期開學日(開始上課)",
+    "isHoliday": false
+  },
+  {
+    "date": "2018-02-26",
+    "unit": "教",
+    "title": "註冊日",
+    "isHoliday": false
+  },
+  {
+    "date": "2018-02-27",
+    "unit": "研",
+    "title": "全校學生填寫證照、獲獎及論文發表等資料",
+    "isHoliday": false
+  },
+  {
+    "date": "2018-02-28",
+    "unit": "教",
+    "title": "和平紀念日(放假1天)",
+    "isHoliday": true
+  },
+  {
+    "date": "2018-03-05",
+    "unit": "學",
+    "title": "個別諮商開始",
+    "isHoliday": false
+  },
+  {
+    "date": "2018-03-06",
+    "unit": "體",
+    "title": "教練會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2018-03-06",
+    "unit": "秘",
+    "title": "行政會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2018-03-08",
+    "unit": "學",
+    "title": "蘋果節",
+    "isHoliday": false
+  },
+  {
+    "date": "2018-03-20",
+    "unit": "學",
+    "title": "第二屆校歌比賽(全校一年級)",
+    "isHoliday": false
+  },
+  {
+    "date": "2018-03-20",
+    "unit": "秘",
+    "title": "校務會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2018-04-04",
+    "unit": "教",
+    "title": "兒童節(放假1天)",
+    "isHoliday": true
+  },
+  {
+    "date": "2018-04-05",
+    "unit": "教",
+    "title": "民族掃墓節(放假1天)",
+    "isHoliday": true
+  },
+  {
+    "date": "2018-04-06",
+    "unit": "教",
+    "title": "彈性放假1天(3月31日補行上班、上課)",
+    "isHoliday": true
+  },
+  {
+    "date": "2018-04-09",
+    "unit": "教",
+    "title": "學期1/3退費基準日",
+    "isHoliday": false
+  },
+  {
+    "date": "2018-04-10",
+    "unit": "秘",
+    "title": "行政會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2018-04-23",
+    "endDate": "2018-04-27",
+    "unit": "教",
+    "title": "106學年度第2學期期中考試",
+    "isHoliday": false
+  },
+  {
+    "date": "2018-05-08",
+    "unit": "秘",
+    "title": "行政會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2018-05-08",
+    "unit": "教育",
+    "title": "教育學院院集會",
+    "isHoliday": false
+  },
+  {
+    "date": "2018-05-18",
+    "unit": "教",
+    "title": "學期2/3退費基準日",
+    "isHoliday": false
+  },
+  {
+    "date": "2018-05-22",
+    "unit": "人文",
+    "title": "人文藝術學院院集會",
+    "isHoliday": false
+  },
+  {
+    "date": "2018-06-01",
+    "unit": "體",
+    "title": "體育表演會",
+    "isHoliday": false
+  },
+  {
+    "date": "2018-06-05",
+    "unit": "秘",
+    "title": "行政會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2018-06-09",
+    "unit": "學",
+    "title": "畢業典禮",
+    "isHoliday": false
+  },
+  {
+    "date": "2018-06-11",
+    "unit": "教",
+    "title": "彈性放假(補107年6月9日畢業典禮)",
+    "isHoliday": true
+  },
+  {
+    "date": "2018-06-18",
+    "unit": "教",
+    "title": "端午節(放假1天)",
+    "isHoliday": true
+  },
+  {
+    "date": "2018-06-18",
+    "unit": "學",
+    "title": "個別諮商結束",
+    "isHoliday": false
+  },
+  {
+    "date": "2018-06-19",
+    "unit": "秘",
+    "title": "校務會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2018-06-21",
+    "unit": "體",
+    "title": "教練會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2018-06-22",
+    "unit": "教",
+    "title": "106學年度第2學期休退學申請截止日",
+    "isHoliday": false
+  },
+  {
+    "date": "2018-06-25",
+    "endDate": "2018-06-29",
+    "unit": "教",
+    "title": "106學年度第2學期期末考試",
+    "isHoliday": false
+  },
+  {
+    "date": "2018-07-02",
+    "unit": "體",
+    "title": "競技運動代表隊暑假集訓開始",
+    "isHoliday": false
+  },
+  {
+    "date": "2018-07-03",
+    "unit": "秘",
+    "title": "行政會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2018-07-31",
+    "unit": "教",
+    "title": "106學年度第2學期結束",
+    "isHoliday": false
+  }
+]

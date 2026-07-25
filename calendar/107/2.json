@@ -1,0 +1,220 @@
+[
+  {
+    "date": "2019-02-01",
+    "unit": "教",
+    "title": "107學年度第2學期開始",
+    "isHoliday": false
+  },
+  {
+    "date": "2019-02-01",
+    "unit": "體",
+    "title": "競技運動代表隊寒假集訓",
+    "isHoliday": false
+  },
+  {
+    "date": "2019-02-04",
+    "endDate": "2019-02-07",
+    "unit": "教",
+    "title": "春節放假",
+    "isHoliday": true
+  },
+  {
+    "date": "2019-02-08",
+    "unit": "教",
+    "title": "彈性放假(1月19日補行上班)",
+    "isHoliday": true
+  },
+  {
+    "date": "2019-02-18",
+    "unit": "教",
+    "title": "107學年度第2學期開學日(開始上課)",
+    "isHoliday": false
+  },
+  {
+    "date": "2019-02-18",
+    "unit": "教",
+    "title": "註冊日",
+    "isHoliday": false
+  },
+  {
+    "date": "2019-02-19",
+    "unit": "研",
+    "title": "全校學生填寫證照、獲獎及論文發表等資料",
+    "isHoliday": false
+  },
+  {
+    "date": "2019-02-25",
+    "unit": "學",
+    "title": "個別諮商開始",
+    "isHoliday": false
+  },
+  {
+    "date": "2019-02-26",
+    "unit": "體",
+    "title": "教練會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2019-02-28",
+    "unit": "教",
+    "title": "和平紀念日(放假1天)",
+    "isHoliday": true
+  },
+  {
+    "date": "2019-03-05",
+    "unit": "秘",
+    "title": "行政會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2019-03-08",
+    "unit": "學",
+    "title": "蘋果節",
+    "isHoliday": false
+  },
+  {
+    "date": "2019-03-19",
+    "unit": "秘",
+    "title": "校務會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2019-03-29",
+    "unit": "教",
+    "title": "學期1/3退費基準日",
+    "isHoliday": false
+  },
+  {
+    "date": "2019-04-02",
+    "unit": "秘",
+    "title": "行政會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2019-04-04",
+    "unit": "教",
+    "title": "兒童節(放假1天)",
+    "isHoliday": true
+  },
+  {
+    "date": "2019-04-05",
+    "unit": "教",
+    "title": "民族掃墓節(放假1天)",
+    "isHoliday": true
+  },
+  {
+    "date": "2019-04-09",
+    "unit": "理",
+    "title": "理學院院集會",
+    "isHoliday": false
+  },
+  {
+    "date": "2019-04-15",
+    "unit": "教",
+    "title": "15-19日107學年度第2學期期中考試",
+    "isHoliday": false
+  },
+  {
+    "date": "2019-04-30",
+    "unit": "教育",
+    "title": "教育學院院集會",
+    "isHoliday": false
+  },
+  {
+    "date": "2019-05-10",
+    "unit": "教",
+    "title": "學期2/3退費基準日",
+    "isHoliday": false
+  },
+  {
+    "date": "2019-05-14",
+    "unit": "秘",
+    "title": "行政會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2019-05-14",
+    "unit": "人文",
+    "title": "人文藝術學院院集會",
+    "isHoliday": false
+  },
+  {
+    "date": "2019-05-31",
+    "unit": "體",
+    "title": "體育表演會",
+    "isHoliday": false
+  },
+  {
+    "date": "2019-06-04",
+    "unit": "秘",
+    "title": "行政會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2019-06-07",
+    "unit": "教",
+    "title": "端午節(放假1天)",
+    "isHoliday": true
+  },
+  {
+    "date": "2019-06-08",
+    "unit": "學",
+    "title": "畢業典禮",
+    "isHoliday": false
+  },
+  {
+    "date": "2019-06-10",
+    "unit": "學",
+    "title": "彈性放假(補107年6月8日畢業典禮)",
+    "isHoliday": true
+  },
+  {
+    "date": "2019-06-10",
+    "unit": "學",
+    "title": "個別諮商結束",
+    "isHoliday": false
+  },
+  {
+    "date": "2019-06-11",
+    "unit": "秘",
+    "title": "校務會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2019-06-13",
+    "unit": "體",
+    "title": "教練會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2019-06-14",
+    "unit": "教",
+    "title": "107學年度第2學期休退學申請截止日",
+    "isHoliday": false
+  },
+  {
+    "date": "2019-06-17",
+    "endDate": "2019-06-21",
+    "unit": "教",
+    "title": "107學年度第2學期期末考試",
+    "isHoliday": false
+  },
+  {
+    "date": "2019-06-24",
+    "unit": "體",
+    "title": "競技運動代表隊暑假集訓開始",
+    "isHoliday": false
+  },
+  {
+    "date": "2019-07-02",
+    "unit": "秘",
+    "title": "行政會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2019-07-31",
+    "unit": "教",
+    "title": "107學年度第2學期結束",
+    "isHoliday": false
+  }
+]

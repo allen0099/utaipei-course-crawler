@@ -1,0 +1,246 @@
+[
+  {
+    "date": "2024-08-01",
+    "unit": "教",
+    "title": "113學年度第1學期開始",
+    "isHoliday": false
+  },
+  {
+    "date": "2024-08-01",
+    "unit": "體",
+    "title": "競技運動代表隊暑假集訓",
+    "isHoliday": false
+  },
+  {
+    "date": "2024-09-03",
+    "unit": "學",
+    "title": "新生始業輔導式",
+    "isHoliday": false
+  },
+  {
+    "date": "2024-09-03",
+    "unit": "秘",
+    "title": "行政會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2024-09-04",
+    "unit": "學",
+    "title": "新生始業輔導式.天母校區學生健檢",
+    "isHoliday": false
+  },
+  {
+    "date": "2024-09-08",
+    "unit": "教",
+    "title": "暑假結束",
+    "isHoliday": false
+  },
+  {
+    "date": "2024-09-09",
+    "unit": "教",
+    "title": "113學年度第1學期開學日(開始上課)",
+    "isHoliday": false
+  },
+  {
+    "date": "2024-09-09",
+    "unit": "教",
+    "title": "註冊日",
+    "isHoliday": false
+  },
+  {
+    "date": "2024-09-14",
+    "unit": "學",
+    "title": "新生家長日(於9月16日彈性放假)",
+    "isHoliday": false
+  },
+  {
+    "date": "2024-09-16",
+    "unit": "教",
+    "title": "彈性放假(補9月14日新生家長日)",
+    "isHoliday": true
+  },
+  {
+    "date": "2024-09-17",
+    "unit": "教",
+    "title": "中秋節(放假一日)",
+    "isHoliday": true
+  },
+  {
+    "date": "2024-09-18",
+    "unit": "學",
+    "title": "學輔中心個別諮商開始",
+    "isHoliday": false
+  },
+  {
+    "date": "2024-09-19",
+    "unit": "體",
+    "title": "教練會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2024-10-01",
+    "unit": "秘",
+    "title": "行政會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2024-10-10",
+    "unit": "教",
+    "title": "國慶日(放假一日)",
+    "isHoliday": true
+  },
+  {
+    "date": "2024-10-18",
+    "unit": "教",
+    "title": "學期1/3退費基準日",
+    "isHoliday": false
+  },
+  {
+    "date": "2024-10-28",
+    "endDate": "2024-11-01",
+    "unit": "教",
+    "title": "113學年度第1學期期中考試",
+    "isHoliday": false
+  },
+  {
+    "date": "2024-10-29",
+    "unit": "秘",
+    "title": "校務會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2024-11-12",
+    "unit": "秘",
+    "title": "行政會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2024-11-26",
+    "unit": "人文",
+    "title": "人文藝術學院院集會",
+    "isHoliday": false
+  },
+  {
+    "date": "2024-11-26",
+    "unit": "理",
+    "title": "理學院院集會",
+    "isHoliday": false
+  },
+  {
+    "date": "2024-11-29",
+    "unit": "教",
+    "title": "學期2/3退費基準日",
+    "isHoliday": false
+  },
+  {
+    "date": "2024-11-30",
+    "unit": "學",
+    "title": "校慶典禮暨園遊會(於12月2日彈性放假)",
+    "isHoliday": false
+  },
+  {
+    "date": "2024-12-02",
+    "unit": "教",
+    "title": "彈性放假(補11月30日校慶典禮暨園遊會)",
+    "isHoliday": true
+  },
+  {
+    "date": "2024-12-10",
+    "unit": "秘",
+    "title": "行政會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2024-12-13",
+    "unit": "體",
+    "title": "體育表演會",
+    "isHoliday": false
+  },
+  {
+    "date": "2024-12-17",
+    "unit": "市政",
+    "title": "市政管理學院院集會",
+    "isHoliday": false
+  },
+  {
+    "date": "2024-12-20",
+    "unit": "教",
+    "title": "113學年度第1學期休退學申請截止日",
+    "isHoliday": false
+  },
+  {
+    "date": "2024-12-20",
+    "unit": "學",
+    "title": "學輔中心個別諮商結束",
+    "isHoliday": false
+  },
+  {
+    "date": "2024-12-23",
+    "endDate": "2024-12-27",
+    "unit": "教",
+    "title": "113學年度第1學期期末考試",
+    "isHoliday": false
+  },
+  {
+    "date": "2024-12-24",
+    "unit": "秘",
+    "title": "校務會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2024-12-30",
+    "endDate": "2025-01-10",
+    "unit": "教",
+    "title": "教師彈性補充教學",
+    "isHoliday": false
+  },
+  {
+    "date": "2025-01-01",
+    "unit": "教",
+    "title": "中華民國開國紀念日(放假一日)",
+    "isHoliday": true
+  },
+  {
+    "date": "2025-01-02",
+    "unit": "體",
+    "title": "教練會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2025-01-13",
+    "unit": "教",
+    "title": "寒假開始",
+    "isHoliday": false
+  },
+  {
+    "date": "2025-01-13",
+    "unit": "體",
+    "title": "競技運動代表隊寒假集訓開始",
+    "isHoliday": false
+  },
+  {
+    "date": "2025-01-27",
+    "unit": "教",
+    "title": "1月27日調整放假日(2月8日補行上班)",
+    "isHoliday": true
+  },
+  {
+    "date": "2025-01-28",
+    "unit": "教",
+    "title": "除夕(放假一日)",
+    "isHoliday": true
+  },
+  {
+    "date": "2025-01-29",
+    "endDate": "2025-01-31",
+    "unit": "教",
+    "title": "春節放假",
+    "isHoliday": true
+  },
+  {
+    "date": "2025-01-31",
+    "unit": "教",
+    "title": "113學年度第1學期結束",
+    "isHoliday": false
+  }
+]

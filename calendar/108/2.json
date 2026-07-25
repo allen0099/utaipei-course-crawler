@@ -1,0 +1,245 @@
+[
+  {
+    "date": "2020-02-01",
+    "unit": "教",
+    "title": "108學年度第2學期開始",
+    "isHoliday": false
+  },
+  {
+    "date": "2020-02-01",
+    "unit": "體",
+    "title": "競技運動代表隊寒假集訓",
+    "isHoliday": false
+  },
+  {
+    "date": "2020-02-15",
+    "unit": "教",
+    "title": "全校補行上班1日(1月23日調整放假)",
+    "isHoliday": true
+  },
+  {
+    "date": "2020-02-17",
+    "unit": "教",
+    "title": "108學年度第2學期開學日(開始上課)",
+    "isHoliday": false
+  },
+  {
+    "date": "2020-02-17",
+    "unit": "教",
+    "title": "註冊日",
+    "isHoliday": false
+  },
+  {
+    "date": "2020-02-28",
+    "unit": "教",
+    "title": "和平紀念日(放假1天)",
+    "isHoliday": true
+  },
+  {
+    "date": "2020-03-02",
+    "unit": "教",
+    "title": "108學年度第2學期開學日(開始上課)",
+    "isHoliday": false
+  },
+  {
+    "date": "2020-03-02",
+    "unit": "教",
+    "title": "註冊日【研】全校學生填寫證照、獲獎及論文發表等資料",
+    "isHoliday": false
+  },
+  {
+    "date": "2020-03-06",
+    "unit": "學",
+    "title": "蘋果節",
+    "isHoliday": false
+  },
+  {
+    "date": "2020-03-09",
+    "unit": "學",
+    "title": "個別諮商開始",
+    "isHoliday": false
+  },
+  {
+    "date": "2020-03-10",
+    "unit": "秘",
+    "title": "行政會議【學】博愛校區班代座談會",
+    "isHoliday": false
+  },
+  {
+    "date": "2020-03-11",
+    "unit": "學",
+    "title": "天母校區班代座談會",
+    "isHoliday": false
+  },
+  {
+    "date": "2020-03-12",
+    "unit": "體",
+    "title": "教練會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2020-03-24",
+    "unit": "秘",
+    "title": "校務會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2020-04-02",
+    "unit": "教",
+    "title": "放假1天(民族掃墓節適逢兒童節補假)",
+    "isHoliday": true
+  },
+  {
+    "date": "2020-04-03",
+    "unit": "教",
+    "title": "放假1天(兒童節適逢週休補假)",
+    "isHoliday": true
+  },
+  {
+    "date": "2020-04-04",
+    "unit": "教",
+    "title": "兒童節",
+    "isHoliday": false
+  },
+  {
+    "date": "2020-04-04",
+    "unit": "教",
+    "title": "民族掃墓節",
+    "isHoliday": false
+  },
+  {
+    "date": "2020-04-10",
+    "unit": "教",
+    "title": "學期1/3退費基準日",
+    "isHoliday": false
+  },
+  {
+    "date": "2020-04-14",
+    "unit": "秘",
+    "title": "行政會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2020-04-27",
+    "endDate": "2020-05-01",
+    "unit": "教",
+    "title": "108學年度第2學期期中考試",
+    "isHoliday": false
+  },
+  {
+    "date": "2020-05-04",
+    "endDate": "2020-05-08",
+    "unit": "教",
+    "title": "轉系、輔系、雙主修申請【教】5月4日至5月18日期中停修申請",
+    "isHoliday": false
+  },
+  {
+    "date": "2020-05-05",
+    "unit": "理",
+    "title": "理學院院集會",
+    "isHoliday": false
+  },
+  {
+    "date": "2020-05-12",
+    "unit": "人文",
+    "title": "人文藝術學院院集會 【秘】行政會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2020-05-12",
+    "unit": "人文",
+    "title": "人文藝術學院院集會",
+    "isHoliday": false
+  },
+  {
+    "date": "2020-05-19",
+    "unit": "教育",
+    "title": "教育學院院集會",
+    "isHoliday": false
+  },
+  {
+    "date": "2020-05-19",
+    "unit": "市政",
+    "title": "市政管理學院院集會",
+    "isHoliday": false
+  },
+  {
+    "date": "2020-05-22",
+    "unit": "教",
+    "title": "學期2/3退費基準日",
+    "isHoliday": false
+  },
+  {
+    "date": "2020-06-02",
+    "unit": "秘",
+    "title": "行政會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2020-06-13",
+    "unit": "學",
+    "title": "畢業典禮",
+    "isHoliday": false
+  },
+  {
+    "date": "2020-06-16",
+    "unit": "秘",
+    "title": "校務會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2020-06-20",
+    "unit": "教",
+    "title": "彈性放假(原6月26日調整上班上課，本校補6月13日畢業典禮)",
+    "isHoliday": true
+  },
+  {
+    "date": "2020-06-22",
+    "unit": "學",
+    "title": "個別諮商結束",
+    "isHoliday": false
+  },
+  {
+    "date": "2020-06-23",
+    "unit": "體",
+    "title": "教練會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2020-06-25",
+    "unit": "教",
+    "title": "端午節(放假1天)",
+    "isHoliday": true
+  },
+  {
+    "date": "2020-06-26",
+    "unit": "教",
+    "title": "調整放假",
+    "isHoliday": true
+  },
+  {
+    "date": "2020-06-26",
+    "unit": "教",
+    "title": "108學年度第2學期休退學申請截止日",
+    "isHoliday": false
+  },
+  {
+    "date": "2020-06-29",
+    "endDate": "2020-07-03",
+    "unit": "教",
+    "title": "108學年度第2學期期末考試",
+    "isHoliday": false
+  },
+  {
+    "date": "2020-07-06",
+    "unit": "體",
+    "title": "競技運動代表隊暑假集訓開始",
+    "isHoliday": false
+  },
+  {
+    "date": "2020-07-31",
+    "unit": "教",
+    "title": "108學年度第2學期結束",
+    "isHoliday": false
+  }
+]

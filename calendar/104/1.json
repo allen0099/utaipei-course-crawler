@@ -1,0 +1,272 @@
+[
+  {
+    "date": "2015-08-01",
+    "unit": "教",
+    "title": "104學年度第1學期開始",
+    "isHoliday": false
+  },
+  {
+    "date": "2015-08-01",
+    "unit": "體",
+    "title": "競技運動代表隊暑假集訓",
+    "isHoliday": false
+  },
+  {
+    "date": "2015-08-10",
+    "endDate": "2015-08-14",
+    "unit": "教",
+    "title": "大考中心分發之104學年度大學部新生上網報到、登錄基本資料",
+    "isHoliday": false
+  },
+  {
+    "date": "2015-09-07",
+    "endDate": "2015-09-11",
+    "unit": "教",
+    "title": "各系所新生、轉學生申請學分抵免",
+    "isHoliday": false
+  },
+  {
+    "date": "2015-09-08",
+    "unit": "秘",
+    "title": "行政會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2015-09-10",
+    "endDate": "2015-09-11",
+    "unit": "學",
+    "title": "104學年度新生始業輔導",
+    "isHoliday": false
+  },
+  {
+    "date": "2015-09-14",
+    "unit": "教",
+    "title": "104學年度第1學期開學日",
+    "isHoliday": false
+  },
+  {
+    "date": "2015-09-14",
+    "unit": "教",
+    "title": "註冊日",
+    "isHoliday": false
+  },
+  {
+    "date": "2015-09-14",
+    "endDate": "2015-10-13",
+    "unit": "教",
+    "title": "申請雙重學籍認可、申請轉在職身分",
+    "isHoliday": false
+  },
+  {
+    "date": "2015-09-19",
+    "unit": "學",
+    "title": "104學年度新生家長座談日，全校上班1日(補105年4月6日彈性放假)",
+    "isHoliday": false
+  },
+  {
+    "date": "2015-09-27",
+    "unit": "教",
+    "title": "中秋節(放假1天)",
+    "isHoliday": true
+  },
+  {
+    "date": "2015-09-28",
+    "unit": "教",
+    "title": "放假1天(中秋節適逢週休補假)",
+    "isHoliday": true
+  },
+  {
+    "date": "2015-10-06",
+    "unit": "秘",
+    "title": "行政會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2015-10-06",
+    "unit": "秘",
+    "title": "教育學院座談會",
+    "isHoliday": false
+  },
+  {
+    "date": "2015-10-09",
+    "unit": "教",
+    "title": "放假1天(國慶日適逢週休補假)",
+    "isHoliday": true
+  },
+  {
+    "date": "2015-10-10",
+    "unit": "教",
+    "title": "國慶日(放假1天)",
+    "isHoliday": true
+  },
+  {
+    "date": "2015-10-13",
+    "unit": "秘",
+    "title": "理學院座談會",
+    "isHoliday": false
+  },
+  {
+    "date": "2015-10-20",
+    "unit": "秘",
+    "title": "校務會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2015-10-20",
+    "unit": "秘",
+    "title": "市政管理學院座談會",
+    "isHoliday": false
+  },
+  {
+    "date": "2015-10-23",
+    "unit": "教",
+    "title": "學期1/3退費基準日",
+    "isHoliday": false
+  },
+  {
+    "date": "2015-10-27",
+    "unit": "秘",
+    "title": "體育學院座談會",
+    "isHoliday": false
+  },
+  {
+    "date": "2015-11-03",
+    "unit": "秘",
+    "title": "人文藝術學院座談會",
+    "isHoliday": false
+  },
+  {
+    "date": "2015-11-09",
+    "endDate": "2015-11-13",
+    "unit": "教",
+    "title": "104學年度第1學期期中考試",
+    "isHoliday": false
+  },
+  {
+    "date": "2015-11-10",
+    "unit": "秘",
+    "title": "行政會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2015-11-24",
+    "unit": "教育",
+    "title": "教育學院院集會",
+    "isHoliday": false
+  },
+  {
+    "date": "2015-11-28",
+    "unit": "學",
+    "title": "校慶典禮暨運動會、園遊會，全校上班1日(補105年4月7日彈性放假)",
+    "isHoliday": false
+  },
+  {
+    "date": "2015-11-30",
+    "unit": "教",
+    "title": "研究生申請學位考試截止",
+    "isHoliday": false
+  },
+  {
+    "date": "2015-11-30",
+    "unit": "教",
+    "title": "畢業生上網申請畢業截止",
+    "isHoliday": false
+  },
+  {
+    "date": "2015-12-04",
+    "unit": "教",
+    "title": "學期2/3退費基準日",
+    "isHoliday": false
+  },
+  {
+    "date": "2015-12-08",
+    "unit": "秘",
+    "title": "行政會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2015-12-08",
+    "unit": "人文",
+    "title": "人文藝術學院院集會",
+    "isHoliday": false
+  },
+  {
+    "date": "2015-12-22",
+    "unit": "秘",
+    "title": "校務會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2015-12-22",
+    "unit": "理",
+    "title": "理學院院集會",
+    "isHoliday": false
+  },
+  {
+    "date": "2016-01-01",
+    "unit": "教",
+    "title": "中華民國開國紀念日(放假1天)",
+    "isHoliday": true
+  },
+  {
+    "date": "2016-01-05",
+    "unit": "秘",
+    "title": "行政會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2016-01-07",
+    "unit": "體",
+    "title": "教練會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2016-01-08",
+    "unit": "教",
+    "title": "本學期休退學申請截止日",
+    "isHoliday": false
+  },
+  {
+    "date": "2016-01-11",
+    "endDate": "2016-01-15",
+    "unit": "教",
+    "title": "104 學年度第1學期期末考試",
+    "isHoliday": false
+  },
+  {
+    "date": "2016-01-18",
+    "unit": "體",
+    "title": "競技運動代表隊寒假集訓開始",
+    "isHoliday": false
+  },
+  {
+    "date": "2016-01-20",
+    "unit": "教",
+    "title": "104學年度第1學期畢業成績繳交截止日",
+    "isHoliday": false
+  },
+  {
+    "date": "2016-01-25",
+    "unit": "教",
+    "title": "104學年度第1學期大學部學期成績繳交截止日",
+    "isHoliday": false
+  },
+  {
+    "date": "2016-01-29",
+    "unit": "教",
+    "title": "研究所論文最後定稿繳交期限",
+    "isHoliday": false
+  },
+  {
+    "date": "2016-01-29",
+    "unit": "教",
+    "title": "104學年度第1學期結束",
+    "isHoliday": false
+  },
+  {
+    "date": "2016-01-30",
+    "unit": "教",
+    "title": "全校補行上班1日(2月12日調整放假)",
+    "isHoliday": true
+  }
+]

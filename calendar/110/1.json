@@ -1,0 +1,244 @@
+[
+  {
+    "date": "2021-08-01",
+    "unit": "教",
+    "title": "110學年度第1學期開始",
+    "isHoliday": false
+  },
+  {
+    "date": "2021-08-02",
+    "unit": "體",
+    "title": "競技運動代表隊暑假集訓",
+    "isHoliday": false
+  },
+  {
+    "date": "2021-09-11",
+    "unit": "教",
+    "title": "全校補行上班1日(9月20日調整放假)",
+    "isHoliday": true
+  },
+  {
+    "date": "2021-09-14",
+    "unit": "學",
+    "title": "新生始業輔導",
+    "isHoliday": false
+  },
+  {
+    "date": "2021-09-14",
+    "unit": "學",
+    "title": "博愛校區新生健檢",
+    "isHoliday": false
+  },
+  {
+    "date": "2021-09-14",
+    "unit": "秘",
+    "title": "行政會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2021-09-15",
+    "unit": "學",
+    "title": "天母校區新生健檢",
+    "isHoliday": false
+  },
+  {
+    "date": "2021-09-20",
+    "unit": "教",
+    "title": "調整放假",
+    "isHoliday": true
+  },
+  {
+    "date": "2021-09-21",
+    "unit": "教",
+    "title": "中秋節(放假一天)",
+    "isHoliday": true
+  },
+  {
+    "date": "2021-09-22",
+    "unit": "教",
+    "title": "110學年度第1學期開學日(開始上課)",
+    "isHoliday": false
+  },
+  {
+    "date": "2021-09-22",
+    "unit": "研發",
+    "title": "全校學生填寫證照、獲獎及論文發表等資料",
+    "isHoliday": false
+  },
+  {
+    "date": "2021-09-30",
+    "unit": "體",
+    "title": "教練會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2021-10-02",
+    "unit": "學",
+    "title": "新生家長日",
+    "isHoliday": false
+  },
+  {
+    "date": "2021-10-05",
+    "unit": "秘",
+    "title": "行政會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2021-10-08",
+    "unit": "教",
+    "title": "彈性放假(補10月2日新生家長日)",
+    "isHoliday": true
+  },
+  {
+    "date": "2021-10-10",
+    "unit": "教",
+    "title": "國慶日(放假一天)",
+    "isHoliday": true
+  },
+  {
+    "date": "2021-10-11",
+    "unit": "教",
+    "title": "國慶日適逢週休補假一天",
+    "isHoliday": true
+  },
+  {
+    "date": "2021-10-19",
+    "unit": "秘",
+    "title": "校務會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2021-10-19",
+    "unit": "教育",
+    "title": "教育學院院集會",
+    "isHoliday": false
+  },
+  {
+    "date": "2021-10-19",
+    "unit": "理",
+    "title": "理學院院集會",
+    "isHoliday": false
+  },
+  {
+    "date": "2021-11-02",
+    "unit": "教",
+    "title": "學期1/3退費基準日",
+    "isHoliday": false
+  },
+  {
+    "date": "2021-11-09",
+    "unit": "秘",
+    "title": "行政會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2021-11-17",
+    "endDate": "2021-11-23",
+    "unit": "教",
+    "title": "110學年度第1學期期中考試",
+    "isHoliday": false
+  },
+  {
+    "date": "2021-11-23",
+    "unit": "學",
+    "title": "校歌比賽",
+    "isHoliday": false
+  },
+  {
+    "date": "2021-11-30",
+    "unit": "學",
+    "title": "校慶典禮暨園遊會",
+    "isHoliday": false
+  },
+  {
+    "date": "2021-12-07",
+    "unit": "秘",
+    "title": "行政會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2021-12-14",
+    "unit": "教",
+    "title": "學期2/3退費基準日",
+    "isHoliday": false
+  },
+  {
+    "date": "2021-12-14",
+    "unit": "人文",
+    "title": "人文藝術學院院集會",
+    "isHoliday": false
+  },
+  {
+    "date": "2021-12-21",
+    "unit": "秘",
+    "title": "校務會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2021-12-28",
+    "unit": "市政",
+    "title": "市政管理學院院集會",
+    "isHoliday": false
+  },
+  {
+    "date": "2021-12-31",
+    "unit": "教",
+    "title": "中華民國開國紀念日逢週休補假一天",
+    "isHoliday": true
+  },
+  {
+    "date": "2022-01-01",
+    "unit": "教",
+    "title": "中華民國開國紀念日",
+    "isHoliday": false
+  },
+  {
+    "date": "2022-01-04",
+    "unit": "秘",
+    "title": "行政會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2022-01-13",
+    "unit": "體",
+    "title": "教練會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2022-01-18",
+    "unit": "教",
+    "title": "110學年度第1學期休退學申請截止日",
+    "isHoliday": false
+  },
+  {
+    "date": "2022-01-19",
+    "endDate": "2022-01-25",
+    "unit": "教",
+    "title": "110學年度第1學期期末考試",
+    "isHoliday": false
+  },
+  {
+    "date": "2022-01-22",
+    "unit": "教",
+    "title": "全校補行上班1日(2月4日調整放假)",
+    "isHoliday": true
+  },
+  {
+    "date": "2022-01-26",
+    "unit": "體",
+    "title": "競技運動代表隊寒假集訓開始",
+    "isHoliday": false
+  },
+  {
+    "date": "2022-01-31",
+    "unit": "教",
+    "title": "除夕(放假一天)",
+    "isHoliday": true
+  },
+  {
+    "date": "2022-01-31",
+    "unit": "教",
+    "title": "110學年度第1學期結束",
+    "isHoliday": false
+  }
+]

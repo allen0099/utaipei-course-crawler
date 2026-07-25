@@ -1,0 +1,221 @@
+[
+  {
+    "date": "2025-02-01",
+    "unit": "教",
+    "title": "113學年度第2學期開始",
+    "isHoliday": false
+  },
+  {
+    "date": "2025-02-01",
+    "unit": "體",
+    "title": "競技運動代表隊寒假集訓",
+    "isHoliday": false
+  },
+  {
+    "date": "2025-02-08",
+    "unit": "教",
+    "title": "2月8日補行上班一日(補1月27日調整放假)",
+    "isHoliday": false
+  },
+  {
+    "date": "2025-02-16",
+    "unit": "教",
+    "title": "寒假結束",
+    "isHoliday": false
+  },
+  {
+    "date": "2025-02-17",
+    "unit": "教",
+    "title": "113學年度第2學期開學日(開始上課)",
+    "isHoliday": false
+  },
+  {
+    "date": "2025-02-17",
+    "unit": "教",
+    "title": "註冊日",
+    "isHoliday": false
+  },
+  {
+    "date": "2025-02-18",
+    "unit": "秘",
+    "title": "行政會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2025-02-24",
+    "unit": "學",
+    "title": "學輔中心個別諮商開始",
+    "isHoliday": false
+  },
+  {
+    "date": "2025-02-27",
+    "unit": "體",
+    "title": "教練會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2025-02-28",
+    "unit": "教",
+    "title": "和平紀念日(放假一日)",
+    "isHoliday": true
+  },
+  {
+    "date": "2025-03-07",
+    "unit": "學",
+    "title": "蘋果節",
+    "isHoliday": false
+  },
+  {
+    "date": "2025-03-18",
+    "unit": "秘",
+    "title": "校務會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2025-03-28",
+    "unit": "教",
+    "title": "學期1/3退費基準日",
+    "isHoliday": false
+  },
+  {
+    "date": "2025-04-01",
+    "unit": "秘",
+    "title": "行政會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2025-04-03",
+    "unit": "教",
+    "title": "兒童節補假(放假一日)",
+    "isHoliday": true
+  },
+  {
+    "date": "2025-04-04",
+    "unit": "教",
+    "title": "兒童節及民俗掃墓節(放假一日)",
+    "isHoliday": true
+  },
+  {
+    "date": "2025-04-07",
+    "endDate": "2025-04-11",
+    "unit": "教",
+    "title": "113學年度第2學期期中考試",
+    "isHoliday": false
+  },
+  {
+    "date": "2025-04-29",
+    "unit": "教育",
+    "title": "教育學院院集會",
+    "isHoliday": false
+  },
+  {
+    "date": "2025-05-06",
+    "unit": "人文",
+    "title": "人文藝術學院院集會",
+    "isHoliday": false
+  },
+  {
+    "date": "2025-05-06",
+    "unit": "市政",
+    "title": "市政管理學院院集會",
+    "isHoliday": false
+  },
+  {
+    "date": "2025-05-09",
+    "unit": "教",
+    "title": "學期2/3退費基準日",
+    "isHoliday": false
+  },
+  {
+    "date": "2025-05-13",
+    "unit": "秘",
+    "title": "行政會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2025-05-24",
+    "unit": "學",
+    "title": "畢業典禮(於5月26日彈性放假)",
+    "isHoliday": false
+  },
+  {
+    "date": "2025-05-26",
+    "unit": "教",
+    "title": "彈性放假(補5月24日畢業典禮)",
+    "isHoliday": true
+  },
+  {
+    "date": "2025-05-29",
+    "unit": "教",
+    "title": "113學年度第2學期休退學申請截止日",
+    "isHoliday": false
+  },
+  {
+    "date": "2025-05-29",
+    "unit": "學",
+    "title": "學輔中心個別諮商結束",
+    "isHoliday": false
+  },
+  {
+    "date": "2025-05-30",
+    "unit": "教",
+    "title": "端午節遇例假日補假",
+    "isHoliday": true
+  },
+  {
+    "date": "2025-05-31",
+    "unit": "教",
+    "title": "端午節(放假一日)",
+    "isHoliday": true
+  },
+  {
+    "date": "2025-06-02",
+    "endDate": "2025-06-06",
+    "unit": "教",
+    "title": "113學年度第2學期期末考試",
+    "isHoliday": false
+  },
+  {
+    "date": "2025-06-03",
+    "unit": "秘",
+    "title": "行政會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2025-06-09",
+    "endDate": "2025-06-20",
+    "unit": "教",
+    "title": "教師彈性補充教學",
+    "isHoliday": false
+  },
+  {
+    "date": "2025-06-12",
+    "unit": "體",
+    "title": "教練會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2025-06-17",
+    "unit": "秘",
+    "title": "校務會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2025-06-23",
+    "unit": "教",
+    "title": "暑假開始",
+    "isHoliday": false
+  },
+  {
+    "date": "2025-06-23",
+    "unit": "體",
+    "title": "競技運動代表隊暑假集訓開始",
+    "isHoliday": false
+  },
+  {
+    "date": "2025-07-31",
+    "unit": "教",
+    "title": "113學年度第2學期結束",
+    "isHoliday": false
+  }
+]

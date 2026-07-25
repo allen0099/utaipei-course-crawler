@@ -1,0 +1,215 @@
+[
+  {
+    "date": "2025-08-01",
+    "unit": "教",
+    "title": "114學年度第1學期開始",
+    "isHoliday": false
+  },
+  {
+    "date": "2025-08-01",
+    "unit": "體",
+    "title": "競技運動代表隊暑假集訓",
+    "isHoliday": false
+  },
+  {
+    "date": "2025-09-02",
+    "unit": "學",
+    "title": "新生始業輔導",
+    "isHoliday": false
+  },
+  {
+    "date": "2025-09-02",
+    "unit": "秘",
+    "title": "行政會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2025-09-03",
+    "unit": "學",
+    "title": "新生始業輔導.天母校區學生健檢",
+    "isHoliday": false
+  },
+  {
+    "date": "2025-09-07",
+    "unit": "教",
+    "title": "暑假結束",
+    "isHoliday": false
+  },
+  {
+    "date": "2025-09-08",
+    "unit": "教",
+    "title": "114學年度第1學期開學日(開始上課)",
+    "isHoliday": false
+  },
+  {
+    "date": "2025-09-08",
+    "unit": "教",
+    "title": "註冊日",
+    "isHoliday": false
+  },
+  {
+    "date": "2025-09-15",
+    "unit": "學",
+    "title": "學輔中心個別諮商開始",
+    "isHoliday": false
+  },
+  {
+    "date": "2025-09-18",
+    "unit": "體",
+    "title": "教練會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2025-10-06",
+    "unit": "教",
+    "title": "中秋節(放假一日)",
+    "isHoliday": true
+  },
+  {
+    "date": "2025-10-07",
+    "unit": "秘",
+    "title": "行政會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2025-10-10",
+    "unit": "教",
+    "title": "國慶日(放假一日)",
+    "isHoliday": true
+  },
+  {
+    "date": "2025-10-17",
+    "unit": "教",
+    "title": "學期1/3退費基準日",
+    "isHoliday": false
+  },
+  {
+    "date": "2025-10-21",
+    "unit": "秘",
+    "title": "校務會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2025-10-27",
+    "endDate": "2025-10-31",
+    "unit": "教",
+    "title": "114學年度第1學期期中考試",
+    "isHoliday": false
+  },
+  {
+    "date": "2025-11-04",
+    "unit": "秘",
+    "title": "行政會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2025-11-04",
+    "unit": "人文",
+    "title": "人文藝術學院院集會",
+    "isHoliday": false
+  },
+  {
+    "date": "2025-11-24",
+    "unit": "教",
+    "title": "彈性放假(補11月29日校慶典禮暨園遊會)",
+    "isHoliday": true
+  },
+  {
+    "date": "2025-11-25",
+    "unit": "理",
+    "title": "理學院院集會",
+    "isHoliday": false
+  },
+  {
+    "date": "2025-11-28",
+    "unit": "教",
+    "title": "學期2/3退費基準日",
+    "isHoliday": false
+  },
+  {
+    "date": "2025-11-29",
+    "unit": "學",
+    "title": "校慶典禮暨園遊會(於11月24日彈性放假)",
+    "isHoliday": false
+  },
+  {
+    "date": "2025-12-02",
+    "unit": "秘",
+    "title": "行政會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2025-12-12",
+    "unit": "體",
+    "title": "體育表演會",
+    "isHoliday": false
+  },
+  {
+    "date": "2025-12-16",
+    "unit": "市政",
+    "title": "市政管理學院院集會",
+    "isHoliday": false
+  },
+  {
+    "date": "2025-12-19",
+    "unit": "教",
+    "title": "114學年度第1學期休退學申請截止日",
+    "isHoliday": false
+  },
+  {
+    "date": "2025-12-19",
+    "unit": "學",
+    "title": "學輔中心個別諮商結束",
+    "isHoliday": false
+  },
+  {
+    "date": "2025-12-22",
+    "endDate": "2025-12-26",
+    "unit": "教",
+    "title": "114學年度第1學期期末考試",
+    "isHoliday": false
+  },
+  {
+    "date": "2025-12-29",
+    "endDate": "2026-01-09",
+    "unit": "教",
+    "title": "教師彈性補充教學",
+    "isHoliday": false
+  },
+  {
+    "date": "2025-12-30",
+    "unit": "體",
+    "title": "教練會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2025-12-30",
+    "unit": "秘",
+    "title": "校務會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2026-01-01",
+    "unit": "教",
+    "title": "中華民國開國紀念日(放假一日)",
+    "isHoliday": true
+  },
+  {
+    "date": "2026-01-12",
+    "unit": "教",
+    "title": "寒假開始",
+    "isHoliday": false
+  },
+  {
+    "date": "2026-01-12",
+    "unit": "體",
+    "title": "競技運動代表隊寒假集訓開始",
+    "isHoliday": false
+  },
+  {
+    "date": "2026-01-31",
+    "unit": "教",
+    "title": "114學年度第1學期結束",
+    "isHoliday": false
+  }
+]

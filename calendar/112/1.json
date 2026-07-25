@@ -1,0 +1,234 @@
+[
+  {
+    "date": "2023-08-01",
+    "unit": "教",
+    "title": "112學年度第1學期開始",
+    "isHoliday": false
+  },
+  {
+    "date": "2023-08-01",
+    "unit": "體",
+    "title": "競技運動代表隊暑假集訓",
+    "isHoliday": false
+  },
+  {
+    "date": "2023-09-05",
+    "endDate": "2023-09-06",
+    "unit": "學",
+    "title": "新生始業輔導",
+    "isHoliday": false
+  },
+  {
+    "date": "2023-09-05",
+    "unit": "秘",
+    "title": "行政會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2023-09-07",
+    "unit": "學",
+    "title": "天母校區學生健檢",
+    "isHoliday": false
+  },
+  {
+    "date": "2023-09-10",
+    "unit": "教",
+    "title": "暑假結束",
+    "isHoliday": false
+  },
+  {
+    "date": "2023-09-11",
+    "unit": "教",
+    "title": "112學年度第1學期開學日(開始上課)",
+    "isHoliday": false
+  },
+  {
+    "date": "2023-09-11",
+    "unit": "教",
+    "title": "註冊日 【研發】全校學生填寫證照、獲獎及論文發表等資料",
+    "isHoliday": false
+  },
+  {
+    "date": "2023-09-16",
+    "unit": "學",
+    "title": "新生家長日",
+    "isHoliday": false
+  },
+  {
+    "date": "2023-09-18",
+    "unit": "學",
+    "title": "學輔中心個別諮商開始",
+    "isHoliday": false
+  },
+  {
+    "date": "2023-09-21",
+    "unit": "體",
+    "title": "教練會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2023-09-29",
+    "unit": "教",
+    "title": "中秋節(放假一天)",
+    "isHoliday": true
+  },
+  {
+    "date": "2023-10-03",
+    "unit": "秘",
+    "title": "行政會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2023-10-09",
+    "unit": "教",
+    "title": "彈性放假(補9月16日新生家長日)",
+    "isHoliday": true
+  },
+  {
+    "date": "2023-10-10",
+    "unit": "教",
+    "title": "國慶日(放假一天)",
+    "isHoliday": true
+  },
+  {
+    "date": "2023-10-20",
+    "unit": "教",
+    "title": "學期1/3退費基準日",
+    "isHoliday": false
+  },
+  {
+    "date": "2023-10-24",
+    "unit": "秘",
+    "title": "校務會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2023-10-30",
+    "endDate": "2023-11-03",
+    "unit": "教",
+    "title": "112學年度第1學期期中考試",
+    "isHoliday": false
+  },
+  {
+    "date": "2023-11-07",
+    "unit": "秘",
+    "title": "行政會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2023-11-07",
+    "unit": "教育",
+    "title": "教育學院院集會",
+    "isHoliday": false
+  },
+  {
+    "date": "2023-11-14",
+    "unit": "人文",
+    "title": "人文藝術學院院集會",
+    "isHoliday": false
+  },
+  {
+    "date": "2023-11-14",
+    "unit": "理",
+    "title": "理學院院集會",
+    "isHoliday": false
+  },
+  {
+    "date": "2023-11-21",
+    "unit": "學",
+    "title": "校歌比賽",
+    "isHoliday": false
+  },
+  {
+    "date": "2023-11-30",
+    "unit": "學",
+    "title": "校慶典禮暨園遊會",
+    "isHoliday": false
+  },
+  {
+    "date": "2023-12-01",
+    "unit": "教",
+    "title": "學期2/3退費基準日",
+    "isHoliday": false
+  },
+  {
+    "date": "2023-12-05",
+    "unit": "秘",
+    "title": "行政會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2023-12-12",
+    "unit": "市政",
+    "title": "市政管理學院院集會",
+    "isHoliday": false
+  },
+  {
+    "date": "2023-12-19",
+    "unit": "秘",
+    "title": "校務會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2023-12-22",
+    "unit": "教",
+    "title": "112學年度第1學期休退學申請截止日",
+    "isHoliday": false
+  },
+  {
+    "date": "2023-12-22",
+    "unit": "學",
+    "title": "學輔中心個別諮商結束",
+    "isHoliday": false
+  },
+  {
+    "date": "2023-12-22",
+    "unit": "體",
+    "title": "體育表演會",
+    "isHoliday": false
+  },
+  {
+    "date": "2023-12-25",
+    "endDate": "2023-12-29",
+    "unit": "教",
+    "title": "112學年度第1學期期末考試",
+    "isHoliday": false
+  },
+  {
+    "date": "2024-01-01",
+    "unit": "教",
+    "title": "中華民國開國紀念日",
+    "isHoliday": false
+  },
+  {
+    "date": "2024-01-02",
+    "endDate": "2024-01-12",
+    "unit": "教",
+    "title": "教師彈性補充教學",
+    "isHoliday": false
+  },
+  {
+    "date": "2024-01-04",
+    "unit": "體",
+    "title": "教練會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2024-01-15",
+    "unit": "教",
+    "title": "寒假開始",
+    "isHoliday": false
+  },
+  {
+    "date": "2024-01-15",
+    "unit": "體",
+    "title": "競技運動代表隊寒假集訓開始",
+    "isHoliday": false
+  },
+  {
+    "date": "2024-01-31",
+    "unit": "教",
+    "title": "112學年度第1學期結束",
+    "isHoliday": false
+  }
+]

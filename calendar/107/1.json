@@ -1,0 +1,227 @@
+[
+  {
+    "date": "2018-08-01",
+    "unit": "教",
+    "title": "107學年度第1學期開始",
+    "isHoliday": false
+  },
+  {
+    "date": "2018-08-01",
+    "unit": "體",
+    "title": "競技運動代表隊暑假集訓",
+    "isHoliday": false
+  },
+  {
+    "date": "2018-09-04",
+    "unit": "秘",
+    "title": "行政會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2018-09-05",
+    "endDate": "2018-09-06",
+    "unit": "學",
+    "title": "107學年度新生始業輔導",
+    "isHoliday": false
+  },
+  {
+    "date": "2018-09-10",
+    "unit": "教",
+    "title": "107學年度第1學期開學日(開始上課)",
+    "isHoliday": false
+  },
+  {
+    "date": "2018-09-10",
+    "unit": "教",
+    "title": "註冊日",
+    "isHoliday": false
+  },
+  {
+    "date": "2018-09-11",
+    "unit": "研",
+    "title": "全校學生填寫證照、獲獎及論文發表等資料",
+    "isHoliday": false
+  },
+  {
+    "date": "2018-09-15",
+    "unit": "學",
+    "title": "107學年度新生家長日",
+    "isHoliday": false
+  },
+  {
+    "date": "2018-09-17",
+    "unit": "學",
+    "title": "個別諮商開始",
+    "isHoliday": false
+  },
+  {
+    "date": "2018-09-18",
+    "unit": "體",
+    "title": "教練會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2018-09-24",
+    "unit": "教",
+    "title": "中秋節(放假一天)",
+    "isHoliday": true
+  },
+  {
+    "date": "2018-09-28",
+    "unit": "教",
+    "title": "彈性放假(補9月15日新生家長日)",
+    "isHoliday": true
+  },
+  {
+    "date": "2018-10-02",
+    "unit": "秘",
+    "title": "行政會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2018-10-10",
+    "unit": "教",
+    "title": "國慶日(放假一天)",
+    "isHoliday": true
+  },
+  {
+    "date": "2018-10-16",
+    "unit": "秘",
+    "title": "校務會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2018-10-19",
+    "unit": "教",
+    "title": "學期1/3退費基準日",
+    "isHoliday": false
+  },
+  {
+    "date": "2018-10-30",
+    "unit": "理",
+    "title": "理學院院集會",
+    "isHoliday": false
+  },
+  {
+    "date": "2018-11-05",
+    "endDate": "2018-11-09",
+    "unit": "教",
+    "title": "107學年度第1學期期中考試",
+    "isHoliday": false
+  },
+  {
+    "date": "2018-11-06",
+    "unit": "秘",
+    "title": "行政會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2018-11-20",
+    "unit": "教育",
+    "title": "教育學院院集會",
+    "isHoliday": false
+  },
+  {
+    "date": "2018-11-27",
+    "unit": "學",
+    "title": "第三屆校歌比賽(全校一年級)",
+    "isHoliday": false
+  },
+  {
+    "date": "2018-11-30",
+    "unit": "教",
+    "title": "學期2/3退費基準日",
+    "isHoliday": false
+  },
+  {
+    "date": "2018-11-30",
+    "unit": "學",
+    "title": "校慶典禮暨運動會、園遊會",
+    "isHoliday": false
+  },
+  {
+    "date": "2018-12-04",
+    "unit": "秘",
+    "title": "行政會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2018-12-04",
+    "unit": "人文",
+    "title": "人文藝術學院院集會",
+    "isHoliday": false
+  },
+  {
+    "date": "2018-12-18",
+    "unit": "秘",
+    "title": "校務會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2018-12-22",
+    "unit": "教",
+    "title": "全校補行上班上課1日(12月31日調整放假)",
+    "isHoliday": true
+  },
+  {
+    "date": "2018-12-31",
+    "unit": "教",
+    "title": "彈性放假(12月22日補行上班上課)",
+    "isHoliday": true
+  },
+  {
+    "date": "2019-01-01",
+    "unit": "教",
+    "title": "中華民國開國紀念日(放假1天)",
+    "isHoliday": true
+  },
+  {
+    "date": "2019-01-02",
+    "unit": "學",
+    "title": "個別諮商結束",
+    "isHoliday": false
+  },
+  {
+    "date": "2019-01-03",
+    "unit": "體",
+    "title": "教練會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2019-01-04",
+    "unit": "教",
+    "title": "107學年度第1學期休退學申請截止日",
+    "isHoliday": false
+  },
+  {
+    "date": "2019-01-07",
+    "endDate": "2019-01-11",
+    "unit": "教",
+    "title": "107學年度第1學期期末考試",
+    "isHoliday": false
+  },
+  {
+    "date": "2019-01-08",
+    "unit": "秘",
+    "title": "行政會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2019-01-14",
+    "unit": "體",
+    "title": "競技運動代表隊寒假集訓開始",
+    "isHoliday": false
+  },
+  {
+    "date": "2019-01-19",
+    "unit": "教",
+    "title": "全校補行上班1日(2月8日調整放假)",
+    "isHoliday": true
+  },
+  {
+    "date": "2019-01-31",
+    "unit": "教",
+    "title": "107學年度第1學期結束",
+    "isHoliday": false
+  }
+]

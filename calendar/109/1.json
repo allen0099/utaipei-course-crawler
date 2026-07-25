@@ -1,0 +1,197 @@
+[
+  {
+    "date": "2020-08-01",
+    "unit": "教",
+    "title": "109學年度第1學期開始",
+    "isHoliday": false
+  },
+  {
+    "date": "2020-08-01",
+    "unit": "體",
+    "title": "競技運動代表隊暑假集訓",
+    "isHoliday": false
+  },
+  {
+    "date": "2020-09-08",
+    "unit": "秘",
+    "title": "行政會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2020-09-08",
+    "endDate": "2020-09-09",
+    "unit": "學",
+    "title": "109學年度新生始業輔導",
+    "isHoliday": false
+  },
+  {
+    "date": "2020-09-14",
+    "unit": "教",
+    "title": "109學年度第1學期開學日(開始上課)",
+    "isHoliday": false
+  },
+  {
+    "date": "2020-09-14",
+    "unit": "教",
+    "title": "註冊日【研】全校學生填寫證照、獲獎及論文發表等資料",
+    "isHoliday": false
+  },
+  {
+    "date": "2020-09-15",
+    "unit": "秘",
+    "title": "校務會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2020-09-19",
+    "unit": "學",
+    "title": "109學年度新生家長日",
+    "isHoliday": false
+  },
+  {
+    "date": "2020-09-22",
+    "unit": "體",
+    "title": "教練會議【學】博愛校區班代會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2020-09-23",
+    "unit": "學",
+    "title": "天母校區班代會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2020-09-26",
+    "unit": "教",
+    "title": "彈性放假(原9月26日調整上班上課，本校補9月19日新生家長日)",
+    "isHoliday": true
+  },
+  {
+    "date": "2020-10-01",
+    "unit": "教",
+    "title": "中秋節(放假一天)",
+    "isHoliday": true
+  },
+  {
+    "date": "2020-10-02",
+    "unit": "教",
+    "title": "調整放假",
+    "isHoliday": true
+  },
+  {
+    "date": "2020-10-09",
+    "unit": "教",
+    "title": "國慶日適逢週休補假一天",
+    "isHoliday": true
+  },
+  {
+    "date": "2020-10-10",
+    "unit": "教",
+    "title": "國慶日(放假一天)",
+    "isHoliday": true
+  },
+  {
+    "date": "2020-10-13",
+    "unit": "秘",
+    "title": "行政會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2020-10-23",
+    "unit": "教",
+    "title": "學期1/3退費基準日",
+    "isHoliday": false
+  },
+  {
+    "date": "2020-11-09",
+    "endDate": "2020-11-13",
+    "unit": "教",
+    "title": "109學年度第1學期期中考試",
+    "isHoliday": false
+  },
+  {
+    "date": "2020-11-10",
+    "unit": "秘",
+    "title": "行政會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2020-11-24",
+    "unit": "教育",
+    "title": "教育學院院集會",
+    "isHoliday": false
+  },
+  {
+    "date": "2020-11-30",
+    "unit": "學",
+    "title": "校慶典禮暨園遊會",
+    "isHoliday": false
+  },
+  {
+    "date": "2020-12-01",
+    "unit": "理",
+    "title": "理學院院集會",
+    "isHoliday": false
+  },
+  {
+    "date": "2020-12-04",
+    "unit": "教",
+    "title": "學期2/3退費基準日",
+    "isHoliday": false
+  },
+  {
+    "date": "2020-12-08",
+    "unit": "秘",
+    "title": "行政會議【人文】人文藝術學院院集會",
+    "isHoliday": false
+  },
+  {
+    "date": "2020-12-22",
+    "unit": "秘",
+    "title": "校務會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2021-01-01",
+    "unit": "教",
+    "title": "中華民國開國紀念日(放假一天)",
+    "isHoliday": true
+  },
+  {
+    "date": "2021-01-07",
+    "unit": "體",
+    "title": "教練會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2021-01-08",
+    "unit": "教",
+    "title": "109學年度第1學期休退學申請截止日",
+    "isHoliday": false
+  },
+  {
+    "date": "2021-01-11",
+    "endDate": "2021-01-15",
+    "unit": "教",
+    "title": "109學年度第1學期期末考試",
+    "isHoliday": false
+  },
+  {
+    "date": "2021-01-12",
+    "unit": "秘",
+    "title": "行政會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2021-01-18",
+    "unit": "體",
+    "title": "競技運動代表隊寒假集訓開始",
+    "isHoliday": false
+  },
+  {
+    "date": "2021-01-31",
+    "unit": "教",
+    "title": "109學年度第1學期結束",
+    "isHoliday": false
+  }
+]

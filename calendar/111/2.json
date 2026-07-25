@@ -1,0 +1,238 @@
+[
+  {
+    "date": "2023-02-01",
+    "unit": "教",
+    "title": "111學年度第2學期開始",
+    "isHoliday": false
+  },
+  {
+    "date": "2023-02-01",
+    "unit": "體",
+    "title": "競技運動代表隊寒假集訓",
+    "isHoliday": false
+  },
+  {
+    "date": "2023-02-04",
+    "unit": "教",
+    "title": "全校補行上班1日(1月27日調整放假)",
+    "isHoliday": true
+  },
+  {
+    "date": "2023-02-13",
+    "unit": "教",
+    "title": "111學年度第2學期開學日(開始上課)",
+    "isHoliday": false
+  },
+  {
+    "date": "2023-02-13",
+    "unit": "教",
+    "title": "註冊日",
+    "isHoliday": false
+  },
+  {
+    "date": "2023-02-13",
+    "unit": "研發",
+    "title": "全校學生填寫證照、獲獎及論文發表等資料",
+    "isHoliday": false
+  },
+  {
+    "date": "2023-02-14",
+    "unit": "秘",
+    "title": "行政會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2023-02-18",
+    "unit": "教",
+    "title": "全校補行上班上課1日(2月27日調整放假)",
+    "isHoliday": true
+  },
+  {
+    "date": "2023-02-23",
+    "unit": "體",
+    "title": "教練會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2023-02-27",
+    "unit": "教",
+    "title": "彈性放假(2月18日補行上班上課)",
+    "isHoliday": true
+  },
+  {
+    "date": "2023-02-28",
+    "unit": "教",
+    "title": "和平紀念日(放假一天)",
+    "isHoliday": true
+  },
+  {
+    "date": "2023-03-08",
+    "unit": "學",
+    "title": "蘋果節",
+    "isHoliday": false
+  },
+  {
+    "date": "2023-03-14",
+    "unit": "秘",
+    "title": "行政會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2023-03-21",
+    "unit": "秘",
+    "title": "校務會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2023-03-25",
+    "unit": "教",
+    "title": "學期1/3退費基準日",
+    "isHoliday": false
+  },
+  {
+    "date": "2023-03-25",
+    "unit": "教",
+    "title": "全校補行上班上課1日(4月3日調整放假)",
+    "isHoliday": true
+  },
+  {
+    "date": "2023-04-03",
+    "unit": "教",
+    "title": "彈性放假(3月25日補行上班上課)",
+    "isHoliday": true
+  },
+  {
+    "date": "2023-04-04",
+    "unit": "教",
+    "title": "兒童節(放假一天)",
+    "isHoliday": true
+  },
+  {
+    "date": "2023-04-05",
+    "unit": "教",
+    "title": "民族掃墓節(放假一天)",
+    "isHoliday": true
+  },
+  {
+    "date": "2023-04-10",
+    "endDate": "2023-04-14",
+    "unit": "教",
+    "title": "111學年第2學期期中考試",
+    "isHoliday": false
+  },
+  {
+    "date": "2023-04-11",
+    "unit": "秘",
+    "title": "行政會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2023-04-25",
+    "unit": "理",
+    "title": "理學院院集會",
+    "isHoliday": false
+  },
+  {
+    "date": "2023-04-25",
+    "unit": "教育",
+    "title": "教育學院院集會",
+    "isHoliday": false
+  },
+  {
+    "date": "2023-05-05",
+    "unit": "教",
+    "title": "學期2/3退費基準日",
+    "isHoliday": false
+  },
+  {
+    "date": "2023-05-09",
+    "unit": "秘",
+    "title": "行政會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2023-05-09",
+    "unit": "人文",
+    "title": "人文藝術學院院集會",
+    "isHoliday": false
+  },
+  {
+    "date": "2023-05-16",
+    "unit": "市政",
+    "title": "市政管理學院院集會",
+    "isHoliday": false
+  },
+  {
+    "date": "2023-06-05",
+    "unit": "教",
+    "title": "彈性放假(補6月10日畢業典禮)",
+    "isHoliday": true
+  },
+  {
+    "date": "2023-06-06",
+    "unit": "秘",
+    "title": "行政會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2023-06-08",
+    "unit": "體",
+    "title": "教練會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2023-06-09",
+    "unit": "教",
+    "title": "111學年度第2學期休退學申請截止日",
+    "isHoliday": false
+  },
+  {
+    "date": "2023-06-10",
+    "unit": "學",
+    "title": "畢業典禮",
+    "isHoliday": false
+  },
+  {
+    "date": "2023-06-12",
+    "endDate": "2023-06-16",
+    "unit": "教",
+    "title": "111學年度第2學期期末考試",
+    "isHoliday": false
+  },
+  {
+    "date": "2023-06-13",
+    "unit": "秘",
+    "title": "校務會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2023-06-17",
+    "unit": "教",
+    "title": "全校補行上班1日(6月23日調整放假)",
+    "isHoliday": true
+  },
+  {
+    "date": "2023-06-19",
+    "unit": "體",
+    "title": "競技運動代表隊暑假集訓開始",
+    "isHoliday": false
+  },
+  {
+    "date": "2023-06-22",
+    "unit": "教",
+    "title": "端午節",
+    "isHoliday": false
+  },
+  {
+    "date": "2023-06-23",
+    "unit": "教",
+    "title": "彈性放假(6月17日補行上班)",
+    "isHoliday": true
+  },
+  {
+    "date": "2023-07-31",
+    "unit": "教",
+    "title": "111學年度第2學期結束",
+    "isHoliday": false
+  }
+]
