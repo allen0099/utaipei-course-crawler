@@ -176,6 +176,9 @@ const fetchDepartmentCourses = async (
       const note = spacing(row.eq(14).text());
       const mixedClass = spacing(row.eq(12).text());
       const nameEn = spacing(row.eq(4).text());
+      // 備註欄除了文字，還可能有一顆「相關限修資料」按鈕（擋修條件）。它是
+      // <input value="...">，.text() 讀不到，得看 value。
+      const hasRestriction = row.eq(14).find('input[value="相關限修資料"]').length > 0;
 
       courses.push({
         code: unifyString(row.eq(1).text()),
@@ -201,6 +204,7 @@ const fetchDepartmentCourses = async (
         ...(nameEn ? { nameEn } : {}),
         ...(mixedClass ? { mixedClass } : {}),
         ...(note ? { note } : {}),
+        ...(hasRestriction ? { hasRestriction } : {}),
         capacity: parseCapacity(row.eq(9).text()),
       });
     });
@@ -378,6 +382,7 @@ const fetchCoursesForYms = async (yms: string): Promise<void> => {
           if (row.capacity) existing.capacity = row.capacity;
           if (row.mixedClass) existing.mixedClass = row.mixedClass;
           if (row.note) existing.note = row.note;
+          if (row.hasRestriction) existing.hasRestriction = true;
           if (!existing.class && row.class) existing.class = row.class;
           addDepartment(existing, department.code, department.name);
           enriched += 1;
@@ -397,6 +402,7 @@ const fetchCoursesForYms = async (yms: string): Promise<void> => {
 
   const withCapacity = all.filter((course) => course.capacity).length;
   const withNote = all.filter((course) => course.note).length;
+  const withRestriction = all.filter((course) => course.hasRestriction).length;
   const withoutClass = all.filter((course) => !course.class).length;
 
   console.log(
@@ -404,7 +410,7 @@ const fetchCoursesForYms = async (yms: string): Promise<void> => {
       `${tag} courses.json: ${all.length} courses`,
       `  ag304 base ${ag304Count}, ag203 enriched ${enriched}, ag203-only added ${added}`,
       `  with capacity ${withCapacity} (${Math.round((withCapacity / all.length) * 100)}%)`,
-      `  with note ${withNote}`,
+      `  with note ${withNote}, with restriction ${withRestriction}`,
       `  offering class unresolved ${withoutClass}`,
     ].join("\n"),
   );

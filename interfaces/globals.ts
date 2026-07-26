@@ -82,6 +82,17 @@ export interface Course extends CourseItem {
   mixedClass?: string;
   /** 備註（ag203_1），如「此課程為學分學程課程，非系專業選修」 */
   note?: string;
+  /**
+   * 這門課有沒有擋修條件（ag203_1 備註欄的「相關限修資料」按鈕）。
+   *
+   * 只存有沒有、不存內容：限修資料是四個初選階段 × 五類條件的一整頁，塞進課程
+   * 列表會把表格撐爆，而學校自己也是用一顆按鈕連出去。web 端據此顯示連往
+   * ag203_limit.jsp 的連結。
+   *
+   * 只有 ag203_1 涵蓋的課（約 63%）判斷得出來；ag304_03 沒有這個欄位，所以
+   * 未定義不代表「沒有限修」，只代表「這個來源看不到」。
+   */
+  hasRestriction?: boolean;
   /** 場地代碼（ag302_02） */
   locationCode?: string;
   /** 授課教師代碼（ag300_02） */

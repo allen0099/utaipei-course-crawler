@@ -31,9 +31,9 @@ describe("unifyString", () => {
 
   it("handles combined: newline + indentation + full-width parentheses", () => {
     // Simulates a real HTML text node: 三、\n              繳費期間如有金額異動（增加或減少）
-    expect(
-      unifyString("三、\n              繳費期間如有金額異動（增加或減少）"),
-    ).toBe("三、 繳費期間如有金額異動(增加或減少)");
+    expect(unifyString("三、\n              繳費期間如有金額異動（增加或減少）")).toBe(
+      "三、 繳費期間如有金額異動(增加或減少)",
+    );
   });
 
   it("returns empty string unchanged", () => {
@@ -50,6 +50,7 @@ describe("spacing", () => {
     const result = spacing(
       "三、\n              繳費期間如有金額異動 (增加或減少) 者，不適用信用卡及智慧支付繳費",
     );
+
     expect(result).not.toContain("\n");
     expect(result).not.toMatch(/\s{2,}/); // no consecutive whitespace
     expect(result).toContain("三、");
