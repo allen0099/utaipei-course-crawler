@@ -44,7 +44,10 @@ const formBody = (yms: string, extra: Record<string, string> = {}) => {
   });
 };
 
-const stripMarkers = (input: string): string => unifyString(input).replace(/[【】]/g, "");
+const stripMarkers = (input: string): string =>
+  unifyString(input)
+    .replace(/[【】]/g, "")
+    .trim();
 
 /** Locate a result table by a word in its header row rather than by position. */
 const tableWithHeader = ($: CheerioAPI, header: string) =>
