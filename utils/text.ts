@@ -68,6 +68,136 @@ export const splitTeacherAndTime = (input: string): [string, string] => {
   return [uniqueTeachers.join(","), uniqueTimes.join(" ")];
 };
 
+export interface CourseSchedule {
+  /** Comma-separated teacher names, e.g. "王小明, 李小華" */
+  teachers: string;
+  /** Space-separated time slots, e.g. "(一) 6-8 (三) 3-4" */
+  times: string;
+  /** Comma-separated classrooms, e.g. "博愛 G313" */
+  classrooms: string;
+}
+
+/** Index of the ")" matching the "(" at `open`, or -1 when unbalanced. */
+const matchingParen = (text: string, open: number): number => {
+  let depth = 0;
+
+  for (let i = open; i < text.length; i++) {
+    if (text[i] === "(") depth += 1;
+    else if (text[i] === ")") {
+      depth -= 1;
+      if (depth === 0) return i;
+    }
+  }
+
+  return -1;
+};
+
+/** Drop the "時間未定" marker and anything that isn't a plausible name. */
+const cleanTeacherName = (input: string): string => {
+  const name = unifyString(input)
+    .replace(/時間未定$/, "")
+    .trim();
+
+  // A bare time slot ("3-4") or leftover punctuation is not a teacher.
+  if (!name || /^[\d\s\-,、/]+$/.test(name)) return "";
+
+  return name;
+};
+
+/**
+ * Split the combined 「上課教師/時間/教室」 cell of 【班級排課清單】
+ * (ag304_03.jsp) into its three parts.
+ *
+ * Unlike {@link splitTeacherAndTime} — which the teacher and location crawlers
+ * use and which throws the classroom away — this keeps the classroom, the one
+ * field a class timetable most needs.
+ *
+ * The cell repeats 「教師 (日)起-迄(校區教室)」 once per time slot. It is scanned
+ * left to right rather than matched with a single regex, because the classroom
+ * may itself contain parentheses ("博愛B101舞蹈教室(一)"): consuming the balanced
+ * classroom group right after each time slot is also what stops that nested
+ * "(一)" being mistaken for a weekday.
+ *
+ * @example
+ * "盧東華 (一)6-8(博愛G313)"
+ *   => { teachers: "盧東華", times: "(一) 6-8", classrooms: "博愛 G313" }
+ * "蔡妙梧 (三)3-4(博愛B101舞蹈教室(一))"
+ *   => { teachers: "蔡妙梧", times: "(三) 3-4", classrooms: "博愛 B101 舞蹈教室 (一)" }
+ */
+export const splitCourseSchedule = (input: string): CourseSchedule => {
+  const text = spacing(input)
+    .replaceAll("(單週)", "")
+    .replaceAll("(雙週)", "")
+    .replaceAll("\n", "");
+
+  const teachers: string[] = [];
+  const times: string[] = [];
+  const classrooms: string[] = [];
+
+  const slotRegex = /\(([一二三四五六日])\)\s*(\d+)(?:\s*-\s*(\d+))?/g;
+
+  let cursor = 0;
+  let match: RegExpExecArray | null;
+
+  while ((match = slotRegex.exec(text)) !== null) {
+    const teacher = cleanTeacherName(text.slice(cursor, match.index));
+
+    if (teacher) teachers.push(teacher);
+
+    const [, day, start, end] = match;
+
+    times.push(end ? `(${day}) ${start}-${end}` : `(${day}) ${start}`);
+
+    let next = match.index + match[0].length;
+
+    // The classroom, when present, is the balanced group immediately after.
+    while (text[next] === " ") next += 1;
+
+    // …unless that group opens the next time slot instead. A course listing
+    // every weekday in one cell ("(一)8-10 (二)8-10") has no classroom between
+    // the slots, and swallowing "(二)" as one would drop that slot entirely.
+    const nextSlotFollows = /^\([一二三四五六日]\)\s*\d/.test(text.slice(next));
+
+    if (text[next] === "(" && !nextSlotFollows) {
+      const close = matchingParen(text, next);
+
+      if (close !== -1) {
+        const classroom = unifyString(text.slice(next + 1, close));
+
+        if (classroom) classrooms.push(classroom);
+        next = close + 1;
+      }
+    }
+
+    cursor = next;
+    slotRegex.lastIndex = next;
+  }
+
+  // No time slot at all ("王小明時間未定 (教室未定)"): the teacher is whatever
+  // remains once every parenthesised group is removed, and the first such group
+  // is still the classroom.
+  if (times.length === 0) {
+    const teacher = cleanTeacherName(text.replace(/\([^)]*\)/g, " "));
+
+    if (teacher) teachers.push(teacher);
+
+    const open = text.indexOf("(");
+    const close = open === -1 ? -1 : matchingParen(text, open);
+
+    if (close !== -1) {
+      const classroom = unifyString(text.slice(open + 1, close));
+
+      if (classroom) classrooms.push(classroom);
+    }
+  }
+
+  return {
+    teachers: Array.from(new Set(teachers)).join(", "),
+    times: Array.from(new Set(times)).join(" "),
+    classrooms: Array.from(new Set(classrooms)).join(", "),
+  };
+};
+
 export const convertChineseNumber = (chineseNum: string): number => {
   const digitMap: { [key: string]: number } = {
     零: 0,

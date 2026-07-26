@@ -1,0 +1,47 @@
+name: fetchClasses
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 6 * * 1" # At 06:00 on Monday
+
+jobs:
+  fetchClasses:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v7
+      - uses: pnpm/action-setup@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: "pnpm"
+      - name: Install dependencies
+        run: pnpm install
+      - name: Lint
+        run: pnpm exec eslint .
+      # Seed ./dist with the already-published data so the crawler can skip
+      # years that were backfilled on a previous run. The runner's checkout is
+      # otherwise empty, which would make every run backfill the same (newest
+      # un-crawled) 學年期 forever instead of working its way back.
+      - name: Restore published data
+        continue-on-error: true
+        uses: actions/checkout@v7
+        with:
+          ref: gh-pages
+          path: gh-pages
+      - name: Seed dist from published data
+        run: |
+          if [ -d gh-pages ]; then
+            mkdir -p dist
+            rsync -a --exclude='.git' gh-pages/ dist/
+          fi
+      - name: Fetch class timetables
+        run: pnpm tsx fetchClasses.ts
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          keep_files: true

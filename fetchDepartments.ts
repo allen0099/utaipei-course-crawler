@@ -6,8 +6,8 @@ import pLimit from "p-limit";
 import { YearAndSemester } from "@/interfaces/globals";
 import { LoadYMS } from "@/utils/common";
 import { writeJson } from "@/utils/dir";
+import { parseOptions } from "@/utils/dom";
 import { fetcher } from "@/utils/fetcher";
-import { spacing } from "@/utils/text";
 
 interface Item {
   code: string;
@@ -37,24 +37,6 @@ const postForm = (yms: string, dptId?: string): Promise<CheerioAPI> => {
   if (dptId !== undefined) body.set("dpt_id", dptId);
 
   return fetcher.post(BASE, body);
-};
-
-// Read a <select>'s <option>s, dropping the "請選擇" (empty value) and
-// "所有…" (value "%") aggregate entries.
-const parseOptions = ($: CheerioAPI, id: string): Item[] => {
-  const items: Item[] = [];
-
-  $(`#${id} option`).each((_, el) => {
-    const value = $(el).val();
-    const text = $(el).text().trim();
-
-    if (Array.isArray(value)) throw new Error("Unexpected array value");
-    if (!value || value === "%" || !text) return;
-
-    items.push({ code: value, name: spacing(text) });
-  });
-
-  return items;
 };
 
 interface DepartmentsResult {
