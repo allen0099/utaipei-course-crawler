@@ -18,6 +18,49 @@ const isYmsCache = (value: unknown): value is YmsCache =>
   !Number.isNaN(new Date((value as YmsCache).lastUpdated).getTime()) &&
   Array.isArray((value as YmsCache).data);
 
+/**
+ * 把命令列參數解析成要爬的學年期清單，三支 fetch* 腳本共用同一套規則：
+ *
+ *   `114#1`  只爬那一個學年期（不需要 LoadYMS，因此也不需要登入）
+ *   `114`    爬 114 學年度的所有學期
+ *   （省略）  爬學校目前學年度的所有學期
+ *
+ * 空字串等同省略：GitHub Actions 的 workflow input 沒填時會傳進來一個空字串，
+ * 若把它當成學年度就會匹配不到任何學年期而靜靜地什麼都不做。
+ */
+export const resolveTargets = async (arg?: string): Promise<string[]> => {
+  const value = arg?.trim();
+
+  if (value?.includes("#")) return [value];
+
+  const yearAndSemesters = await LoadYMS();
+  const year = value || yearAndSemesters.find((item) => item.default)?.code.split("#")[0];
+
+  if (!year) {
+    console.error("[resolveTargets] No year given and no default 學年期 found.");
+
+    return [];
+  }
+
+  const targets = yearAndSemesters
+    .filter((item) => item.code.split("#")[0] === year)
+    .map((item) => item.code);
+
+  // 手動指定卻一個都對不到，多半是年份打錯。安靜地跑完 0 個學年期會讓
+  // workflow 顯示成功，看起來像更新過了，所以直接失敗。
+  if (targets.length === 0) {
+    throw new Error(
+      `找不到 ${year} 學年度的任何學期。可用的學年期：${yearAndSemesters
+        .map((item) => item.code)
+        .join(", ")}`,
+    );
+  }
+
+  console.log(`[resolveTargets] ${year} 學年度: ${targets.join(", ")}`);
+
+  return targets;
+};
+
 export const LoadYMS = async (): Promise<YearAndSemester[]> => {
   const targetFile = "./dist/yms.json";
 

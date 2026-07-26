@@ -10,7 +10,7 @@ import {
   Course,
   YearAndSemester,
 } from "@/interfaces/globals";
-import { LoadYMS } from "@/utils/common";
+import { LoadYMS, resolveTargets } from "@/utils/common";
 import { writeJson } from "@/utils/dir";
 import { parseOptions } from "@/utils/dom";
 import { fetcher } from "@/utils/fetcher";
@@ -450,21 +450,23 @@ const main = async () => {
   console.log("All courses fetched!");
 };
 
-// Optionally crawl a single year/semester passed on the command line.
-const args = process.argv.slice(2);
+// `114#1` 只爬那個學年期、`114` 爬整個學年度；兩者都不做回填 —— 回填是排程用來
+// 慢慢補歷史的機制，手動指定範圍時不該再多跑一個不相干的學年期。
+const target = process.argv.slice(2)[0]?.trim();
 
-if (args.length > 0) {
-  const yms = args[0];
-
-  (async () => {
-    console.log("Fetch courses for", yms);
-
-    await fetchCoursesForYms(yms);
-
-    console.log(`Fetch courses for ${yms} done.`);
-  })();
-} else {
-  (async () => {
+(async () => {
+  if (!target) {
     await main();
-  })();
-}
+
+    return;
+  }
+
+  const targets = await resolveTargets(target);
+
+  for (const yms of targets) {
+    console.log(`Fetch courses for ${yms}...`);
+    await fetchCoursesForYms(yms);
+  }
+
+  console.log(`Fetch courses for ${target} done (${targets.length} 學年期).`);
+})();

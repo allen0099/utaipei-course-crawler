@@ -2,9 +2,9 @@ import { CheerioAPI } from "cheerio";
 import pLimit from "p-limit";
 import { CookieJar } from "tough-cookie";
 
-import { CourseIndex, PartialCourse, TeacherUnit, YearAndSemester } from "@/interfaces/globals";
+import { CourseIndex, PartialCourse, TeacherUnit } from "@/interfaces/globals";
 import { login } from "@/utils/authFetcher";
-import { LoadYMS } from "@/utils/common";
+import { resolveTargets } from "@/utils/common";
 import { collectExtraCourses, loadPublishedCourseCodes } from "@/utils/courses";
 import { writeJson } from "@/utils/dir";
 import { fetcher } from "@/utils/fetcher";
@@ -199,53 +199,18 @@ const fetchTeachers = async (yms: string, jar: CookieJar) => {
   await writeJson(`./dist/${year}/${semester}/teachers.json`, index, true);
 };
 
-const main = async () => {
+// `114#1` 只爬那個學年期、`114` 爬整個學年度、省略則爬目前學年度。
+const target = process.argv.slice(2)[0]?.trim();
+
+(async () => {
+  const targets = await resolveTargets(target);
   const authJar = await login();
-  const yearAndSemesters: YearAndSemester[] = await LoadYMS();
 
-  const jobs: Promise<void>[] = [];
-  // Find default equals to true, and get the year for the true item
-  const defaultItem = yearAndSemesters.find((item) => item.default);
-
-  if (defaultItem) {
-    const [year] = defaultItem.code.split("#");
-
-    // Add all results with the same year as the default item
-    yearAndSemesters.forEach((item) => {
-      const [itemYear] = item.code.split("#");
-
-      if (itemYear === year) {
-        jobs.push(fetchTeachers(item.code, authJar));
-      } else console.log(`Skip fetching teachers for ${item.code}`);
-    });
-  }
-
-  // Done job one by one to avoid overwhelming the server
-  for (const job of jobs) {
-    await job;
-  }
-
-  console.log("All done.");
-};
-
-// Read first argument from command line
-const args = process.argv.slice(2);
-
-// Treat first argument as yms if exists
-if (args.length > 0) {
-  const yms = args[0];
-
-  (async () => {
-    console.log("Fetch teachers for", yms);
-
-    const authJar = await login();
-
+  // 一個接一個，不要並行整個學年度 —— 每個學年期本身已經有上千個請求。
+  for (const yms of targets) {
+    console.log(`Fetch teachers for ${yms}...`);
     await fetchTeachers(yms, authJar);
+  }
 
-    console.log(`Fetch teachers for ${yms} done.`);
-  })();
-} else {
-  (async () => {
-    await main();
-  })();
-}
+  console.log(`All teachers fetched (${targets.length} 學年期).`);
+})();

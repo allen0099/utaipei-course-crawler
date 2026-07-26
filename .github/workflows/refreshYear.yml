@@ -1,0 +1,67 @@
+# 手動整年重抓。
+#
+# 排程的三支 workflow 各自只顧自己那份資料，而且 fetchCourses 每次只回填一個舊
+# 學年期 —— 要初始化一個學年度、或某年的資料出問題要重來，靠排程得等好幾週。
+# 這支把整年一次做完。
+#
+# 刻意只有 workflow_dispatch、沒有 schedule：一次跑完三支爬蟲、整年所有學期，
+# 請求量是排程單次的好幾倍，該由人決定什麼時候打學校的伺服器。
+name: refreshYear
+
+on:
+  workflow_dispatch:
+    inputs:
+      year:
+        description: "學年度，例如 114。留空則抓學校目前的學年度。該年的所有學期都會重抓。"
+        required: false
+        type: string
+
+jobs:
+  refreshYear:
+    runs-on: ubuntu-latest
+    # 一個學年期約 2200 個請求（courses 770 + teachers 1180 + locations 275），
+    # 一個學年度最多 5 個學期，所以給足時間；預設的 360 分鐘不一定夠。
+    timeout-minutes: 350
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v7
+      - uses: pnpm/action-setup@v6
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: "pnpm"
+      - name: Install dependencies
+        run: pnpm install
+      - name: Lint
+        run: pnpm exec eslint .
+      # dist 要先有已發佈的資料：fetchCourses 靠 courses.json 是否存在判斷哪些
+      # 舊學年期已經抓過，teachers/locations 也要讀它才算得出 extraCourses。
+      - name: Restore published data
+        continue-on-error: true
+        uses: actions/checkout@v7
+        with:
+          ref: gh-pages
+          path: gh-pages
+      - name: Seed dist from published data
+        run: |
+          if [ -d gh-pages ]; then
+            mkdir -p dist
+            rsync -a --exclude='.git' gh-pages/ dist/
+          fi
+      # 順序有依賴，不能並行：courses.json 必須先產生，另外兩支才知道自己看到的
+      # 課裡哪些是 courses.json 沒有的（extraCourses）。
+      - name: Fetch courses, classes and class timetables
+        run: pnpm tsx fetchCourses.ts "${{ inputs.year }}"
+      - name: Fetch teacher index
+        run: pnpm tsx fetchTeacherClasses.ts "${{ inputs.year }}"
+      - name: Fetch location index
+        run: pnpm tsx fetchLocations.ts "${{ inputs.year }}"
+      # 三支都跑完才部署一次。分開部署的話，兩支 workflow 若時間重疊，後部署的
+      # 會蓋掉前一份的新增（keep_files 只保留 publish_dir 裡沒有的檔案）。
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          keep_files: true
