@@ -2,17 +2,21 @@ import { CheerioAPI } from "cheerio";
 import pLimit from "p-limit";
 import { CookieJar } from "tough-cookie";
 
-import { CourseItem, YearAndSemester } from "@/interfaces/globals";
+import { CourseIndex, PartialCourse, TeacherUnit, YearAndSemester } from "@/interfaces/globals";
 import { login } from "@/utils/authFetcher";
 import { LoadYMS } from "@/utils/common";
+import { collectExtraCourses, loadPublishedCourseCodes } from "@/utils/courses";
 import { writeJson } from "@/utils/dir";
 import { fetcher } from "@/utils/fetcher";
 import { spacing, splitTeacherAndTime, unifyString } from "@/utils/text";
 
+// Intermediate shapes: the crawl still pulls whole course rows, because that is
+// what tells us which ones courses.json is missing. They are reduced to
+// TeacherUnit/TeacherEntry (code lists) just before writing.
 interface TeacherClasses {
   code: string;
   name: string;
-  class: CourseItem[];
+  class: PartialCourse[];
 }
 
 interface Units {
@@ -67,7 +71,7 @@ const fetchTeacherClasses = async (yms: string, teacherCode: string, jar: Cookie
   const $ = await callSecondApi({ yms, jar, teacherCode });
   const data = $("body > form:nth-child(3) > table > tbody > tr[bgcolor='#FFFCEE']");
 
-  const results: CourseItem[] = [];
+  const results: PartialCourse[] = [];
 
   data.each((_, el) => {
     const row = $(el).find("td");
@@ -97,7 +101,7 @@ const fetchUnitTeacher = async (
   const $ = await callApi({ yms, unit, jar });
   const data = $("#tea_str1 option");
 
-  const entries: { code: string; value: string; promise: Promise<CourseItem[]> }[] = [];
+  const entries: { code: string; value: string; promise: Promise<PartialCourse[]> }[] = [];
 
   data.each((_, el) => {
     const code = $(el).val() as string;
@@ -165,7 +169,34 @@ const fetchTeachers = async (yms: string, jar: CookieJar) => {
     teachers: result,
   }));
 
-  await writeJson(`./dist/${year}/${semester}/teachers.json`, results, true);
+  // Publish the index (系級 -> 教師 -> 選課代碼) plus only those courses
+  // courses.json does not already carry; everything else is looked up there so
+  // a course's fields never differ depending on which file the page read.
+  const published = loadPublishedCourseCodes(yms);
+  const extraCourses = collectExtraCourses(
+    published,
+    results.flatMap((unit) => unit.teachers.flatMap((teacher) => teacher.class)),
+  );
+
+  const index: CourseIndex<TeacherUnit> = {
+    entries: results.map((unit) => ({
+      code: unit.code,
+      name: unit.name,
+      teachers: unit.teachers.map((teacher) => ({
+        code: teacher.code,
+        name: teacher.name,
+        courseCodes: [...new Set(teacher.class.map((course) => course.code))],
+      })),
+    })),
+    extraCourses,
+  };
+
+  console.log(
+    `[${year}-${semester}] teachers: ${index.entries.length} units, ` +
+      `${extraCourses.length} courses not in courses.json`,
+  );
+
+  await writeJson(`./dist/${year}/${semester}/teachers.json`, index, true);
 };
 
 const main = async () => {

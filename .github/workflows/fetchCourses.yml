@@ -1,4 +1,4 @@
-name: fetchClasses
+name: fetchCourses
 
 on:
   workflow_dispatch:
@@ -6,7 +6,7 @@ on:
     - cron: "0 6 * * 1" # At 06:00 on Monday
 
 jobs:
-  fetchClasses:
+  fetchCourses:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -37,8 +37,8 @@ jobs:
             mkdir -p dist
             rsync -a --exclude='.git' gh-pages/ dist/
           fi
-      - name: Fetch class timetables
-        run: pnpm tsx fetchClasses.ts
+      - name: Fetch courses, classes and class timetables
+        run: pnpm tsx fetchCourses.ts
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:

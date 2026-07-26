@@ -1,17 +1,17 @@
 import pLimit from "p-limit";
 import { CookieJar } from "tough-cookie";
 
-import { YearAndSemester, CourseItem } from "@/interfaces/globals";
+import { YearAndSemester, CourseIndex, LocationEntry, PartialCourse } from "@/interfaces/globals";
 import { login } from "@/utils/authFetcher";
 import { LoadYMS } from "@/utils/common";
+import { collectExtraCourses, loadPublishedCourseCodes } from "@/utils/courses";
 import { writeJson } from "@/utils/dir";
 import { fetcher } from "@/utils/fetcher";
 import { spacing } from "@/utils/text";
 
-interface Location {
-  code: string;
-  name: string;
-  courses: CourseItem[];
+interface Location extends LocationEntry {
+  /** Kept only long enough to work out which courses courses.json lacks. */
+  courses: PartialCourse[];
 }
 
 const fetchCourses = async (yms: string, courseId: string, jar: CookieJar) => {
@@ -28,7 +28,7 @@ const fetchCourses = async (yms: string, courseId: string, jar: CookieJar) => {
   const $ = await fetcher.authPost(url, params, jar);
   const data = $('body > form > table > tbody > tr[bgcolor="#fffcee"]');
 
-  const results: CourseItem[] = [];
+  const results: PartialCourse[] = [];
 
   data.each((_, el) => {
     const row = $(el).find("td");
@@ -87,11 +87,46 @@ const fetchLocations = async (yms: string, jar: CookieJar) => {
 
   const locations = await Promise.all(locationPromises);
 
-  await writeJson(`./dist/${year}/${semester}/locations.json`, locations);
+  // Publish the index (場地 -> 選課代碼) plus only those courses courses.json
+  // does not already carry; everything else is looked up there so a course's
+  // fields never differ depending on which file the page happened to read.
+  const published = loadPublishedCourseCodes(yms);
+  const extraCourses = collectExtraCourses(
+    published,
+    locations.flatMap((location) => location.courses),
+  );
+
+  const index: CourseIndex<LocationEntry> = {
+    entries: locations.map(({ code, name, courses }) => ({
+      code,
+      name,
+      courseCodes: [...new Set(courses.map((course) => course.code))],
+    })),
+    extraCourses,
+  };
+
+  console.log(
+    `[${year}-${semester}] locations: ${index.entries.length} places, ` +
+      `${extraCourses.length} courses not in courses.json`,
+  );
+
+  await writeJson(`./dist/${year}/${semester}/locations.json`, index);
 };
+
+// Optionally crawl a single year/semester passed on the command line, matching
+// the other fetch* scripts.
+const args = process.argv.slice(2);
 
 (async () => {
   const authJar = await login();
+
+  if (args.length > 0) {
+    console.log("Fetch locations for", args[0]);
+    await fetchLocations(args[0], authJar);
+    console.log(`Fetch locations for ${args[0]} done.`);
+
+    return;
+  }
 
   const yearAndSemesters: YearAndSemester[] = await LoadYMS();
 
