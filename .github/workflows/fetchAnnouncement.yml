@@ -1,4 +1,4 @@
-name: fetchAnnouncement.yml
+name: fetchAnnouncement
 
 on:
   workflow_dispatch:
