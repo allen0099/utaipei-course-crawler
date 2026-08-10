@@ -1,0 +1,251 @@
+[
+  {
+    "date": "2026-08-01",
+    "unit": "教",
+    "title": "115學年度第1學期開始",
+    "isHoliday": false
+  },
+  {
+    "date": "2026-08-01",
+    "unit": "體",
+    "title": "競技運動代表隊暑假集訓",
+    "isHoliday": false
+  },
+  {
+    "date": "2026-09-01",
+    "unit": "學",
+    "title": "新生始業輔導式(暫定)",
+    "isHoliday": false
+  },
+  {
+    "date": "2026-09-02",
+    "unit": "學",
+    "title": "新生始業輔導式、天母校區學生健檢(暫定)",
+    "isHoliday": false
+  },
+  {
+    "date": "2026-09-06",
+    "unit": "教",
+    "title": "暑假結束",
+    "isHoliday": false
+  },
+  {
+    "date": "2026-09-07",
+    "unit": "教",
+    "title": "115學年度第1學期開學日(開始上課)",
+    "isHoliday": false
+  },
+  {
+    "date": "2026-09-07",
+    "unit": "教",
+    "title": "註冊日",
+    "isHoliday": false
+  },
+  {
+    "date": "2026-09-08",
+    "unit": "秘",
+    "title": "行政會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2026-09-14",
+    "unit": "學",
+    "title": "學輔中心個別諮商開始",
+    "isHoliday": false
+  },
+  {
+    "date": "2026-09-17",
+    "unit": "體",
+    "title": "教練會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2026-09-25",
+    "unit": "教",
+    "title": "中秋節(放假一日)",
+    "isHoliday": true
+  },
+  {
+    "date": "2026-09-28",
+    "unit": "教",
+    "title": "孔子誕辰紀念日/教師節(放假一日)",
+    "isHoliday": true
+  },
+  {
+    "date": "2026-10-06",
+    "unit": "秘",
+    "title": "行政會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2026-10-09",
+    "unit": "教",
+    "title": "國慶日遇例假日補假一日",
+    "isHoliday": true
+  },
+  {
+    "date": "2026-10-10",
+    "unit": "教",
+    "title": "國慶日(放假一日)",
+    "isHoliday": true
+  },
+  {
+    "date": "2026-10-16",
+    "unit": "教",
+    "title": "學期1/3退費基準日",
+    "isHoliday": false
+  },
+  {
+    "date": "2026-10-20",
+    "unit": "秘",
+    "title": "校務會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2026-10-25",
+    "unit": "教",
+    "title": "臺灣光復暨金門古寧頭大捷紀念日(放假一日)",
+    "isHoliday": true
+  },
+  {
+    "date": "2026-10-26",
+    "unit": "教",
+    "title": "臺灣光復暨金門古寧頭大捷紀念日遇例假日補假一日",
+    "isHoliday": true
+  },
+  {
+    "date": "2026-10-27",
+    "endDate": "2026-11-02",
+    "unit": "教",
+    "title": "115學年度第1學期期中考，若教師另訂其他日期者，從其規定。",
+    "isHoliday": false
+  },
+  {
+    "date": "2026-11-03",
+    "unit": "秘",
+    "title": "行政會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2026-11-03",
+    "unit": "理",
+    "title": "理學院院集會",
+    "isHoliday": false
+  },
+  {
+    "date": "2026-11-10",
+    "unit": "人文",
+    "title": "人文藝術學院院集會",
+    "isHoliday": false
+  },
+  {
+    "date": "2026-11-27",
+    "unit": "教",
+    "title": "學期2/3退費基準日",
+    "isHoliday": false
+  },
+  {
+    "date": "2026-11-30",
+    "unit": "教",
+    "title": "彈性放假(補12月5日校慶典禮暨園遊會)",
+    "isHoliday": true
+  },
+  {
+    "date": "2026-12-05",
+    "unit": "學",
+    "title": "校慶典禮暨園遊會",
+    "isHoliday": false
+  },
+  {
+    "date": "2026-12-08",
+    "unit": "秘",
+    "title": "行政會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2026-12-11",
+    "unit": "體",
+    "title": "體育表演會",
+    "isHoliday": false
+  },
+  {
+    "date": "2026-12-15",
+    "unit": "市政",
+    "title": "市政管理學院院集會",
+    "isHoliday": false
+  },
+  {
+    "date": "2026-12-17",
+    "unit": "體",
+    "title": "教練會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2026-12-18",
+    "unit": "教",
+    "title": "115學年度第1學期休退學申請截止日",
+    "isHoliday": false
+  },
+  {
+    "date": "2026-12-18",
+    "unit": "學",
+    "title": "學輔中心個別諮商結束",
+    "isHoliday": false
+  },
+  {
+    "date": "2026-12-21",
+    "endDate": "2026-12-24",
+    "unit": "教",
+    "title": "115學年度第1學期期末考試，若教師另訂其他日期者，從其規定。",
+    "isHoliday": false
+  },
+  {
+    "date": "2026-12-25",
+    "unit": "教",
+    "title": "行憲紀念日(放假一日)",
+    "isHoliday": true
+  },
+  {
+    "date": "2026-12-28",
+    "endDate": "2027-01-08",
+    "unit": "教",
+    "title": "教師彈性補充教學",
+    "isHoliday": false
+  },
+  {
+    "date": "2026-12-29",
+    "unit": "秘",
+    "title": "校務會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2027-01-01",
+    "unit": "教",
+    "title": "中華民國開國紀念日(放假一日)",
+    "isHoliday": true
+  },
+  {
+    "date": "2027-01-11",
+    "unit": "教",
+    "title": "寒假開始",
+    "isHoliday": false
+  },
+  {
+    "date": "2027-01-11",
+    "unit": "體",
+    "title": "競技運動代表隊寒假集訓開始",
+    "isHoliday": false
+  },
+  {
+    "date": "2027-01-29",
+    "unit": "人",
+    "title": "寒休共同排休(職員、助教、技工友及本校規定約聘僱(用)、臨僱人員)(暫定)",
+    "isHoliday": false
+  },
+  {
+    "date": "2027-01-31",
+    "unit": "教",
+    "title": "115學年度第1學期結束",
+    "isHoliday": false
+  }
+]

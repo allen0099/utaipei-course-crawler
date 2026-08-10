@@ -1,0 +1,273 @@
+[
+  {
+    "date": "2027-02-01",
+    "unit": "教",
+    "title": "115學年度第2學期開始",
+    "isHoliday": false
+  },
+  {
+    "date": "2027-02-01",
+    "unit": "體",
+    "title": "競技運動代表隊寒假集訓",
+    "isHoliday": false
+  },
+  {
+    "date": "2027-02-03",
+    "unit": "人",
+    "title": "寒休共同排休(職員、助教、技工友及本校規定約聘僱(用)、臨僱人員)(暫定)",
+    "isHoliday": false
+  },
+  {
+    "date": "2027-02-04",
+    "unit": "教",
+    "title": "除夕前一日(放假一日)",
+    "isHoliday": true
+  },
+  {
+    "date": "2027-02-05",
+    "unit": "教",
+    "title": "除夕(放假一日)",
+    "isHoliday": true
+  },
+  {
+    "date": "2027-02-06",
+    "endDate": "2027-02-08",
+    "unit": "教",
+    "title": "春節放假",
+    "isHoliday": true
+  },
+  {
+    "date": "2027-02-09",
+    "endDate": "2027-02-10",
+    "unit": "教",
+    "title": "春節適逢週休補假二天",
+    "isHoliday": true
+  },
+  {
+    "date": "2027-02-11",
+    "unit": "人",
+    "title": "寒休共同排休(職員、助教、技工友及本校規定約聘僱(用)、臨僱人員)(暫定)",
+    "isHoliday": false
+  },
+  {
+    "date": "2027-02-21",
+    "unit": "教",
+    "title": "寒假結束",
+    "isHoliday": false
+  },
+  {
+    "date": "2027-02-22",
+    "unit": "教",
+    "title": "115學年度第2學期開學日(開始上課)",
+    "isHoliday": false
+  },
+  {
+    "date": "2027-02-22",
+    "unit": "教",
+    "title": "註冊日",
+    "isHoliday": false
+  },
+  {
+    "date": "2027-02-23",
+    "unit": "秘",
+    "title": "行政會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2027-02-28",
+    "unit": "教",
+    "title": "和平紀念日(放假一日)",
+    "isHoliday": true
+  },
+  {
+    "date": "2027-03-01",
+    "unit": "教",
+    "title": "和平紀念日遇例假日補假一日",
+    "isHoliday": true
+  },
+  {
+    "date": "2027-03-02",
+    "unit": "學",
+    "title": "學輔中心個別諮商開始",
+    "isHoliday": false
+  },
+  {
+    "date": "2027-03-04",
+    "unit": "體",
+    "title": "教練會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2027-03-23",
+    "unit": "秘",
+    "title": "校務會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2027-04-02",
+    "unit": "教",
+    "title": "彈性放假(補6月5日畢業典禮)",
+    "isHoliday": true
+  },
+  {
+    "date": "2027-04-02",
+    "unit": "教",
+    "title": "學期1/3退費基準日",
+    "isHoliday": false
+  },
+  {
+    "date": "2027-04-04",
+    "unit": "教",
+    "title": "兒童節(放假一日)",
+    "isHoliday": true
+  },
+  {
+    "date": "2027-04-05",
+    "unit": "教",
+    "title": "清明節(放假一日)",
+    "isHoliday": true
+  },
+  {
+    "date": "2027-04-06",
+    "unit": "教",
+    "title": "兒童節遇例假日補假一日",
+    "isHoliday": true
+  },
+  {
+    "date": "2027-04-12",
+    "endDate": "2027-04-16",
+    "unit": "教",
+    "title": "115學年度第2學期期中考試",
+    "isHoliday": false
+  },
+  {
+    "date": "2027-04-13",
+    "unit": "秘",
+    "title": "行政會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2027-04-30",
+    "unit": "教",
+    "title": "勞動節遇例假日補假一日",
+    "isHoliday": true
+  },
+  {
+    "date": "2027-05-01",
+    "unit": "教",
+    "title": "勞動節(放假一日)",
+    "isHoliday": true
+  },
+  {
+    "date": "2027-05-01",
+    "endDate": "2027-05-06",
+    "unit": "體",
+    "title": "116年全國大專校院運動會(5月1日開幕)",
+    "isHoliday": false
+  },
+  {
+    "date": "2027-05-06",
+    "unit": "體",
+    "title": "116年全國大專校院運動會閉幕",
+    "isHoliday": false
+  },
+  {
+    "date": "2027-05-10",
+    "endDate": "2027-05-14",
+    "unit": "教育",
+    "title": "教育學院週",
+    "isHoliday": false
+  },
+  {
+    "date": "2027-05-11",
+    "unit": "秘",
+    "title": "行政會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2027-05-14",
+    "unit": "教",
+    "title": "學期2/3退費基準日",
+    "isHoliday": false
+  },
+  {
+    "date": "2027-05-18",
+    "unit": "市政",
+    "title": "市政管理學院院集會",
+    "isHoliday": false
+  },
+  {
+    "date": "2027-06-03",
+    "unit": "體",
+    "title": "教練會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2027-06-04",
+    "unit": "教",
+    "title": "115學年度第2學期休退學申請截止日",
+    "isHoliday": false
+  },
+  {
+    "date": "2027-06-04",
+    "unit": "學",
+    "title": "學輔中心個別諮商結束",
+    "isHoliday": false
+  },
+  {
+    "date": "2027-06-05",
+    "unit": "學",
+    "title": "畢業典禮",
+    "isHoliday": false
+  },
+  {
+    "date": "2027-06-07",
+    "endDate": "2027-06-11",
+    "unit": "教",
+    "title": "115學年度第2學期期末考試，若教師另訂其他日期者，從其規定。",
+    "isHoliday": false
+  },
+  {
+    "date": "2027-06-08",
+    "unit": "秘",
+    "title": "行政會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2027-06-09",
+    "unit": "教",
+    "title": "端午節(放假一日)",
+    "isHoliday": true
+  },
+  {
+    "date": "2027-06-14",
+    "endDate": "2027-06-25",
+    "unit": "教",
+    "title": "教師彈性補充教學",
+    "isHoliday": false
+  },
+  {
+    "date": "2027-06-22",
+    "unit": "秘",
+    "title": "校務會議",
+    "isHoliday": false
+  },
+  {
+    "date": "2027-06-28",
+    "unit": "教",
+    "title": "暑假開始",
+    "isHoliday": false
+  },
+  {
+    "date": "2027-06-28",
+    "unit": "體",
+    "title": "競技運動代表隊暑假集訓開始",
+    "isHoliday": false
+  },
+  {
+    "date": "2027-07-31",
+    "unit": "教",
+    "title": "115學年度第2學期結束",
+    "isHoliday": false
+  }
+]
