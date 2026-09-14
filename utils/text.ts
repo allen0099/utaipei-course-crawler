@@ -1,4 +1,3 @@
-// @ts-ignore
 import pangu from "pangu";
 
 export const unifyString = (input: string): string => {
@@ -13,7 +12,7 @@ export const unifyString = (input: string): string => {
 };
 
 export const spacing = (text: string): string => {
-  if (text) return pangu.spacingText(unifyString(text));
+  if (text) return pangu.spaceText(unifyString(text));
   else return text;
 };
 
