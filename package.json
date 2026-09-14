@@ -16,7 +16,7 @@
     "fetch-cookie": "^3.2.0",
     "jsonfile": "^6.2.1",
     "p-limit": "^7.3.2",
-    "pangu": "^10.1.0",
+    "pangu": "^10.1.1",
     "pdfjs-dist": "^6.3.289",
     "tough-cookie": "^6.0.2"
   },

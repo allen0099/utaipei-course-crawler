@@ -1,3 +1,6 @@
 allowBuilds:
   esbuild: false
   unrs-resolver: false
+overrides:
+  postcss@<8.5.23: ^8.5.23
+  vite@>=8.0.0 <8.0.16: ^8.0.16
