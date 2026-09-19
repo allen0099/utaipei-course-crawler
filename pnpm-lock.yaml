@@ -184,7 +184,7 @@ importers:
         version: 7.3.2
       pangu:
         specifier: ^10.1.1
-        version: 10.1.1
+        version: 10.2.0
       pdfjs-dist:
         specifier: ^6.3.289
         version: 6.3.289
@@ -1762,8 +1762,8 @@ packages:
     resolution: {integrity: sha512-LaNjtRWUBY++zB5nE/NwcaoMylSPk+S+ZHNB1TzdbMJMny6dynpAGt7X/tl/QYq3TIeE6nxHppbo2LGymrG5Pw==}
     engines: {node: '>=10'}
 
-  pangu@10.1.1:
-    resolution: {integrity: sha512-lyaxUedpLBRav2MUcuLTbzhZUvAGAd5DGIPKQNcXxyL3k91hRtLne5kPG8xxSiIzGA6w4VaQuq0I0UvdzsknJw==}
+  pangu@10.2.0:
+    resolution: {integrity: sha512-GKRQcritBJZZRrBl8Ntl/M0SpOZrgD+LxsRSMF8Lv/r3aAYUnYWZC9wmxzzp8IOWnYcvT0RcKb/qzBC8Oe/fRw==}
     engines: {node: '>=20.0.0'}
     hasBin: true
 
@@ -3683,7 +3683,7 @@ snapshots:
     dependencies:
       p-limit: 3.1.0
 
-  pangu@10.1.1: {}
+  pangu@10.2.0: {}
 
   parent-module@1.0.1:
     dependencies:
