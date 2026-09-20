@@ -400,6 +400,15 @@ const fetchCoursesForYms = async (yms: string): Promise<void> => {
 
   await writeJson(`./dist/${year}/${semester}/courses.json`, all, true);
 
+  // 這份資料是什麼時候抓的。web 拿它在頁尾顯示「課程資料更新於…」—— 週排程的
+  // 資料最多會舊七天，使用者需要知道手上這份有多新。放在旁邊的小檔而不是塞進
+  // courses.json：那個檔的頂層是陣列，改成物件會讓還沒更新的 web 整個讀不到課。
+  // gh-pages 的 Last-Modified 不能用，任何一個 workflow 部署都會把它刷新。
+  await writeJson(`./dist/${year}/${semester}/meta.json`, {
+    coursesUpdatedAt: new Date().toISOString(),
+    courseCount: all.length,
+  });
+
   const withCapacity = all.filter((course) => course.capacity).length;
   const withNote = all.filter((course) => course.note).length;
   const withRestriction = all.filter((course) => course.hasRestriction).length;
