@@ -1,5 +1,15 @@
 [
   {
+    "code": "13",
+    "name": "教務處",
+    "departments": [
+      {
+        "code": "ZZ90",
+        "name": "跨域彈性修業中心"
+      }
+    ]
+  },
+  {
     "code": "24",
     "name": "師資培育中心",
     "departments": [
