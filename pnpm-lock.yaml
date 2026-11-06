@@ -190,7 +190,7 @@ importers:
         version: 6.5.438
       tough-cookie:
         specifier: ^6.0.2
-        version: 6.0.2
+        version: 6.1.0
     devDependencies:
       '@eslint/compat':
         specifier: ^2.1.1
@@ -1986,6 +1986,10 @@ packages:
 
   tough-cookie@6.0.2:
     resolution: {integrity: sha512-exgYmnmL/sJpR3upZfXG5PoatXQii55xAiXGXzY+sROLZ/Y+SLcp9PgJNI9Vz37HpQ74WvDcLT8eqm+kV3FzrA==}
+    engines: {node: '>=16'}
+
+  tough-cookie@6.1.0:
+    resolution: {integrity: sha512-FTxc8u8Kl2tz0Lat1u8ksvcy8bwHRyEMawwTWybo51JqaC6O7SvfuhAKg+Ld6VqyIe2QRJBzY9HA7y2WyFRT2w==}
     engines: {node: '>=16'}
 
   ts-api-utils@2.5.0:
@@ -3936,6 +3940,10 @@ snapshots:
       tldts-core: 7.4.12
 
   tough-cookie@6.0.2:
+    dependencies:
+      tldts: 7.4.12
+
+  tough-cookie@6.1.0:
     dependencies:
       tldts: 7.4.12
 
