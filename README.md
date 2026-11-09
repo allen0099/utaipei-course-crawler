@@ -1,6 +1,6 @@
 # utaipei-course-crawler
 
-北市大課程系統爬蟲。
+北市大課程系統爬蟲。爬到的資料供 [北市大選課小幫手](https://utc.allen0099.tw/) 使用（前端原始碼：[utaipei-course-web](https://github.com/allen0099/utaipei-course-web)）。
 
 ## 專案設定與執行
 
